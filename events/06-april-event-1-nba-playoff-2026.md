@@ -2,14 +2,15 @@
 
 ## SNAPSHOT
 
-| Item | Owner | Status |
-|------|-------|--------|
-| Mission & Success Criteria | | |
-| Theme & Messaging | | |
-| Promotion & Registration | | |
-| Experience Readiness | | |
-| Ops & Systems | | |
-| Post-Event Plan | | |
+| Phase | Dates | Status |
+|-------|-------|--------|
+| Phase 1: Initial planning | Jan 05, 2026 - Feb 02, 2026 | Complete |
+| Phase 2: Content development & outreach | Feb 16, 2026 - Mar 02, 2026 | In Progress |
+| Phase 3: Final preparation & promotional push | Mar 16-30, 2026 | Pending |
+| Phase 4: Final confirmations & team briefings | Apr 13-26, 2026 | Pending |
+| Phase 5: Execution | Apr 27-29, 2026 | Pending |
+| Phase 6: CRM updates, Feedback & Follow-up | Apr 30, 2026 - May 06, 2026 | Pending |
+| Phase 7: ROI analysis | May 29, 2026 | Pending |
 
 - **Format:** PRAY Mini Event
 - **Date(s):** April 27-29, 2026

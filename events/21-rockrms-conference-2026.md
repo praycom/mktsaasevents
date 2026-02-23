@@ -2,14 +2,15 @@
 
 ## SNAPSHOT
 
-| Item | Owner | Status |
-|------|-------|--------|
-| Mission & Success Criteria | | |
-| Theme & Messaging | | |
-| Promotion & Registration | | |
-| Experience Readiness | | |
-| Ops & Systems | | |
-| Post-Event Plan | | |
+| Phase | Dates | Status |
+|-------|-------|--------|
+| Phase 1: Initial planning | Jul 14, 2026 - Aug 11, 2026 | Pending |
+| Phase 2: Content development & outreach | Aug 25, 2026 - Sep 08, 2026 | Pending |
+| Phase 3: Final preparation & promotional push | Sep 22, 2026 - Oct 06, 2026 | Pending |
+| Phase 4: Final confirmations & team briefings | Oct 20, 2026 - Nov 02, 2026 | Pending |
+| Phase 5: Execution | Nov 03-05, 2026 | Pending |
+| Phase 6: CRM updates, Feedback & Follow-up | Nov 06-12, 2026 | Pending |
+| Phase 7: ROI analysis | Dec 05, 2026 | Pending |
 
 - **Format:** Conference
 - **Date(s):** November 3-5, 2026

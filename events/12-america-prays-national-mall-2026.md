@@ -2,14 +2,15 @@
 
 ## SNAPSHOT
 
-| Item | Owner | Status |
-|------|-------|--------|
-| Mission & Success Criteria | | |
-| Theme & Messaging | | |
-| Promotion & Registration | | |
-| Experience Readiness | | |
-| Ops & Systems | | |
-| Post-Event Plan | | |
+| Phase | Dates | Status |
+|-------|-------|--------|
+| Phase 1: Initial planning | Jan 26, 2026 - Feb 23, 2026 | In Progress |
+| Phase 2: Content development & outreach | Mar 09-23, 2026 | Pending |
+| Phase 3: Final preparation & promotional push | Apr 06-20, 2026 | Pending |
+| Phase 4: Final confirmations & team briefings | May 04-17, 2026 | Pending |
+| Phase 5: Execution | May 18, 2026 | Pending |
+| Phase 6: CRM updates, Feedback & Follow-up | May 19-25, 2026 | Pending |
+| Phase 7: ROI analysis | Jun 17, 2026 | Pending |
 
 - **Format:** American Prays
 - **Date(s):** May 18, 2026

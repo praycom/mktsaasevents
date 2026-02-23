@@ -2,14 +2,15 @@
 
 ## SNAPSHOT
 
-| Item | Owner | Status |
-|------|-------|--------|
-| Mission & Success Criteria | | |
-| Theme & Messaging | | |
-| Promotion & Registration | | |
-| Experience Readiness | | |
-| Ops & Systems | | |
-| Post-Event Plan | | |
+| Phase | Dates | Status |
+|-------|-------|--------|
+| Phase 1: Initial planning | Oct 28, 2025 - Nov 25, 2025 | Complete |
+| Phase 2: Content development & outreach | Dec 09-23, 2025 | Complete |
+| Phase 3: Final preparation & promotional push | Jan 06-20, 2026 | Complete |
+| Phase 4: Final confirmations & team briefings | Feb 03-16, 2026 | Complete |
+| Phase 5: Execution | Feb 17-20, 2026 | Complete |
+| Phase 6: CRM updates, Feedback & Follow-up | Feb 21-27, 2026 | In Progress |
+| Phase 7: ROI analysis | Mar 22, 2026 | Pending |
 
 - **Format:** NRB Conference
 - **Date(s):** February 17-20, 2026
