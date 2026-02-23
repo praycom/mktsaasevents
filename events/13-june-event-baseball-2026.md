@@ -1,4 +1,4 @@
-# June Event / TBD (Baseball?) 2026
+# Rangers vs. Padres — Father's Day VIP Night 2026
 
 ## SNAPSHOT
 
@@ -12,15 +12,18 @@
 | Post-Event Plan | | |
 
 - **Format:** PRAY Mini Event
-- **Date(s):** June 3, 2026
-- **Location:** TBD
+- **Date(s):** June 19-21, 2026
+- **Location:** Dallas, TX
+- **Venue:** Globe Life Field
 - **Website:** TBD
 - **Participation:** Hosting
 - **Size:** Small
 - **Budget:** $30,000
 
+> **Staffing note:** BCI Conference runs June 19-20 in Atlanta. Separate staff will be needed for each event.
+
 ### Summary
-A PRAY-hosted mini event potentially tied to a baseball game to foster relationships with prospects through a sporting experience.
+A PRAY-hosted VIP game night around the Rangers vs. Padres series on Father's Day weekend in Dallas. The Father's Day theme is a natural fit for PRAY.COM's faith-based audience — faith, family, and fathers are deeply aligned with our mission and ICP.
 
 ### Target Metrics
 | Metric | Target |
@@ -38,9 +41,9 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 **Exec Sponsor:** Hosting
 
 ### Why are we hosting this event?
-- **Primary goal:**
-- **Secondary goal:**
-- **Strategic rationale (1-2 sentences):**
+- **Primary goal:** Build relationships with Dallas-area pastors and ministry leaders through a faith-and-family themed experience
+- **Secondary goal:** Create brand association between PRAY.COM and meaningful family moments
+- **Strategic rationale:** Father's Day weekend gives this event a natural emotional and thematic hook that resonates deeply with our faith-based ICP. Dallas is one of our strongest markets.
 
 ### Success Metrics
 - **Attendees:**
@@ -58,10 +61,10 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 
 | Element | Definition |
 |---------|------------|
-| Theme Name | |
-| Spiritual Anchor | (Scripture / Principle) |
+| Theme Name | Father's Day VIP Night |
+| Spiritual Anchor | Honoring fathers, faith, and family |
 | Core Message | |
-| Attendee Should Feel | |
+| Attendee Should Feel | Celebrated, connected, and appreciated |
 | Attendee Should Say | |
 
 ---
@@ -69,7 +72,7 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 ## AUDIENCE, PROMOTIONAL & DISTRIBUTION LAYER
 
 ### Target Audience
-- **Who we want:** Key prospects and customers interested in VIP experiences
+- **Who we want:** Pastors, ministry leaders, and faith-based executives in the Dallas area — ideally invite them with a son, daughter, or family member
 - **Who we don't:**
 
 ### Promotion Channels Overview
@@ -86,15 +89,15 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 ### Attendee Journey
 
 **Pre-Event**
-- Key message:
+- Key message: "Celebrate Father's Day with PRAY.COM — an exclusive evening with faith leaders at the ballpark."
 - CTA:
 
 **On-Site / Live**
-- Critical moments:
+- Critical moments: Welcome moment acknowledging Father's Day, branded gifts for dads
 - Conversion moment:
 
 **Post-Event**
-- First follow-up:
+- First follow-up: Father's Day-themed thank you message
 - Relationship goal:
 
 ---
@@ -124,9 +127,13 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 | On-Site Decisions | |
 
 ### Known Risks
-- **Risk:** Event details TBD
-- **Mitigation plan:** Finalize by April 2026
+- **Risk:** Team split — BCI Conference (Atlanta) runs June 19-20 at the same time
+- **Mitigation plan:** Assign dedicated staff to each event; no overlap in team members
 - **Owner:**
+
+### Critical Dependencies
+- **External partners:** Rangers ticket availability for Father's Day weekend (high demand)
+- **Internal approvals:**
 
 ---
 
@@ -142,55 +149,56 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 
 ## TO-DO LIST WITH DATES
 
-### 10 Weeks Before Event (March 25, 2026)
-- [ ] Finalize event concept and venue
-- [ ] Secure tickets for sporting event
+### 10 Weeks Before Event (April 10, 2026)
+- [ ] Finalize event concept and secure Rangers tickets (Father's Day weekend sells fast)
 - [ ] Define event goals and KPIs
-- [ ] Create VIP guest list
+- [ ] Create VIP guest list — consider "bring a family member" invitation format
+- [ ] Assign dedicated staff (separate from BCI Conference team)
 
-### 8 Weeks Before Event (April 8, 2026)
-- [ ] Confirm venue and logistics
-- [ ] Send exclusive invitations
+### 8 Weeks Before Event (April 24, 2026)
+- [ ] Confirm ticket block and suite/hospitality options
+- [ ] Send exclusive Father's Day themed invitations
 - [ ] Create event page on internal wiki/Confluence
 - [ ] Set up CRM tracking
 
-### 6 Weeks Before Event (April 22, 2026)
-- [ ] Finalize event details
-- [ ] Confirm attendee list
+### 6 Weeks Before Event (May 8, 2026)
+- [ ] Finalize attendee list and confirm RSVPs
 - [ ] Book travel and accommodations
-- [ ] Order branded materials
+- [ ] Order Father's Day branded gifts and swag
+- [ ] Confirm BCI Conference staff assignments (separate team)
 
-### 4 Weeks Before Event (May 6, 2026)
-- [ ] Send reminder emails
-- [ ] Prepare materials and swag
+### 4 Weeks Before Event (May 22, 2026)
+- [ ] Send reminder emails with event details
 - [ ] Confirm ticket allocations
-- [ ] Train staff on event flow
+- [ ] Prepare event materials and gifts
+- [ ] Final brief on dual-event staffing plan
 
-### 2 Weeks Before Event (May 20, 2026)
+### 2 Weeks Before Event (June 5, 2026)
 - [ ] Final confirmation emails
-- [ ] Confirm all logistics
+- [ ] Confirm all logistics and transportation
 - [ ] Pack all materials
 - [ ] Final team briefing
 
-### 1 Week Before Event (May 27, 2026)
+### 1 Week Before Event (June 12, 2026)
 - [ ] Final logistics check
 - [ ] Distribute tickets to attendees
-- [ ] Confirm transportation
-- [ ] Prepare networking materials
+- [ ] Confirm venue hospitality details
+- [ ] Coordinate final split-staff logistics with BCI Conference team
 
-### Event Day (June 3, 2026)
-- [ ] Host VIP experience
-- [ ] Execute event
-- [ ] Network with attendees
-- [ ] Gather feedback
+### Event Days (June 19-21, 2026)
+- [ ] June 19: Arrive and set up — BCI Conference also begins (separate team)
+- [ ] June 20: Father's Day VIP game night — Rangers vs. Padres
+- [ ] June 21: Final game of series — optional extended networking
+- [ ] Capture leads and conversations throughout
+- [ ] Daily team debrief
 
-### Post-Event Week (June 4-10, 2026)
-- [ ] Day 1: Send thank you emails
-- [ ] Day 2-3: Upload leads to CRM
+### Post-Event Week (June 22-28, 2026)
+- [ ] Day 1: Send Father's Day themed thank you emails
+- [ ] Day 2-3: Upload all leads to CRM with notes
 - [ ] Day 5: Begin follow-up calls
 - [ ] Day 7: Team retrospective
 
-### 30 Days Post-Event (July 3, 2026)
+### 30 Days Post-Event (July 21, 2026)
 - [ ] Complete all lead follow-ups
 - [ ] Track pipeline progress
 - [ ] Document lessons learned

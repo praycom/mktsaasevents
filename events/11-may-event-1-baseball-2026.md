@@ -1,4 +1,4 @@
-# May Event 1 / TBD (Baseball?) 2026
+# VIP Dinner + Astros vs. Rangers 2026
 
 ## SNAPSHOT
 
@@ -12,15 +12,16 @@
 | Post-Event Plan | | |
 
 - **Format:** PRAY Mini Event
-- **Date(s):** May 1, 2026
-- **Location:** TBD
+- **Date(s):** May 15-16, 2026
+- **Location:** Houston, TX
+- **Venue:** TBD (Dinner venue) + Minute Maid Park
 - **Website:** TBD
 - **Participation:** Hosting
 - **Size:** Small
 - **Budget:** $30,000
 
 ### Summary
-A PRAY-hosted mini event potentially tied to a baseball game to foster relationships with prospects through a sporting experience.
+A two-part PRAY VIP experience in Houston: a private dinner on May 15 followed by a VIP outing to the Astros vs. Rangers game on May 16. The dinner format elevates the experience and creates space for deeper conversations before the game.
 
 ### Target Metrics
 | Metric | Target |
@@ -38,9 +39,9 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 **Exec Sponsor:** Hosting
 
 ### Why are we hosting this event?
-- **Primary goal:**
-- **Secondary goal:**
-- **Strategic rationale (1-2 sentences):**
+- **Primary goal:** Build deep relationships with key Houston-area ministry and church prospects
+- **Secondary goal:** Create a two-touchpoint experience (dinner + game) for higher retention and conversion
+- **Strategic rationale:** Houston has one of the largest concentrations of churches and faith-based organizations in the U.S. The two-part format — dinner then game — is intentional: dinner builds rapport, the game seals the relationship.
 
 ### Success Metrics
 - **Attendees:**
@@ -69,7 +70,7 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 ## AUDIENCE, PROMOTIONAL & DISTRIBUTION LAYER
 
 ### Target Audience
-- **Who we want:** Key prospects and customers interested in VIP experiences
+- **Who we want:** Senior pastors, executive directors, and ministry leaders in the Houston area
 - **Who we don't:**
 
 ### Promotion Channels Overview
@@ -89,7 +90,11 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 - Key message:
 - CTA:
 
-**On-Site / Live**
+**On-Site / Live — Dinner (May 15)**
+- Critical moments:
+- Conversion moment:
+
+**On-Site / Live — Game (May 16)**
 - Critical moments:
 - Conversion moment:
 
@@ -124,9 +129,13 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 | On-Site Decisions | |
 
 ### Known Risks
-- **Risk:** Event details TBD, dependent on baseball schedule
-- **Mitigation plan:** Monitor schedule and finalize by March 2026
+- **Risk:** Two-day commitment may reduce acceptances vs. single-day event
+- **Mitigation plan:** Frame as exclusive two-part experience; offer option to attend just the game if dinner conflicts
 - **Owner:**
+
+### Critical Dependencies
+- **External partners:** Dinner venue, Astros ticket availability
+- **Internal approvals:**
 
 ---
 
@@ -142,55 +151,57 @@ A PRAY-hosted mini event potentially tied to a baseball game to foster relations
 
 ## TO-DO LIST WITH DATES
 
-### 10 Weeks Before Event (February 20, 2026)
-- [ ] Finalize event concept and venue
-- [ ] Secure tickets for sporting event
+### 10 Weeks Before Event (March 6, 2026)
+- [ ] Finalize event concept (confirm dinner + game format)
+- [ ] Secure Astros vs. Rangers tickets and suite options
+- [ ] Research and shortlist dinner venues in Houston
 - [ ] Define event goals and KPIs
 - [ ] Create VIP guest list
 
-### 8 Weeks Before Event (March 6, 2026)
-- [ ] Confirm venue and logistics
+### 8 Weeks Before Event (March 20, 2026)
+- [ ] Book dinner venue
+- [ ] Confirm ticket block for the game
 - [ ] Send exclusive invitations
 - [ ] Create event page on internal wiki/Confluence
 - [ ] Set up CRM tracking
 
-### 6 Weeks Before Event (March 20, 2026)
-- [ ] Finalize event details
-- [ ] Confirm attendee list
+### 6 Weeks Before Event (April 3, 2026)
+- [ ] Finalize attendee list and confirm RSVPs
+- [ ] Plan dinner menu and run of show
 - [ ] Book travel and accommodations
-- [ ] Order branded materials
+- [ ] Order branded gifts and materials
 
-### 4 Weeks Before Event (April 3, 2026)
-- [ ] Send reminder emails
+### 4 Weeks Before Event (April 17, 2026)
+- [ ] Send reminder with full itinerary
+- [ ] Confirm RSVPs for both dinner and game
 - [ ] Prepare materials and swag
-- [ ] Confirm ticket allocations
 - [ ] Train staff on event flow
 
-### 2 Weeks Before Event (April 17, 2026)
+### 2 Weeks Before Event (May 1, 2026)
 - [ ] Final confirmation emails
-- [ ] Confirm all logistics
+- [ ] Confirm all vendor and venue arrangements
 - [ ] Pack all materials
 - [ ] Final team briefing
 
-### 1 Week Before Event (April 24, 2026)
-- [ ] Final logistics check
-- [ ] Distribute tickets to attendees
-- [ ] Confirm transportation
-- [ ] Prepare networking materials
+### 1 Week Before Event (May 8, 2026)
+- [ ] Final logistics check for both venues
+- [ ] Confirm final headcount with dinner venue
+- [ ] Distribute game tickets to attendees
+- [ ] Prepare seating plans and name cards for dinner
 
-### Event Day (May 1, 2026)
-- [ ] Host VIP experience
-- [ ] Execute event
-- [ ] Network with attendees
-- [ ] Gather feedback
+### Event Days (May 15-16, 2026)
+- [ ] May 15: VIP Dinner — private venue
+- [ ] May 16: Astros vs. Rangers game — Minute Maid Park
+- [ ] Capture leads and conversations from both touchpoints
+- [ ] Daily team debrief
 
-### Post-Event Week (May 2-8, 2026)
-- [ ] Day 1: Send thank you emails
-- [ ] Day 2-3: Upload leads to CRM
+### Post-Event Week (May 17-23, 2026)
+- [ ] Day 1: Send personalized thank you emails
+- [ ] Day 2-3: Upload all leads to CRM with notes
 - [ ] Day 5: Begin follow-up calls
 - [ ] Day 7: Team retrospective
 
-### 30 Days Post-Event (May 31, 2026)
+### 30 Days Post-Event (June 15, 2026)
 - [ ] Complete all lead follow-ups
 - [ ] Track pipeline progress
 - [ ] Document lessons learned

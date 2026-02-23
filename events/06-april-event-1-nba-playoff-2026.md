@@ -1,4 +1,4 @@
-# April Event 1 / TBD (NBA Playoff?) 2026
+# Rangers vs. Yankees — VIP Game Night 2026
 
 ## SNAPSHOT
 
@@ -12,15 +12,18 @@
 | Post-Event Plan | | |
 
 - **Format:** PRAY Mini Event
-- **Date(s):** April 19, 2026
-- **Location:** TBD
+- **Date(s):** April 27-29, 2026
+- **Location:** Dallas, TX
+- **Venue:** Globe Life Field
 - **Website:** TBD
 - **Participation:** Hosting
 - **Size:** Small
 - **Budget:** $30,000
 
+> **Strategic note:** The Outcomes Conference (CLA) runs April 28-30 in Dallas. This event on April 27 serves as a pre-conference VIP warm-up — invite Outcomes Conference attendees to the game the night before. Same city, no extra travel.
+
 ### Summary
-A PRAY-hosted mini event potentially tied to NBA Playoff timing to foster relationships with prospects through a sporting experience.
+A PRAY-hosted VIP game night around the Rangers vs. Yankees series in Dallas, designed to build relationships with key prospects attending the Outcomes Conference the following day.
 
 ### Target Metrics
 | Metric | Target |
@@ -38,9 +41,9 @@ A PRAY-hosted mini event potentially tied to NBA Playoff timing to foster relati
 **Exec Sponsor:** Hosting
 
 ### Why are we hosting this event?
-- **Primary goal:**
-- **Secondary goal:**
-- **Strategic rationale (1-2 sentences):**
+- **Primary goal:** Build relationships with ministry and nonprofit leaders ahead of the Outcomes Conference
+- **Secondary goal:** Create a memorable brand touchpoint that sets tone for Outcomes Conference follow-up
+- **Strategic rationale:** Dallas concentrates our ICP; combining with the Outcomes Conference doubles the ROI of the trip.
 
 ### Success Metrics
 - **Attendees:**
@@ -69,7 +72,7 @@ A PRAY-hosted mini event potentially tied to NBA Playoff timing to foster relati
 ## AUDIENCE, PROMOTIONAL & DISTRIBUTION LAYER
 
 ### Target Audience
-- **Who we want:** Key prospects and customers interested in VIP experiences
+- **Who we want:** Christian nonprofit leaders, ministry executives, Outcomes Conference attendees
 - **Who we don't:**
 
 ### Promotion Channels Overview
@@ -77,8 +80,7 @@ A PRAY-hosted mini event potentially tied to NBA Playoff timing to foster relati
 | Channel | Owner | Status |
 |---------|-------|--------|
 | Email (Owned) | | |
-| Partner Email | | |
-| Social (PRAY.COM) | | |
+| Direct Outreach | | |
 
 ---
 
@@ -125,9 +127,13 @@ A PRAY-hosted mini event potentially tied to NBA Playoff timing to foster relati
 | On-Site Decisions | |
 
 ### Known Risks
-- **Risk:** Event details TBD, dependent on NBA Playoff schedule
-- **Mitigation plan:** Monitor playoff schedule and finalize venue by March 2026
+- **Risk:** Team capacity stretched — Outcomes Conference (Apr 28-30) starts the day after
+- **Mitigation plan:** Ensure same staff can cover both; assign clear handoff between events
 - **Owner:**
+
+### Critical Dependencies
+- **External partners:** Rangers ticket availability
+- **Internal approvals:**
 
 ---
 
@@ -143,55 +149,57 @@ A PRAY-hosted mini event potentially tied to NBA Playoff timing to foster relati
 
 ## TO-DO LIST WITH DATES
 
-### 10 Weeks Before Event (February 8, 2026)
-- [ ] Finalize event concept and venue
-- [ ] Secure tickets/venue for sporting event
+> **Note:** Today is Feb 23. This event is ~9 weeks away. The 10-week milestone has passed — begin immediately.
+
+### URGENT — Start Now (Week of Feb 23, 2026)
+- [ ] Finalize event concept and secure Rangers vs. Yankees tickets
 - [ ] Define event goals and KPIs
+- [ ] Create VIP guest list (prioritize Outcomes Conference attendees)
 - [ ] Assign event lead and team members
 
-### 8 Weeks Before Event (February 22, 2026)
-- [ ] Confirm venue and logistics
-- [ ] Create VIP guest list
+### 8 Weeks Before Event (March 3, 2026)
+- [ ] Confirm ticket block and suite/hospitality options
+- [ ] Send exclusive invitations to VIP guest list
 - [ ] Create event page on internal wiki/Confluence
 - [ ] Set up CRM tracking
 
-### 6 Weeks Before Event (March 8, 2026)
-- [ ] Finalize event agenda
-- [ ] Send exclusive invitations
-- [ ] Begin promotional outreach
-- [ ] Book travel and accommodations
+### 6 Weeks Before Event (March 17, 2026)
+- [ ] Finalize attendee list and confirm RSVPs
+- [ ] Book travel and accommodations (coordinate with Outcomes Conference stay)
+- [ ] Order branded materials and gifts
+- [ ] Plan event flow and run of show
 
-### 4 Weeks Before Event (March 22, 2026)
-- [ ] Complete all creative assets
-- [ ] Send reminder emails
-- [ ] Prepare materials and swag
-- [ ] Confirm ticket allocations
+### 4 Weeks Before Event (March 30, 2026)
+- [ ] Send reminder emails with event details
+- [ ] Confirm ticket allocations per attendee
+- [ ] Prepare swag and giveaways
+- [ ] Brief staff on dual-event schedule (Rangers night + Outcomes next day)
 
-### 2 Weeks Before Event (April 5, 2026)
+### 2 Weeks Before Event (April 13, 2026)
 - [ ] Final confirmation emails
-- [ ] Confirm all logistics
+- [ ] Confirm all logistics and transportation
 - [ ] Pack all materials
 - [ ] Final team briefing
 
-### 1 Week Before Event (April 12, 2026)
+### 1 Week Before Event (April 20, 2026)
 - [ ] Final logistics check
-- [ ] Confirm final headcount
 - [ ] Distribute tickets to attendees
-- [ ] Prepare networking materials
+- [ ] Confirm venue hospitality details
+- [ ] Prepare networking talking points
 
-### Event Day (April 19, 2026)
-- [ ] Execute event
-- [ ] Host VIP experience
-- [ ] Network with attendees
-- [ ] Gather feedback
+### Event Days (April 27-29, 2026)
+- [ ] April 27: VIP game night — Rangers vs. Yankees
+- [ ] April 28: Transition to Outcomes Conference (same staff)
+- [ ] Capture leads and conversations from both events
+- [ ] Daily team debrief
 
-### Post-Event Week (April 20-26, 2026)
-- [ ] Day 1: Send thank you emails
-- [ ] Day 2-3: Upload leads to CRM
+### Post-Event Week (April 30 - May 6, 2026)
+- [ ] Day 1: Send thank you emails to game night attendees
+- [ ] Day 2-3: Upload all leads to CRM with notes
 - [ ] Day 5: Begin follow-up calls
-- [ ] Day 7: Team retrospective
+- [ ] Day 7: Combined retrospective for Rangers night + Outcomes Conference
 
-### 30 Days Post-Event (May 19, 2026)
+### 30 Days Post-Event (May 27, 2026)
 - [ ] Complete all lead follow-ups
 - [ ] Track pipeline progress
 - [ ] Document lessons learned
