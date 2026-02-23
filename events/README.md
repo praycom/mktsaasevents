@@ -7,18 +7,18 @@ This folder contains individual event planning documents for all PRAY.COM events
 | # | Event | Dates | Location | Format | Participation | Budget |
 |---|-------|-------|----------|--------|---------------|--------|
 | 1 | [Dunham Summit](./01-dunham-summit-2026.md) | Jan 6-8 | Lake Buena Vista, FL | Conference | Speaking | $45,000 |
-| 2 | [Agency Retreat](./02-agency-retreat-2026.md) | Jan 26-28 | San Diego | PRAY Retreat | Hosting | $80,000 |
+| 2 | [Agency Retreat](./02-agency-retreat-2026.md) | Apr 22-24 *(postponed)* | San Diego | PRAY Retreat | Hosting | $80,000 |
 | 3 | [NRB Convention](./03-nrb-convention-2026.md) | Feb 17-20 | Nashville, TN | NRB | Booth + Speaking | $450,000 |
 | 4 | [March Event 1 / TBD](./04-march-event-1-tbd-2026.md) | Mar 1 | TBD | PRAY Mini Event | Hosting | $30,000 |
 | 5 | [March Event 2 / TBD](./05-march-event-2-tbd-2026.md) | Mar 19 | TBD | PRAY Mini Event | Hosting | $30,000 |
-| 6 | [April Event 1 (NBA Playoff?)](./06-april-event-1-nba-playoff-2026.md) | Apr 19 | TBD | PRAY Mini Event | Hosting | $30,000 |
+| 6 | [Rangers vs. Yankees — VIP Game Night](./06-april-event-1-nba-playoff-2026.md) | Apr 27-29 | Dallas, TX | PRAY Mini Event | Hosting | $30,000 |
 | 7 | [America Reads the Bible](./07-america-reads-the-bible-2026.md) | Apr 20-21 | Washington, D.C. | Conference | TBD | $35,000 |
 | 8 | [Pastor Retreat 1 of 2](./08-pastor-retreat-1-of-2-2026.md) | Apr 22-24 | TBD | PRAY Retreat | Hosting | $80,000 |
 | 9 | [MegaMetro](./09-megametro-senior-pastors-2026.md) | Apr 26-28 | Boston, MA | Conference | TBD | $34,850 |
 | 10 | [Outcomes Conference (CLA)](./10-outcomes-conference-cla-2026.md) | Apr 28-30 | Dallas, TX | Conference | Booth + Speaking | $34,850 |
-| 11 | [May Event 1 (Baseball?)](./11-may-event-1-baseball-2026.md) | May 1 | TBD | PRAY Mini Event | Hosting | $30,000 |
+| 11 | [VIP Dinner + Astros vs. Rangers](./11-may-event-1-baseball-2026.md) | May 15-16 | Houston, TX | PRAY Mini Event | Hosting | $30,000 |
 | 12 | [America Prays National Mall](./12-america-prays-national-mall-2026.md) | May 18 | Philadelphia, PA | America Prays | TBD | $50,000 |
-| 13 | [June Event (Baseball?)](./13-june-event-baseball-2026.md) | Jun 3 | TBD | PRAY Mini Event | Hosting | $30,000 |
+| 13 | [Rangers vs. Padres — Father's Day VIP Night](./13-june-event-baseball-2026.md) | Jun 19-21 | Dallas, TX | PRAY Mini Event | Hosting | $30,000 |
 | 14 | [SBC VIP Event](./14-sbc-vip-event-2026.md) | Jun 6-8 | Orlando, FL | PRAY Mini Event | Hosting | $32,200 |
 | 15 | [BCI Conference](./15-bci-conference-2026.md) | Jun 19-20 | Atlanta, GA | Conference | Sponsor Only | $15,000 |
 | 16 | [PRAY Event - America Prays 250](./16-pray-event-america-prays-250-2026.md) | Jun 20 | TBD | PRAY Event | Hosting | $375,000 |

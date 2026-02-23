@@ -12,12 +12,14 @@
 | Post-Event Plan | | |
 
 - **Format:** PRAY Retreat
-- **Date(s):** January 26-28, 2026
+- **Date(s):** April 22-24, 2026 *(postponed from January 26-28)*
 - **Location:** San Diego
 - **Website:** TBD
 - **Participation:** Hosting
 - **Size:** Small
 - **Budget:** $80,000
+
+> **Staffing note:** Pastor Retreat 1 of 2 was previously scheduled April 22-24. Confirm there is no overlap or reschedule one of the two retreats to avoid team conflicts.
 
 ### Summary
 An exclusive PRAY retreat designed to foster relationships with prospects and engage key customers, thereby enhancing retention and driving upselling opportunities.
@@ -152,8 +154,8 @@ Brief narrative summary tying this event to PRAY.COM's mission, growth strategy,
 | On-Site Decisions | |
 
 ### Known Risks
-- **Risk:**
-- **Mitigation plan:**
+- **Risk:** Date conflict — Pastor Retreat 1 of 2 was previously scheduled April 22-24
+- **Mitigation plan:** Confirm Pastor Retreat dates have been shifted; resolve before sending invitations
 - **Owner:**
 
 ### Critical Dependencies
@@ -202,63 +204,53 @@ Brief narrative summary tying this event to PRAY.COM's mission, growth strategy,
 
 ## TO-DO LIST WITH DATES
 
-### 12 Weeks Before Event (November 3, 2025)
-- [ ] Define retreat objectives and agenda
-- [ ] Confirm venue and accommodations
-- [ ] Create guest list and send save-the-dates
-- [ ] Assign event lead and team members
-- [ ] Begin budget allocation
+> **Note:** This retreat was postponed from January to April 22-24. Today is Feb 23 — this event is 8 weeks away. Begin immediately.
 
-### 10 Weeks Before Event (November 17, 2025)
+### URGENT — Start Now (Week of Feb 23, 2026)
+- [ ] Reconfirm San Diego venue for new April 22-24 dates
+- [ ] Update save-the-dates and notify all previously invited guests of new dates
+- [ ] Confirm Pastor Retreat 1 of 2 conflict is resolved
+- [ ] Reassign any team members impacted by the date change
+
+### 6 Weeks Before Event (March 11, 2026)
 - [ ] Finalize retreat agenda and sessions
-- [ ] Create event page on internal wiki/Confluence
-- [ ] Set up CRM tracking for event leads
-- [ ] Send formal invitations
-
-### 8 Weeks Before Event (December 1, 2025)
 - [ ] Confirm speaker/facilitator lineup
-- [ ] Design retreat materials and workbooks
-- [ ] Create promotional email sequences
-- [ ] Book all travel and accommodations
+- [ ] Send updated formal invitations with new dates
+- [ ] Set up CRM tracking for event leads
 
-### 6 Weeks Before Event (December 15, 2025)
-- [ ] Send detailed itinerary to attendees
+### 4 Weeks Before Event (March 25, 2026)
+- [ ] Confirm RSVPs and final attendee list
 - [ ] Finalize catering and meal plans
 - [ ] Order branded gifts and swag
-- [ ] Confirm all logistics with venue
+- [ ] Design retreat materials and workbooks
+- [ ] Book all travel and accommodations
 
-### 4 Weeks Before Event (December 29, 2025)
-- [ ] Complete all creative assets
-- [ ] Send reminder emails with logistics
-- [ ] Prepare all presentation materials
+### 2 Weeks Before Event (April 8, 2026)
+- [ ] Send detailed itinerary to all attendees
+- [ ] Confirm all vendor arrangements
+- [ ] Complete all creative and presentation assets
 - [ ] Train staff on event flow
 
-### 2 Weeks Before Event (January 12, 2026)
-- [ ] Final confirmation emails to attendees
-- [ ] Confirm all vendor arrangements
-- [ ] Pack all materials and supplies
-- [ ] Conduct run-through of key sessions
-
-### 1 Week Before Event (January 19, 2026)
+### 1 Week Before Event (April 15, 2026)
 - [ ] Final team briefing
 - [ ] Test all AV equipment
 - [ ] Confirm final headcount with venue
-- [ ] Prepare name badges and materials
+- [ ] Pack all materials, supplies, and branded gifts
 
-### Event Week (January 26-28, 2026)
+### Event Days (April 22-24, 2026)
 - [ ] Arrive early for setup
 - [ ] Welcome and registration
 - [ ] Execute all retreat sessions
 - [ ] Capture feedback throughout
 - [ ] Daily team check-ins
 
-### Post-Event Week (January 29 - February 4, 2026)
+### Post-Event Week (April 25 - May 1, 2026)
 - [ ] Day 1: Send thank you emails to all attendees
 - [ ] Day 2-3: Upload all leads and notes to CRM
 - [ ] Day 5: Begin follow-up calls
 - [ ] Day 7: Team retrospective meeting
 
-### 30 Days Post-Event (February 28, 2026)
+### 30 Days Post-Event (May 24, 2026)
 - [ ] Complete all lead follow-ups
 - [ ] Track pipeline and deal progress
 - [ ] Document lessons learned
