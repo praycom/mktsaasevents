@@ -5,516 +5,609 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PRAY.COM 2026 Events Calendar — Sales Reference</title>
   <style>
-    /* ===== RESET & BASE ===== */
+    /* ═══════════════════════════════════════════════════════
+       BRAND TOKENS — PRAY.COM Color Palette
+       Black 40–50% · White 40–50% · Gold 5–15%
+    ════════════════════════════════════════════════════════ */
+    :root {
+      --black:       #0B0C0D;
+      --black-soft:  #1A1B1D;
+      --black-mid:   #252628;
+      --black-light: #3A3B3E;
+      --white:       #FFFFFF;
+      --off-white:   #F9F9F8;
+      --gray-50:     #F4F4F2;
+      --gray-100:    #EBEBEA;
+      --gray-200:    #D5D5D3;
+      --gray-400:    #A3A3A1;
+      --gray-600:    #636361;
+      --gold:        #E3AF4A;
+      --gold-light:  #FBF2DC;
+      --gold-muted:  rgba(227,175,74,0.15);
+      --gold-dark:   #C49432;
+      --gold-border: rgba(227,175,74,0.35);
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       RESET & BASE
+    ════════════════════════════════════════════════════════ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: #EEF2FF;
-      color: #1E293B;
+      background: var(--gray-50);
+      color: var(--black);
       line-height: 1.5;
       font-size: 14px;
     }
+    a { text-decoration: none; color: inherit; }
 
-    /* ===== HEADER ===== */
+    /* ═══════════════════════════════════════════════════════
+       HEADER — Black bg, gold accent border
+    ════════════════════════════════════════════════════════ */
     .site-header {
-      background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 60%, #3B82F6 100%);
-      color: white;
-      padding: 20px 40px;
+      background: var(--black);
+      color: var(--white);
+      padding: 0 48px;
+      height: 68px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       position: sticky;
       top: 0;
-      z-index: 200;
-      box-shadow: 0 4px 24px rgba(30,58,138,0.35);
+      z-index: 300;
+      border-bottom: 2px solid var(--gold);
     }
-    .header-left { display: flex; align-items: center; gap: 16px; }
-    .logo-pill {
-      background: rgba(255,255,255,0.15);
-      border: 1.5px solid rgba(255,255,255,0.3);
-      color: white;
-      font-weight: 800;
-      font-size: 13px;
-      padding: 5px 12px;
-      border-radius: 8px;
-      letter-spacing: 0.8px;
-    }
-    .header-title h1 { font-size: 20px; font-weight: 800; }
-    .header-title p { font-size: 12px; opacity: 0.75; margin-top: 2px; }
-    .header-right { text-align: right; font-size: 12px; opacity: 0.85; }
-    .header-right strong { display: block; font-size: 14px; opacity: 1; margin-bottom: 2px; }
-
-    /* ===== STATS BAR ===== */
-    .stats-bar {
-      background: white;
-      border-bottom: 1px solid #E2E8F0;
-      padding: 14px 40px;
+    .hd-left { display: flex; align-items: center; gap: 18px; }
+    .hd-logo {
       display: flex;
-      gap: 0;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-mark {
+      width: 36px; height: 36px;
+      background: var(--gold);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 900;
+      color: var(--black);
+      letter-spacing: 0.3px;
+      flex-shrink: 0;
+    }
+    .logo-text {
+      font-size: 15px; font-weight: 800;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+    .logo-text span { color: var(--gold); }
+    .hd-divider { width: 1px; height: 28px; background: rgba(255,255,255,0.15); }
+    .hd-title { font-size: 16px; font-weight: 700; color: var(--white); }
+    .hd-subtitle { font-size: 11px; color: var(--gray-400); margin-top: 1px; }
+    .hd-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 12px;
+      color: var(--gray-400);
+    }
+    .hd-today {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--black-soft);
+      border: 1px solid var(--gold-border);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 12px; font-weight: 600; color: var(--gold);
+    }
+    .hd-counts {
+      display: flex; gap: 16px;
+    }
+    .hd-count { text-align: right; }
+    .hd-count strong { display: block; font-size: 15px; color: var(--white); font-weight: 700; }
+    .hd-count span { font-size: 10px; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* ═══════════════════════════════════════════════════════
+       STATS BAR — Black bg, gold key numbers
+    ════════════════════════════════════════════════════════ */
+    .stats-bar {
+      background: var(--black-soft);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 0 48px;
+      display: flex;
       align-items: stretch;
-      flex-wrap: wrap;
+      gap: 0;
       overflow-x: auto;
     }
     .stat-item {
       display: flex;
       flex-direction: column;
-      gap: 2px;
-      padding: 0 28px 0 0;
+      justify-content: center;
+      gap: 3px;
+      padding: 16px 28px 16px 0;
       margin-right: 28px;
-      border-right: 1px solid #E2E8F0;
+      border-right: 1px solid rgba(255,255,255,0.08);
     }
+    .stat-item:first-child { padding-left: 0; }
     .stat-item:last-child { border-right: none; }
-    .stat-val { font-size: 22px; font-weight: 800; color: #1E3A8A; line-height: 1.1; }
-    .stat-val.green { color: #059669; }
-    .stat-val.amber { color: #D97706; }
-    .stat-val.gray  { color: #94A3B8; }
-    .stat-lbl { font-size: 10px; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.6px; font-weight: 600; }
+    .stat-val { font-size: 24px; font-weight: 800; color: var(--gold); line-height: 1; }
+    .stat-val.white { color: var(--white); }
+    .stat-val.muted { color: var(--gray-400); }
+    .stat-lbl { font-size: 10px; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.6px; font-weight: 600; }
+    .stat-sub { font-size: 11px; color: var(--gray-600); }
 
-    /* ===== FILTER BAR ===== */
+    /* ═══════════════════════════════════════════════════════
+       FILTER BAR
+    ════════════════════════════════════════════════════════ */
     .filters-bar {
-      background: white;
-      border-bottom: 1px solid #E2E8F0;
-      padding: 10px 40px;
-      display: flex;
-      gap: 8px;
-      align-items: center;
-      flex-wrap: wrap;
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-100);
+      padding: 10px 48px;
+      display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
     }
-    .filter-group-lbl {
-      font-size: 10px;
-      font-weight: 700;
-      color: #94A3B8;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
+    .fgrp-lbl {
+      font-size: 10px; font-weight: 700; color: var(--gray-400);
+      text-transform: uppercase; letter-spacing: 0.6px;
       padding-right: 4px;
     }
-    .filter-sep { color: #CBD5E1; padding: 0 4px; font-size: 16px; }
+    .fsep { color: var(--gray-200); padding: 0 4px; font-size: 18px; line-height: 1; }
     .fbtn {
       padding: 5px 14px;
       border-radius: 20px;
-      border: 1.5px solid #E2E8F0;
-      background: white;
-      color: #64748B;
-      font-size: 12px;
-      font-weight: 600;
+      border: 1.5px solid var(--gray-200);
+      background: var(--white);
+      color: var(--gray-600);
+      font-size: 12px; font-weight: 600;
       cursor: pointer;
       transition: all 0.15s ease;
       white-space: nowrap;
     }
-    .fbtn:hover { border-color: #2563EB; color: #2563EB; background: #EFF6FF; }
-    .fbtn.active { background: #1E3A8A; border-color: #1E3A8A; color: white; }
+    .fbtn:hover { border-color: var(--gold); color: var(--black); background: var(--gold-light); }
+    .fbtn.active { background: var(--gold); border-color: var(--gold); color: var(--black); font-weight: 700; }
+    .fbtn.active-dark { background: var(--black); border-color: var(--black); color: var(--white); font-weight: 700; }
 
-    /* ===== YEAR TIMELINE STRIP ===== */
-    .timeline-wrap {
-      background: white;
-      border-bottom: 2px solid #E2E8F0;
-      padding: 16px 40px 20px;
-      overflow-x: auto;
+    /* ═══════════════════════════════════════════════════════
+       YEAR AT A GLANCE — NEW HERO SECTION
+    ════════════════════════════════════════════════════════ */
+    .year-section {
+      background: var(--black);
+      padding: 36px 48px 40px;
+      border-bottom: 2px solid var(--gold-border);
     }
-    .timeline-strip {
-      display: flex;
-      min-width: 700px;
-      gap: 0;
+    .year-section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 28px;
     }
-    .tm-month {
-      flex: 1;
+    .year-section-title {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .year-badge {
+      background: var(--gold);
+      color: var(--black);
+      font-size: 10px; font-weight: 800;
+      padding: 3px 10px; border-radius: 4px;
+      text-transform: uppercase; letter-spacing: 0.8px;
+    }
+    .year-section-title h2 {
+      font-size: 18px; font-weight: 800;
+      color: var(--white);
+    }
+    .year-legend {
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 11px; color: var(--gray-400); font-weight: 500;
+    }
+    .legend-dot {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+    .ld-conf    { background: var(--gold); }
+    .ld-retreat { background: var(--white); }
+    .ld-sports  { border: 2px solid var(--gold); background: transparent; }
+    .ld-faith   { background: rgba(227,175,74,0.4); border: 1px solid var(--gold); }
+    .ld-today   { background: var(--white); border: 2px solid var(--gold); }
+
+    /* Mini calendar grid — 4×3 */
+    .mini-cals-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .mini-cal-card {
+      background: var(--black-soft);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+    .mini-cal-card:hover { border-color: var(--gold-border); }
+    .mini-cal-card.has-events { border-color: rgba(227,175,74,0.2); }
+    .mc-head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 12px 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .mc-month-name {
+      font-size: 12px; font-weight: 800;
+      color: var(--white); text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .mc-qtr {
+      font-size: 9px; font-weight: 700;
+      color: var(--gold); text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .mc-days-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 1px;
+      padding: 6px 8px 10px;
+    }
+    .mc-day-hdr {
+      text-align: center; font-size: 8px; font-weight: 700;
+      color: var(--gray-600); text-transform: uppercase;
+      padding: 2px 0 4px;
+    }
+    .mc-day {
+      aspect-ratio: 1;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 9px; color: var(--gray-400);
+      border-radius: 4px;
+      cursor: default;
+      position: relative;
+      transition: all 0.1s;
+    }
+    .mc-day.mc-empty { color: transparent; cursor: default; }
+    .mc-day.mc-past { color: var(--black-light); }
+    .mc-day.mc-event {
+      background: var(--gold);
+      color: var(--black);
+      font-weight: 700;
+      border-radius: 4px;
+    }
+    .mc-day.mc-event:hover {
+      background: var(--gold-dark);
+      cursor: pointer;
+    }
+    .mc-day.mc-event-conf  { background: var(--gold); color: var(--black); }
+    .mc-day.mc-event-ret   { background: var(--white); color: var(--black); }
+    .mc-day.mc-event-sport {
+      background: transparent;
+      border: 1.5px solid var(--gold);
+      color: var(--gold);
+    }
+    .mc-day.mc-event-faith {
+      background: rgba(227,175,74,0.25);
+      color: var(--gold);
+      border: 1px solid var(--gold-border);
+    }
+    .mc-day.mc-event-multi {
+      background: var(--gold);
+      color: var(--black);
+    }
+    .mc-day.mc-event-multi::after {
+      content: '';
+      position: absolute;
+      bottom: 2px; right: 2px;
+      width: 4px; height: 4px;
+      background: var(--black);
+      border-radius: 50%;
+    }
+    .mc-day.mc-today {
+      background: var(--white) !important;
+      color: var(--black) !important;
+      font-weight: 800 !important;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px var(--gold);
+    }
+    /* Mini cal event list */
+    .mc-event-list {
+      padding: 0 8px 8px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 4px;
-      border-radius: 8px;
-      transition: background 0.15s;
-    }
-    .tm-month.current {
-      background: #EFF6FF;
-      border: 1px solid #BFDBFE;
-    }
-    .tm-month-name {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: #CBD5E1;
-    }
-    .tm-month.has-events .tm-month-name { color: #64748B; }
-    .tm-month.current .tm-month-name { color: #1D4ED8; }
-    .tm-dots {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       gap: 3px;
-      min-height: 14px;
+      min-height: 20px;
     }
-    .tm-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      flex-shrink: 0;
+    .mc-ev-item {
+      display: flex; align-items: center; gap: 5px;
+      font-size: 9px; color: var(--gray-400);
+      line-height: 1.3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
-    .tm-count {
-      font-size: 10px;
-      font-weight: 600;
-      color: #CBD5E1;
-      height: 14px;
+    .mc-ev-dot {
+      width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0;
     }
-    .tm-month.has-events .tm-count { color: #94A3B8; }
-    .tm-month a { text-decoration: none; display: contents; }
+    .mc-ev-dot.conf   { background: var(--gold); }
+    .mc-ev-dot.ret    { background: var(--white); }
+    .mc-ev-dot.sport  { background: transparent; border: 1.5px solid var(--gold); border-radius: 50%; }
+    .mc-ev-dot.faith  { background: rgba(227,175,74,0.5); }
 
-    /* ===== CONFLICT ALERT ===== */
-    .conflict-wrap {
-      max-width: 1400px;
-      margin: 24px auto 0;
-      padding: 0 40px;
-    }
+    /* ═══════════════════════════════════════════════════════
+       CONFLICT ALERT
+    ════════════════════════════════════════════════════════ */
+    .conflict-wrap { max-width: 1400px; margin: 24px auto 0; padding: 0 48px; }
     .conflict-box {
-      background: #FFFBEB;
-      border: 1.5px solid #FDE68A;
-      border-left: 4px solid #F59E0B;
+      background: var(--black-soft);
+      border: 1px solid var(--gold-border);
+      border-left: 4px solid var(--gold);
       border-radius: 10px;
-      padding: 16px 20px;
-      margin-bottom: 8px;
+      padding: 14px 20px;
     }
     .conflict-head {
-      font-size: 12px;
-      font-weight: 700;
-      color: #B45309;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      font-size: 11px; font-weight: 800; color: var(--gold);
+      text-transform: uppercase; letter-spacing: 0.6px;
+      display: flex; align-items: center; gap: 6px;
       margin-bottom: 10px;
     }
-    .conflict-rows { display: flex; flex-direction: column; gap: 6px; }
     .conflict-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 12px;
-      flex-wrap: wrap;
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 12px; flex-wrap: wrap; padding: 4px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
-    .conflict-date { font-weight: 700; color: #92400E; min-width: 70px; }
-    .conflict-events { color: #78350F; }
-    .conflict-res { color: #B45309; font-style: italic; }
+    .conflict-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .conflict-date { font-weight: 700; color: var(--gold); min-width: 68px; flex-shrink: 0; }
+    .conflict-events { color: var(--gray-400); flex: 1; }
+    .conflict-res { color: var(--gray-600); font-style: italic; }
 
-    /* ===== MAIN CONTENT ===== */
-    main {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 28px 40px 40px;
-    }
+    /* ═══════════════════════════════════════════════════════
+       MAIN — MONTHLY SECTIONS
+    ════════════════════════════════════════════════════════ */
+    main { max-width: 1400px; margin: 0 auto; padding: 32px 48px 40px; }
 
-    /* ===== MONTH SECTION ===== */
-    .month-section { margin-bottom: 36px; }
-    .month-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
+    .month-section { margin-bottom: 40px; }
     .month-anchor { display: block; position: relative; top: -80px; }
-    .month-name-text { font-size: 20px; font-weight: 800; color: #0F172A; }
-    .month-qtr-badge {
-      background: #EEF2FF;
-      color: #4338CA;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 12px;
+    .month-header {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 18px;
     }
-    .month-line { flex: 1; height: 1px; background: #E2E8F0; }
-    .month-budget-total { font-size: 12px; font-weight: 600; color: #94A3B8; }
-    .no-events-msg { color: #CBD5E1; font-style: italic; font-size: 13px; padding: 8px 0; }
+    .month-name-text { font-size: 22px; font-weight: 900; color: var(--black); }
+    .month-qtr-badge {
+      background: var(--black);
+      color: var(--white);
+      font-size: 10px; font-weight: 700;
+      padding: 3px 10px; border-radius: 4px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .month-line { flex: 1; height: 1px; background: var(--gray-100); }
+    .month-budget-total { font-size: 12px; font-weight: 700; color: var(--gray-400); }
+    .no-events-msg { color: var(--gray-400); font-style: italic; font-size: 13px; padding: 8px 0; }
 
-    /* ===== EVENTS GRID ===== */
+    /* ═══════════════════════════════════════════════════════
+       EVENTS GRID
+    ════════════════════════════════════════════════════════ */
     .events-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
       gap: 14px;
     }
 
-    /* ===== EVENT CARD ===== */
+    /* ═══════════════════════════════════════════════════════
+       EVENT CARD — White bg, gold top accent
+    ════════════════════════════════════════════════════════ */
     .event-card {
-      background: white;
+      background: var(--white);
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 1px 10px rgba(0,0,0,0.04);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 2px 12px rgba(0,0,0,0.04);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
-      position: relative;
     }
     .event-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 28px rgba(11,12,13,0.12);
     }
     .event-card.is-tbd {
-      border: 2px dashed #CBD5E1;
+      border: 2px dashed var(--gray-200);
       box-shadow: none;
     }
-    .event-card.is-tbd:hover { border-color: #94A3B8; }
-    .event-card.is-postponed { border: 2px solid #FEE2E2; }
+    .event-card.is-tbd:hover { border-color: var(--gold); }
+    .event-card.is-postponed { border: 2px solid var(--gold-light); }
 
-    /* Color accent bar */
-    .card-bar { height: 5px; width: 100%; }
-    .bar-blue     { background: #1D4ED8; }
-    .bar-purple   { background: #7C3AED; }
-    .bar-cyan     { background: #0891B2; }
-    .bar-amber    { background: #D97706; }
-    .bar-emerald  { background: #059669; }
-    .bar-rose     { background: #DC2626; }
+    /* Top accent bar — always gold */
+    .card-bar { height: 4px; width: 100%; background: var(--gold); }
+    .card-bar.bar-thin  { height: 4px; }
+    .card-bar.bar-conf  { background: var(--gold); }
+    .card-bar.bar-ret   { background: var(--black); }
+    .card-bar.bar-sport {
+      background: repeating-linear-gradient(
+        90deg, var(--gold) 0, var(--gold) 12px, var(--gray-100) 12px, var(--gray-100) 16px
+      );
+    }
+    .card-bar.bar-faith {
+      background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 100%);
+    }
 
     /* Card body */
-    .card-body { padding: 15px 16px 14px; }
+    .card-body { padding: 16px 17px 15px; }
 
-    /* Top row: type + status */
+    /* Top row */
     .card-top-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 8px;
-      margin-bottom: 8px;
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 8px; margin-bottom: 8px;
     }
+
+    /* Type chip */
     .type-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 9px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 3px 8px;
-      border-radius: 4px;
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 9px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.5px; padding: 3px 8px; border-radius: 3px;
       white-space: nowrap;
     }
-    .chip-blue    { background: #DBEAFE; color: #1D4ED8; }
-    .chip-purple  { background: #EDE9FE; color: #6D28D9; }
-    .chip-cyan    { background: #CFFAFE; color: #0E7490; }
-    .chip-amber   { background: #FEF3C7; color: #92400E; }
-    .chip-emerald { background: #D1FAE5; color: #065F46; }
-    .chip-rose    { background: #FEE2E2; color: #991B1B; }
+    .chip-conf    { background: var(--gold); color: var(--black); }
+    .chip-ret     { background: var(--black); color: var(--white); }
+    .chip-sport   { background: var(--gray-50); color: var(--black); border: 1px solid var(--gray-200); }
+    .chip-faith   { background: var(--gold-light); color: var(--black); border: 1px solid var(--gold-border); }
 
     /* Status badge */
     .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-      padding: 3px 8px;
-      border-radius: 6px;
-      white-space: nowrap;
-      flex-shrink: 0;
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 9px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.4px; padding: 3px 8px; border-radius: 3px;
+      white-space: nowrap; flex-shrink: 0;
     }
-    .st-complete   { background: #DCFCE7; color: #166534; }
-    .st-inprogress { background: #FEF3C7; color: #92400E; }
-    .st-pending    { background: #F1F5F9; color: #64748B; }
-    .st-postponed  { background: #FEE2E2; color: #991B1B; }
-    .st-tbd        { background: #F0F9FF; color: #075985; }
+    .st-complete   { background: var(--black); color: var(--white); }
+    .st-inprogress { background: var(--gold-light); color: var(--black); border: 1px solid var(--gold-border); }
+    .st-pending    { background: var(--gray-50); color: var(--gray-600); border: 1px solid var(--gray-100); }
+    .st-postponed  { background: var(--black); color: var(--gold); border: 1px solid var(--black); }
+    .st-tbd        { background: var(--off-white); color: var(--gray-600); border: 1px dashed var(--gray-200); }
 
     /* Event name */
-    .card-name {
-      font-size: 15px;
-      font-weight: 800;
-      color: #0F172A;
-      line-height: 1.3;
-      margin-bottom: 10px;
-    }
+    .card-name { font-size: 15px; font-weight: 800; color: var(--black); line-height: 1.3; margin-bottom: 10px; }
 
     /* Meta info */
-    .card-meta { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
-    .meta-row {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      color: #64748B;
-    }
-    .meta-icon { font-size: 12px; width: 16px; text-align: center; flex-shrink: 0; }
-    .meta-row strong { color: #374151; font-weight: 600; }
+    .card-meta { display: flex; flex-direction: column; gap: 3px; margin-bottom: 12px; }
+    .meta-row { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--gray-600); }
+    .meta-icon { font-size: 11px; width: 15px; text-align: center; flex-shrink: 0; }
+    .meta-row strong { color: var(--black); font-weight: 600; }
 
-    /* Budget pill */
-    .budget-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-    }
+    /* Budget row */
+    .budget-row { margin-bottom: 13px; }
     .budget-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: #F8FAFC;
-      border: 1px solid #E2E8F0;
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--gold-light);
+      border: 1px solid var(--gold-border);
       border-radius: 20px;
       padding: 4px 12px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #334155;
+      font-size: 13px; font-weight: 800; color: var(--black);
     }
 
     /* Metrics section */
-    .card-metrics {
-      border-top: 1px solid #F1F5F9;
-      padding-top: 11px;
-    }
+    .card-metrics { border-top: 1px solid var(--gray-100); padding-top: 12px; }
     .metrics-head {
-      font-size: 9px;
-      font-weight: 800;
-      color: #94A3B8;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      margin-bottom: 8px;
+      font-size: 9px; font-weight: 800; color: var(--gray-400);
+      text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 8px;
     }
-    .metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-    }
+    .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
     .metric-item { display: flex; flex-direction: column; gap: 1px; }
     .m-val {
-      font-size: 14px;
-      font-weight: 800;
-      color: #1E293B;
-      line-height: 1.2;
+      font-size: 14px; font-weight: 800; color: var(--black); line-height: 1.2;
     }
-    .m-val.blue { color: #1D4ED8; }
-    .m-val.green { color: #059669; }
-    .m-val.tbd-val { color: #94A3B8; font-style: italic; font-size: 11px; }
-    .m-lbl { font-size: 9px; color: #94A3B8; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
+    .m-val.gold  { color: var(--gold-dark); }
+    .m-val.tbd-v { color: var(--gray-400); font-style: italic; font-size: 11px; font-weight: 500; }
+    .m-lbl { font-size: 9px; color: var(--gray-400); font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
 
     /* Phase progress bar */
     .phase-bar-wrap { margin-top: 12px; }
     .phase-bar-label {
-      font-size: 9px;
-      color: #94A3B8;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
+      font-size: 9px; color: var(--gray-400); font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.4px;
       margin-bottom: 5px;
-      display: flex;
-      justify-content: space-between;
+      display: flex; justify-content: space-between;
     }
-    .phase-bar {
-      display: flex;
-      gap: 2px;
-      height: 5px;
-    }
-    .ph-seg {
-      flex: 1;
-      border-radius: 3px;
-      background: #F1F5F9;
-    }
-    .ph-seg.done   { background: #22C55E; }
-    .ph-seg.active { background: #F59E0B; }
+    .phase-bar { display: flex; gap: 3px; height: 5px; }
+    .ph-seg { flex: 1; border-radius: 3px; background: var(--gray-100); }
+    .ph-seg.done   { background: var(--gold); }
+    .ph-seg.active { background: var(--black); }
 
-    /* Conflict mini-badge */
+    /* Conflict mini */
     .conflict-mini {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: #FFFBEB;
-      border: 1px solid #FDE68A;
+      display: flex; align-items: flex-start; gap: 6px;
+      background: var(--gold-light);
+      border: 1px solid var(--gold-border);
       border-radius: 6px;
-      padding: 5px 10px;
-      font-size: 11px;
-      color: #92400E;
-      font-weight: 500;
-      margin-top: 10px;
+      padding: 6px 10px;
+      font-size: 10px; color: var(--black); font-weight: 500;
+      margin-top: 10px; line-height: 1.4;
     }
 
-    /* ===== BUDGET SUMMARY ===== */
-    .budget-summary-wrap {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 40px 40px;
-    }
-    .budget-summary {
-      background: white;
+    /* ═══════════════════════════════════════════════════════
+       BUDGET SUMMARY — Dark table
+    ════════════════════════════════════════════════════════ */
+    .budget-wrap { max-width: 1400px; margin: 0 auto; padding: 0 48px 48px; }
+    .budget-card {
+      background: var(--black-soft);
+      border: 1px solid rgba(255,255,255,0.07);
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
-    .budget-summary-head {
-      padding: 16px 20px;
-      border-bottom: 1px solid #F1F5F9;
-      font-size: 14px;
-      font-weight: 800;
-      color: #1E293B;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+    .budget-card-head {
+      display: flex; align-items: center; gap: 10px;
+      padding: 18px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
     }
-    .budget-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+    .budget-card-head h3 { font-size: 14px; font-weight: 800; color: var(--white); }
+    .budget-card-head span { font-size: 11px; color: var(--gray-600); }
+    .budget-table { width: 100%; border-collapse: collapse; }
     .budget-table th {
-      text-align: left;
-      padding: 10px 20px;
-      background: #F8FAFC;
-      font-size: 10px;
-      color: #94A3B8;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      font-weight: 700;
-      border-bottom: 1px solid #E2E8F0;
+      text-align: left; padding: 10px 22px;
+      background: rgba(255,255,255,0.03);
+      font-size: 9px; color: var(--gray-600);
+      text-transform: uppercase; letter-spacing: 0.6px; font-weight: 700;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     .budget-table td {
-      padding: 11px 20px;
-      border-bottom: 1px solid #F8FAFC;
-      font-size: 13px;
-      color: #374151;
+      padding: 12px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 13px; color: var(--gray-400);
     }
-    .budget-table tr:last-child td {
-      font-weight: 800;
-      color: #1E293B;
-      background: #F8FAFC;
-      font-size: 14px;
-    }
-    .budget-table td.amount { font-weight: 700; color: #1E3A8A; }
-    .budget-table tr:last-child td.amount { color: #059669; font-size: 16px; }
+    .budget-table tr:last-child td { border-bottom: none; background: rgba(227,175,74,0.05); }
+    .budget-table tr:last-child td { font-weight: 800; color: var(--white); }
+    .budget-table .amt { font-weight: 700; color: var(--white); text-align: right; }
+    .budget-table tr:last-child .amt { color: var(--gold); font-size: 15px; }
+    .budget-table tr:last-child td:first-child { color: var(--gold); }
 
-    /* ===== FOOTER ===== */
+    /* ═══════════════════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════════════════════ */
     footer {
-      text-align: center;
-      padding: 24px;
-      font-size: 11px;
-      color: #CBD5E1;
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      text-align: center; padding: 20px;
+      font-size: 11px; color: var(--black-light);
     }
 
-    /* ===== HIDDEN ===== */
+    /* ═══════════════════════════════════════════════════════
+       UTILITY
+    ════════════════════════════════════════════════════════ */
     .hidden { display: none !important; }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 700px) {
+    /* ═══════════════════════════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════════════════════════════ */
+    @media (max-width: 1200px) {
+      .mini-cals-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 800px) {
       .site-header, .stats-bar, .filters-bar,
-      .timeline-wrap, main, .budget-summary-wrap { padding-left: 16px; padding-right: 16px; }
+      .year-section, .conflict-wrap, main, .budget-wrap { padding-left: 16px; padding-right: 16px; }
+      .mini-cals-grid { grid-template-columns: repeat(2, 1fr); }
       .events-grid { grid-template-columns: 1fr; }
-      .header-right { display: none; }
+      .hd-right { display: none; }
+    }
+    @media (max-width: 500px) {
+      .mini-cals-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  HEADER                                                 -->
+<!-- ════════════════════════════════════════════════════════ -->
 <header class="site-header">
-  <div class="header-left">
-    <div class="logo-pill">PRAY.COM</div>
-    <div class="header-title">
-      <h1>2026 Events Calendar</h1>
-      <p>Sales Team Reference &nbsp;·&nbsp; Ministry SaaS</p>
+  <div class="hd-left">
+    <div class="hd-logo">
+      <div class="logo-mark">P.</div>
+      <div>
+        <div class="logo-text">PRAY<span>.COM</span></div>
+      </div>
+    </div>
+    <div class="hd-divider"></div>
+    <div>
+      <div class="hd-title">2026 Events Calendar</div>
+      <div class="hd-subtitle">Sales Team Reference · Ministry SaaS</div>
     </div>
   </div>
-  <div class="header-right">
-    <strong>📅 Today: February 24, 2026</strong>
-    17 Events &nbsp;·&nbsp; $1,047,500 Total Budget
+  <div class="hd-right">
+    <div class="hd-today">📅 February 24, 2026</div>
+    <div class="hd-counts">
+      <div class="hd-count"><strong>17</strong><span>Events</span></div>
+      <div class="hd-count"><strong>$1,047,500</strong><span>Budget</span></div>
+    </div>
   </div>
 </header>
 
-<!-- ===== STATS BAR ===== -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  STATS BAR                                              -->
+<!-- ════════════════════════════════════════════════════════ -->
 <div class="stats-bar">
   <div class="stat-item">
     <span class="stat-val">17</span>
@@ -533,113 +626,138 @@
     <span class="stat-lbl">Target Pipeline</span>
   </div>
   <div class="stat-item">
-    <span class="stat-val green">1</span>
-    <span class="stat-lbl">Complete</span>
+    <span class="stat-val white">1</span>
+    <span class="stat-lbl">✓ Complete</span>
+    <span class="stat-sub">Dunham Summit</span>
   </div>
   <div class="stat-item">
-    <span class="stat-val amber">9</span>
-    <span class="stat-lbl">In Progress</span>
+    <span class="stat-val">9</span>
+    <span class="stat-lbl">● In Progress</span>
   </div>
   <div class="stat-item">
-    <span class="stat-val gray">7</span>
-    <span class="stat-lbl">Pending</span>
+    <span class="stat-val muted">7</span>
+    <span class="stat-lbl">○ Pending</span>
   </div>
 </div>
 
-<!-- ===== FILTER BAR ===== -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  FILTER BAR                                             -->
+<!-- ════════════════════════════════════════════════════════ -->
 <div class="filters-bar">
-  <span class="filter-group-lbl">Quarter</span>
+  <span class="fgrp-lbl">Quarter</span>
   <button class="fbtn active" onclick="setFilter('quarter','all',this)">All</button>
   <button class="fbtn" onclick="setFilter('quarter','Q1',this)">Q1</button>
   <button class="fbtn" onclick="setFilter('quarter','Q2',this)">Q2</button>
   <button class="fbtn" onclick="setFilter('quarter','Q3',this)">Q3</button>
   <button class="fbtn" onclick="setFilter('quarter','Q4',this)">Q4</button>
-  <span class="filter-sep">|</span>
-  <span class="filter-group-lbl">Type</span>
-  <button class="fbtn" onclick="setFilter('type','conference',this)">🏛 Conference</button>
-  <button class="fbtn" onclick="setFilter('type','retreat',this)">🏕 Retreat</button>
-  <button class="fbtn" onclick="setFilter('type','sports',this)">⚾ Sports / VIP</button>
-  <button class="fbtn" onclick="setFilter('type','faith',this)">🙏 Faith Events</button>
-  <span class="filter-sep">|</span>
-  <span class="filter-group-lbl">Status</span>
+  <span class="fsep">|</span>
+  <span class="fgrp-lbl">Type</span>
+  <button class="fbtn" onclick="setFilter('type','conference',this)">Conference</button>
+  <button class="fbtn" onclick="setFilter('type','retreat',this)">Retreat</button>
+  <button class="fbtn" onclick="setFilter('type','sports',this)">Sports / VIP</button>
+  <button class="fbtn" onclick="setFilter('type','faith',this)">Faith Events</button>
+  <span class="fsep">|</span>
+  <span class="fgrp-lbl">Status</span>
   <button class="fbtn" onclick="setFilter('status','complete',this)">✓ Complete</button>
   <button class="fbtn" onclick="setFilter('status','inprogress',this)">● In Progress</button>
   <button class="fbtn" onclick="setFilter('status','pending',this)">○ Pending</button>
 </div>
 
-<!-- ===== YEAR TIMELINE STRIP ===== -->
-<div class="timeline-wrap">
-  <div class="timeline-strip" id="timeline-strip">
-    <!-- rendered by JS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  YEAR AT A GLANCE                                       -->
+<!-- ════════════════════════════════════════════════════════ -->
+<section class="year-section">
+  <div class="year-section-header">
+    <div class="year-section-title">
+      <span class="year-badge">2026</span>
+      <h2>Year at a Glance</h2>
+    </div>
+    <div class="year-legend">
+      <div class="legend-item"><div class="legend-dot ld-conf"></div>Conference</div>
+      <div class="legend-item"><div class="legend-dot ld-retreat"></div>Retreat</div>
+      <div class="legend-item"><div class="legend-dot ld-sports"></div>Sports / VIP</div>
+      <div class="legend-item"><div class="legend-dot ld-faith"></div>Faith Event</div>
+      <div class="legend-item"><div class="legend-dot ld-today"></div>Today</div>
+    </div>
   </div>
-</div>
+  <div class="mini-cals-grid" id="mini-cals-grid">
+    <!-- Rendered by JS -->
+  </div>
+</section>
 
-<!-- ===== CONFLICT ALERT ===== -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  CONFLICT ALERT                                         -->
+<!-- ════════════════════════════════════════════════════════ -->
 <div class="conflict-wrap">
   <div class="conflict-box">
-    <div class="conflict-head">⚠️ Team Scheduling Conflicts</div>
-    <div class="conflict-rows">
+    <div class="conflict-head">⚠ Team Scheduling Conflicts</div>
+    <div>
       <div class="conflict-row">
         <span class="conflict-date">Apr 27–30</span>
         <span class="conflict-events">Rangers vs. Yankees (TBD) + Outcomes Conference — both in Dallas, TX</span>
-        <span class="conflict-res">✓ Same city — leverage overlap / coordinate teams</span>
+        <span class="conflict-res">→ Same city — coordinate &amp; leverage overlap</span>
       </div>
       <div class="conflict-row">
         <span class="conflict-date">Jun 19–21</span>
         <span class="conflict-events">Rangers vs. Padres (TBD) in Dallas + BCI Conference in Atlanta</span>
-        <span class="conflict-res">⚡ Split team required</span>
+        <span class="conflict-res">→ Split team required</span>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ===== MAIN CONTENT ===== -->
-<main id="main-content">
-  <!-- rendered by JS -->
-</main>
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  MONTHLY DETAIL SECTIONS                                -->
+<!-- ════════════════════════════════════════════════════════ -->
+<main id="main-content"><!-- rendered by JS --></main>
 
-<!-- ===== BUDGET SUMMARY ===== -->
-<div class="budget-summary-wrap" id="budget-summary-wrap">
-  <div class="budget-summary">
-    <div class="budget-summary-head">💰 Budget Summary by Category</div>
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  BUDGET SUMMARY                                         -->
+<!-- ════════════════════════════════════════════════════════ -->
+<div class="budget-wrap">
+  <div class="budget-card">
+    <div class="budget-card-head">
+      <h3>Budget Summary</h3>
+      <span>by category · FY 2026</span>
+    </div>
     <table class="budget-table">
       <thead>
         <tr>
           <th>Category</th>
           <th>Events Included</th>
-          <th>Total Budget</th>
+          <th style="text-align:right">Total Budget</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Major Conferences</td>
           <td>NRB Convention, Outcomes Conference</td>
-          <td class="amount">$484,850</td>
+          <td class="amt">$484,850</td>
         </tr>
         <tr>
           <td>PRAY Retreats</td>
           <td>Pastors Retreat (1), Pastors Retreat (2)</td>
-          <td class="amount">$160,000</td>
+          <td class="amt">$160,000</td>
         </tr>
         <tr>
           <td>Industry Conferences</td>
-          <td>Dunham Summit, America Reads the Bible, MegaMetro, BCI Conference, Family Reunion</td>
-          <td class="amount">$140,450</td>
+          <td>Dunham Summit, America Reads, MegaMetro, BCI, Family Reunion</td>
+          <td class="amt">$140,450</td>
         </tr>
         <tr>
           <td>Sports / VIP Mini Events</td>
           <td>Rangers/Yankees, Astros/Rangers, Rangers/Padres, SBC VIP, Q3 July, Q3 Sep, November</td>
-          <td class="amount">$212,200</td>
+          <td class="amt">$212,200</td>
         </tr>
         <tr>
           <td>National Faith Events</td>
           <td>America Prays National Mall</td>
-          <td class="amount">$50,000</td>
+          <td class="amt">$50,000</td>
         </tr>
         <tr>
-          <td><strong>TOTAL</strong></td>
-          <td><strong>17 events</strong></td>
-          <td class="amount"><strong>$1,047,500</strong></td>
+          <td>TOTAL</td>
+          <td>17 events · FY 2026</td>
+          <td class="amt">$1,047,500</td>
         </tr>
       </tbody>
     </table>
@@ -647,506 +765,242 @@
 </div>
 
 <footer>
-  Generated February 24, 2026 &nbsp;·&nbsp; PRAY.COM Ministry SaaS Sales Team &nbsp;·&nbsp; Data sourced from EVENT-TRACKER-2026.md &amp; Ministry SaaS - Events Budget (1).xlsx
+  PRAY.COM · Ministry SaaS Sales Team · 2026 Event Calendar · Updated February 24, 2026
 </footer>
 
-<!-- ===== JAVASCRIPT DATA + RENDERING ===== -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--  JAVASCRIPT — DATA & RENDERING                          -->
+<!-- ════════════════════════════════════════════════════════ -->
 <script>
+// ─── BRAND CONSTANTS ──────────────────────────────────────────────────────────
+const TODAY_Y = 2026, TODAY_M = 2, TODAY_D = 24;
+
 // ─── EVENT DATA ───────────────────────────────────────────────────────────────
 const events = [
   {
-    id: 1,
-    name: "Dunham Summit",
-    dateStr: "Jan 6–8, 2026",
-    month: 1,
-    quarter: "Q1",
-    location: "Lake Buena Vista, FL",
-    type: "conference",
-    typeLabel: "Conference (Speaking)",
-    chipClass: "chip-blue",
-    barClass: "bar-blue",
-    status: "complete",
-    phase: "All Phases Complete",
-    phaseDone: 7,
-    phaseActive: 0,
-    tbd: false,
-    postponed: false,
-    budget: "$45,000",
-    attendees: "35",
-    mqls: "30",
-    sqls: "13.5",
-    deals: "1.89",
-    pipeline: "$948K",
-    revenue: "$81K",
-    roi: "0.81×",
-    conflict: null
+    id:1, name:"Dunham Summit",
+    dateStr:"Jan 6–8, 2026", month:1, startDay:6, endDay:8, quarter:"Q1",
+    location:"Lake Buena Vista, FL",
+    type:"conference", typeLabel:"Conference (Speaking)",
+    chipClass:"chip-conf", barClass:"bar-conf",
+    status:"complete", phaseDone:7, phaseActive:0, tbd:false, postponed:false,
+    budget:"$45,000", attendees:"35",
+    mqls:"30", sqls:"13.5", deals:"1.89", pipeline:"$948K", revenue:"$81K", roi:"0.81×",
+    conflict:null
   },
   {
-    id: 2,
-    name: "Pastors Retreat (1)",
-    dateStr: "Apr 22–24, 2026",
-    month: 4,
-    quarter: "Q2",
-    location: "San Diego, CA",
-    type: "retreat",
-    typeLabel: "PRAY Retreat",
-    chipClass: "chip-amber",
-    barClass: "bar-amber",
-    status: "postponed",
-    phase: "Phase 2 — In Progress",
-    phaseDone: 1,
-    phaseActive: 2,
-    tbd: false,
-    postponed: true,
-    budget: "$80,000",
-    attendees: "18",
-    mqls: "18",
-    sqls: null,
-    deals: null,
-    pipeline: null,
-    revenue: null,
-    roi: null,
-    conflict: null
+    id:2, name:"Pastors Retreat (1)",
+    dateStr:"Apr 22–24, 2026", month:4, startDay:22, endDay:24, quarter:"Q2",
+    location:"San Diego, CA",
+    type:"retreat", typeLabel:"PRAY Retreat",
+    chipClass:"chip-ret", barClass:"bar-ret",
+    status:"postponed", phaseDone:1, phaseActive:2, tbd:false, postponed:true,
+    budget:"$80,000", attendees:"18",
+    mqls:"18", sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
+    conflict:null
   },
   {
-    id: 3,
-    name: "NRB Convention",
-    dateStr: "Feb 17–20, 2026",
-    month: 2,
-    quarter: "Q1",
-    location: "Nashville, TN",
-    type: "conference",
-    typeLabel: "Conference (Booth + Speaking)",
-    chipClass: "chip-blue",
-    barClass: "bar-blue",
-    status: "inprogress",
-    phase: "Phase 6 — Follow-up",
-    phaseDone: 5,
-    phaseActive: 6,
-    tbd: false,
-    postponed: false,
-    budget: "$450,000",
-    attendees: "6,000",
-    mqls: "655",
-    sqls: "307.9",
-    deals: "43.1",
-    pipeline: "$4.89M",
-    revenue: "$2.89M",
-    roi: "5.41×",
-    conflict: null
+    id:3, name:"NRB Convention",
+    dateStr:"Feb 17–20, 2026", month:2, startDay:17, endDay:20, quarter:"Q1",
+    location:"Nashville, TN",
+    type:"conference", typeLabel:"Conference (Booth + Speaking)",
+    chipClass:"chip-conf", barClass:"bar-conf",
+    status:"inprogress", phaseDone:5, phaseActive:6, tbd:false, postponed:false,
+    budget:"$450,000", attendees:"6,000",
+    mqls:"655", sqls:"307.9", deals:"43.1", pipeline:"$4.89M", revenue:"$2.89M", roi:"5.41×",
+    conflict:null
   },
   {
-    id: 4,
-    name: "Rangers vs. Yankees — VIP Game Night (TBD)",
-    dateStr: "Apr 27–29, 2026",
-    month: 4,
-    quarter: "Q2",
-    location: "Dallas, TX",
-    type: "sports",
-    typeLabel: "PRAY Mini Event (Sports/VIP)",
-    chipClass: "chip-emerald",
-    barClass: "bar-emerald",
-    status: "inprogress",
-    phase: "Phase 2 — Theme & Audience",
-    phaseDone: 1,
-    phaseActive: 2,
-    tbd: true,
-    postponed: false,
-    budget: "$30,000",
-    attendees: "23",
-    mqls: "23",
-    sqls: "18.4",
-    deals: "1.84",
-    pipeline: "$89.8K",
-    revenue: "$48.8K",
-    roi: "0.63×",
-    conflict: "⚠️ Same weekend as Outcomes Conference (Dallas) — leverage overlap"
+    id:4, name:"Rangers vs. Yankees — VIP Game Night (TBD)",
+    dateStr:"Apr 27–29, 2026", month:4, startDay:27, endDay:29, quarter:"Q2",
+    location:"Dallas, TX",
+    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
+    chipClass:"chip-sport", barClass:"bar-sport",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:true, postponed:false,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:"⚠ Outcomes Conference (Apr 28–30, Dallas) — same city, coordinate teams"
   },
   {
-    id: 5,
-    name: "America Reads the Bible",
-    dateStr: "Apr 20–21, 2026",
-    month: 4,
-    quarter: "Q2",
-    location: "Washington, D.C.",
-    type: "conference",
-    typeLabel: "Conference (TBD Participation)",
-    chipClass: "chip-cyan",
-    barClass: "bar-cyan",
-    status: "inprogress",
-    phase: "Phase 2 — Theme & Audience",
-    phaseDone: 1,
-    phaseActive: 2,
-    tbd: false,
-    postponed: false,
-    budget: "$35,000",
-    attendees: "—",
-    mqls: "70",
-    sqls: "31.5",
-    deals: "4.41",
-    pipeline: "$2.21M",
-    revenue: "$190K",
-    roi: "4.43×",
-    conflict: null
+    id:5, name:"America Reads the Bible",
+    dateStr:"Apr 20–21, 2026", month:4, startDay:20, endDay:21, quarter:"Q2",
+    location:"Washington, D.C.",
+    type:"conference", typeLabel:"Conference (TBD Participation)",
+    chipClass:"chip-conf", barClass:"bar-conf",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
+    budget:"$35,000", attendees:"—",
+    mqls:"70", sqls:"31.5", deals:"4.41", pipeline:"$2.21M", revenue:"$190K", roi:"4.43×",
+    conflict:null
   },
   {
-    id: 6,
-    name: "MegaMetro (Senior Pastors)",
-    dateStr: "Apr 26–28, 2026",
-    month: 4,
-    quarter: "Q2",
-    location: "Boston, MA",
-    type: "conference",
-    typeLabel: "Conference (TBD Participation)",
-    chipClass: "chip-cyan",
-    barClass: "bar-cyan",
-    status: "inprogress",
-    phase: "Phase 2 — Theme & Audience",
-    phaseDone: 1,
-    phaseActive: 2,
-    tbd: false,
-    postponed: false,
-    budget: "$34,850",
-    attendees: "—",
-    mqls: "64",
-    sqls: "28.8",
-    deals: "4.03",
-    pipeline: "$2.02M",
-    revenue: "$173.7K",
-    roi: "3.98×",
-    conflict: null
+    id:6, name:"MegaMetro (Senior Pastors)",
+    dateStr:"Apr 26–28, 2026", month:4, startDay:26, endDay:28, quarter:"Q2",
+    location:"Boston, MA",
+    type:"conference", typeLabel:"Conference (TBD Participation)",
+    chipClass:"chip-conf", barClass:"bar-conf",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
+    budget:"$34,850", attendees:"—",
+    mqls:"64", sqls:"28.8", deals:"4.03", pipeline:"$2.02M", revenue:"$173.7K", roi:"3.98×",
+    conflict:null
   },
   {
-    id: 7,
-    name: "Outcomes Conference (CLA)",
-    dateStr: "Apr 28–30, 2026",
-    month: 4,
-    quarter: "Q2",
-    location: "Dallas, TX",
-    type: "conference",
-    typeLabel: "Conference (Booth + Speaking)",
-    chipClass: "chip-blue",
-    barClass: "bar-blue",
-    status: "inprogress",
-    phase: "Phase 2 — Theme & Audience",
-    phaseDone: 1,
-    phaseActive: 2,
-    tbd: false,
-    postponed: false,
-    budget: "$34,850",
-    attendees: "1,000",
-    mqls: "20",
-    sqls: "9",
-    deals: "1.26",
-    pipeline: "$632K",
-    revenue: "$54.3K",
-    roi: "0.56×",
-    conflict: "⚠️ Same city as Rangers vs. Yankees (Apr 27–29, Dallas)"
+    id:7, name:"Outcomes Conference (CLA)",
+    dateStr:"Apr 28–30, 2026", month:4, startDay:28, endDay:30, quarter:"Q2",
+    location:"Dallas, TX",
+    type:"conference", typeLabel:"Conference (Booth + Speaking)",
+    chipClass:"chip-conf", barClass:"bar-conf",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
+    budget:"$34,850", attendees:"1,000",
+    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"0.56×",
+    conflict:"⚠ Rangers vs. Yankees (Apr 27–29, Dallas) — same city"
   },
   {
-    id: 8,
-    name: "VIP Dinner + Astros vs. Rangers (TBD)",
-    dateStr: "May 15–16, 2026",
-    month: 5,
-    quarter: "Q2",
-    location: "Houston, TX",
-    type: "sports",
-    typeLabel: "PRAY Mini Event (Sports/VIP)",
-    chipClass: "chip-emerald",
-    barClass: "bar-emerald",
-    status: "inprogress",
-    phase: "Phase 1 — Mission & Strategy",
-    phaseDone: 0,
-    phaseActive: 1,
-    tbd: true,
-    postponed: false,
-    budget: "$30,000",
-    attendees: "23",
-    mqls: "23",
-    sqls: "18.4",
-    deals: "1.84",
-    pipeline: "$89.8K",
-    revenue: "$48.8K",
-    roi: "0.63×",
-    conflict: null
+    id:8, name:"VIP Dinner + Astros vs. Rangers (TBD)",
+    dateStr:"May 15–16, 2026", month:5, startDay:15, endDay:16, quarter:"Q2",
+    location:"Houston, TX",
+    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
+    chipClass:"chip-sport", barClass:"bar-sport",
+    status:"inprogress", phaseDone:0, phaseActive:1, tbd:true, postponed:false,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null
   },
   {
-    id: 9,
-    name: "America Prays National Mall",
-    dateStr: "May 18, 2026",
-    month: 5,
-    quarter: "Q2",
-    location: "Philadelphia, PA",
-    type: "faith",
-    typeLabel: "America Prays (Hosted)",
-    chipClass: "chip-rose",
-    barClass: "bar-rose",
-    status: "inprogress",
-    phase: "Phase 1 — Mission & Strategy",
-    phaseDone: 0,
-    phaseActive: 1,
-    tbd: false,
-    postponed: false,
-    budget: "$50,000",
-    attendees: "—",
-    mqls: "N/A",
-    sqls: null,
-    deals: null,
-    pipeline: null,
-    revenue: null,
-    roi: "TBD — Awareness / Faith Event",
-    conflict: null
+    id:9, name:"America Prays National Mall",
+    dateStr:"May 18, 2026", month:5, startDay:18, endDay:18, quarter:"Q2",
+    location:"Philadelphia, PA",
+    type:"faith", typeLabel:"America Prays (Hosted)",
+    chipClass:"chip-faith", barClass:"bar-faith",
+    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false, postponed:false,
+    budget:"$50,000", attendees:"—",
+    mqls:"N/A", sqls:null, deals:null, pipeline:null, revenue:null, roi:"TBD — Awareness / Faith Event",
+    conflict:null
   },
   {
-    id: 10,
-    name: "Rangers vs. Padres — Father's Day VIP Night (TBD)",
-    dateStr: "Jun 19–21, 2026",
-    month: 6,
-    quarter: "Q2",
-    location: "Dallas, TX",
-    type: "sports",
-    typeLabel: "PRAY Mini Event (Sports/VIP)",
-    chipClass: "chip-emerald",
-    barClass: "bar-emerald",
-    status: "pending",
-    phase: "Phase 1 — Not Started",
-    phaseDone: 0,
-    phaseActive: 0,
-    tbd: true,
-    postponed: false,
-    budget: "$30,000",
-    attendees: "18",
-    mqls: "23",
-    sqls: "18.4",
-    deals: "1.84",
-    pipeline: "$89.8K",
-    revenue: "$48.8K",
-    roi: "0.63×",
-    conflict: "⚠️ BCI Conference (Jun 19–20, Atlanta) same weekend — split team"
+    id:10, name:"Rangers vs. Padres — Father's Day VIP Night (TBD)",
+    dateStr:"Jun 19–21, 2026", month:6, startDay:19, endDay:21, quarter:"Q2",
+    location:"Dallas, TX",
+    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
+    chipClass:"chip-sport", barClass:"bar-sport",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
+    budget:"$30,000", attendees:"18",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:"⚠ BCI Conference (Jun 19–20, Atlanta) same weekend — split team"
   },
   {
-    id: 11,
-    name: "SBC VIP Event",
-    dateStr: "Jun 6–8, 2026",
-    month: 6,
-    quarter: "Q2",
-    location: "Orlando, FL",
-    type: "sports",
-    typeLabel: "PRAY Mini Event (Hosted)",
-    chipClass: "chip-emerald",
-    barClass: "bar-emerald",
-    status: "inprogress",
-    phase: "Phase 1 — Mission & Strategy",
-    phaseDone: 0,
-    phaseActive: 1,
-    tbd: false,
-    postponed: false,
-    budget: "$32,200",
-    attendees: "23",
-    mqls: "23",
-    sqls: "18.4",
-    deals: "1.84",
-    pipeline: "$89.8K",
-    revenue: "$48.8K",
-    roi: "0.52×",
-    conflict: null
+    id:11, name:"SBC VIP Event",
+    dateStr:"Jun 6–8, 2026", month:6, startDay:6, endDay:8, quarter:"Q2",
+    location:"Orlando, FL",
+    type:"sports", typeLabel:"PRAY Mini Event (Hosted)",
+    chipClass:"chip-sport", barClass:"bar-sport",
+    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false, postponed:false,
+    budget:"$32,200", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.52×",
+    conflict:null
   },
   {
-    id: 12,
-    name: "BCI Conference",
-    dateStr: "Jun 19–20, 2026",
-    month: 6,
-    quarter: "Q2",
-    location: "Atlanta, GA",
-    type: "conference",
-    typeLabel: "Conference (Sponsor Only)",
-    chipClass: "chip-purple",
-    barClass: "bar-purple",
-    status: "pending",
-    phase: "Phase 1 — Not Started",
-    phaseDone: 0,
-    phaseActive: 0,
-    tbd: false,
-    postponed: false,
-    budget: "$15,000",
-    attendees: "—",
-    mqls: "20",
-    sqls: "9",
-    deals: "1.26",
-    pipeline: "$632K",
-    revenue: "$54.3K",
-    roi: "2.62×",
-    conflict: "⚠️ Rangers vs. Padres (Jun 19–21, Dallas) same weekend — split team"
+    id:12, name:"BCI Conference",
+    dateStr:"Jun 19–20, 2026", month:6, startDay:19, endDay:20, quarter:"Q2",
+    location:"Atlanta, GA",
+    type:"conference", typeLabel:"Conference (Sponsor Only)",
+    chipClass:"chip-conf", barClass:"bar-conf",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
+    budget:"$15,000", attendees:"—",
+    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"2.62×",
+    conflict:"⚠ Rangers vs. Padres (Jun 19–21, Dallas) same weekend — split team"
   },
   {
-    id: 13,
-    name: "Pastors Retreat (2)",
-    dateStr: "Jun 24–26, 2026",
-    month: 6,
-    quarter: "Q2",
-    location: "TBD",
-    type: "retreat",
-    typeLabel: "PRAY Retreat",
-    chipClass: "chip-amber",
-    barClass: "bar-amber",
-    status: "pending",
-    phase: "Phase 1 — Not Started",
-    phaseDone: 0,
-    phaseActive: 0,
-    tbd: false,
-    postponed: false,
-    budget: "$80,000",
-    attendees: "18",
-    mqls: "18",
-    sqls: null,
-    deals: null,
-    pipeline: null,
-    revenue: null,
-    roi: null,
-    conflict: null
+    id:13, name:"Pastors Retreat (2)",
+    dateStr:"Jun 24–26, 2026", month:6, startDay:24, endDay:26, quarter:"Q2",
+    location:"TBD",
+    type:"retreat", typeLabel:"PRAY Retreat",
+    chipClass:"chip-ret", barClass:"bar-ret",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
+    budget:"$80,000", attendees:"18",
+    mqls:"18", sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
+    conflict:null
   },
   {
-    id: 14,
-    name: "Q3 Sporting Event — July (TBD)",
-    dateStr: "Jul 31, 2026",
-    month: 7,
-    quarter: "Q3",
-    location: "TBD",
-    type: "sports",
-    typeLabel: "PRAY Mini Event (Sports/VIP)",
-    chipClass: "chip-emerald",
-    barClass: "bar-emerald",
-    status: "pending",
-    phase: "Phase 1 — Not Started",
-    phaseDone: 0,
-    phaseActive: 0,
-    tbd: true,
-    postponed: false,
-    budget: "$30,000",
-    attendees: "23",
-    mqls: "23",
-    sqls: "18.4",
-    deals: "1.84",
-    pipeline: "$89.8K",
-    revenue: "$48.8K",
-    roi: "0.63×",
-    conflict: null
+    id:14, name:"Q3 Sporting Event — July (TBD)",
+    dateStr:"Jul 31, 2026", month:7, startDay:31, endDay:31, quarter:"Q3",
+    location:"TBD",
+    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
+    chipClass:"chip-sport", barClass:"bar-sport",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null
   },
   {
-    id: 15,
-    name: "Q3 Sporting Event — September (TBD)",
-    dateStr: "Sep 1, 2026",
-    month: 9,
-    quarter: "Q3",
-    location: "TBD",
-    type: "sports",
-    typeLabel: "PRAY Mini Event (Sports/VIP)",
-    chipClass: "chip-emerald",
-    barClass: "bar-emerald",
-    status: "pending",
-    phase: "Phase 1 — Not Started",
-    phaseDone: 0,
-    phaseActive: 0,
-    tbd: true,
-    postponed: false,
-    budget: "$30,000",
-    attendees: "23",
-    mqls: "23",
-    sqls: "18.4",
-    deals: "1.84",
-    pipeline: "$89.8K",
-    revenue: "$48.8K",
-    roi: "0.63×",
-    conflict: null
+    id:15, name:"Q3 Sporting Event — September (TBD)",
+    dateStr:"Sep 1, 2026", month:9, startDay:1, endDay:1, quarter:"Q3",
+    location:"TBD",
+    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
+    chipClass:"chip-sport", barClass:"bar-sport",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null
   },
   {
-    id: 16,
-    name: "Family Reunion",
-    dateStr: "Oct 27, 2026",
-    month: 10,
-    quarter: "Q4",
-    location: "TBD",
-    type: "conference",
-    typeLabel: "Conference (TBD Participation)",
-    chipClass: "chip-cyan",
-    barClass: "bar-cyan",
-    status: "pending",
-    phase: "Phase 1 — Not Started",
-    phaseDone: 0,
-    phaseActive: 0,
-    tbd: false,
-    postponed: false,
-    budget: "$10,600",
-    attendees: "—",
-    mqls: "20",
-    sqls: "9",
-    deals: "1.26",
-    pipeline: "$632K",
-    revenue: "$54.3K",
-    roi: "4.12×",
-    conflict: null
+    id:16, name:"Family Reunion",
+    dateStr:"Oct 27, 2026", month:10, startDay:27, endDay:27, quarter:"Q4",
+    location:"TBD",
+    type:"conference", typeLabel:"Conference (TBD Participation)",
+    chipClass:"chip-conf", barClass:"bar-conf",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
+    budget:"$10,600", attendees:"—",
+    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"4.12×",
+    conflict:null
   },
   {
-    id: 17,
-    name: "November Sporting Event — RightNow Adjacent (TBD)",
-    dateStr: "Nov 4–6, 2026",
-    month: 11,
-    quarter: "Q4",
-    location: "Dallas, TX",
-    type: "sports",
-    typeLabel: "PRAY Mini Event (Sports/VIP)",
-    chipClass: "chip-emerald",
-    barClass: "bar-emerald",
-    status: "pending",
-    phase: "Phase 1 — Not Started",
-    phaseDone: 0,
-    phaseActive: 0,
-    tbd: true,
-    postponed: false,
-    budget: "$30,000",
-    attendees: "23",
-    mqls: "23",
-    sqls: "18.4",
-    deals: "1.84",
-    pipeline: "$89.8K",
-    revenue: "$48.8K",
-    roi: "0.63×",
-    conflict: null
+    id:17, name:"November Sporting Event — RightNow Adjacent (TBD)",
+    dateStr:"Nov 4–6, 2026", month:11, startDay:4, endDay:6, quarter:"Q4",
+    location:"Dallas, TX",
+    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
+    chipClass:"chip-sport", barClass:"bar-sport",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null
   }
 ];
 
-// ─── MONTH METADATA ────────────────────────────────────────────────────────────
+// ─── MONTH META ───────────────────────────────────────────────────────────────
 const MONTHS = [
-  { num: 1,  name: "January",   abbr: "Jan", qtr: "Q1" },
-  { num: 2,  name: "February",  abbr: "Feb", qtr: "Q1" },
-  { num: 3,  name: "March",     abbr: "Mar", qtr: "Q1" },
-  { num: 4,  name: "April",     abbr: "Apr", qtr: "Q2" },
-  { num: 5,  name: "May",       abbr: "May", qtr: "Q2" },
-  { num: 6,  name: "June",      abbr: "Jun", qtr: "Q2" },
-  { num: 7,  name: "July",      abbr: "Jul", qtr: "Q3" },
-  { num: 8,  name: "August",    abbr: "Aug", qtr: "Q3" },
-  { num: 9,  name: "September", abbr: "Sep", qtr: "Q3" },
-  { num: 10, name: "October",   abbr: "Oct", qtr: "Q4" },
-  { num: 11, name: "November",  abbr: "Nov", qtr: "Q4" },
-  { num: 12, name: "December",  abbr: "Dec", qtr: "Q4" }
+  {num:1, name:"January",   abbr:"Jan", qtr:"Q1"},
+  {num:2, name:"February",  abbr:"Feb", qtr:"Q1"},
+  {num:3, name:"March",     abbr:"Mar", qtr:"Q1"},
+  {num:4, name:"April",     abbr:"Apr", qtr:"Q2"},
+  {num:5, name:"May",       abbr:"May", qtr:"Q2"},
+  {num:6, name:"June",      abbr:"Jun", qtr:"Q2"},
+  {num:7, name:"July",      abbr:"Jul", qtr:"Q3"},
+  {num:8, name:"August",    abbr:"Aug", qtr:"Q3"},
+  {num:9, name:"September", abbr:"Sep", qtr:"Q3"},
+  {num:10,name:"October",   abbr:"Oct", qtr:"Q4"},
+  {num:11,name:"November",  abbr:"Nov", qtr:"Q4"},
+  {num:12,name:"December",  abbr:"Dec", qtr:"Q4"}
 ];
 
 // ─── FILTER STATE ──────────────────────────────────────────────────────────────
-let filters = { quarter: "all", type: "all", status: "all" };
+const activeFilters = {quarter:"all", type:"all", status:"all"};
 
 function setFilter(key, val, btn) {
-  // if same button, reset to "all" toggle behavior
-  if (filters[key] === val) {
-    filters[key] = "all";
+  if (activeFilters[key] === val) {
+    activeFilters[key] = "all";
     document.querySelectorAll('.fbtn').forEach(b => {
-      if (b.onclick && b.onclick.toString().includes(`'${key}'`)) b.classList.remove('active');
+      if (b.getAttribute('onclick') && b.getAttribute('onclick').includes(`'${key}'`))
+        b.classList.remove('active');
     });
-    // re-activate "All" button if it exists for this group
-  } else {
-    filters[key] = val;
-    // Deactivate all buttons in the same filter group
     document.querySelectorAll('.fbtn').forEach(b => {
-      if (b.onclick && b.onclick.toString().includes(`'${key}'`)) b.classList.remove('active');
+      if (b.getAttribute('onclick') && b.getAttribute('onclick').includes(`'${key}','all'`))
+        b.classList.add('active');
+    });
+  } else {
+    activeFilters[key] = val;
+    document.querySelectorAll('.fbtn').forEach(b => {
+      if (b.getAttribute('onclick') && b.getAttribute('onclick').includes(`'${key}'`))
+        b.classList.remove('active');
     });
     btn.classList.add('active');
   }
@@ -1154,72 +1008,157 @@ function setFilter(key, val, btn) {
 }
 
 function matchesFilters(ev) {
-  if (filters.quarter !== "all" && ev.quarter !== filters.quarter) return false;
-  if (filters.type !== "all" && ev.type !== filters.type) return false;
-  if (filters.status !== "all") {
-    if (filters.status === "inprogress" && ev.status !== "inprogress" && ev.status !== "postponed") return false;
-    if (filters.status !== "inprogress" && ev.status !== filters.status) return false;
+  if (activeFilters.quarter !== "all" && ev.quarter !== activeFilters.quarter) return false;
+  if (activeFilters.type !== "all" && ev.type !== activeFilters.type) return false;
+  if (activeFilters.status !== "all") {
+    if (activeFilters.status === "inprogress" && ev.status !== "inprogress" && ev.status !== "postponed") return false;
+    if (activeFilters.status !== "inprogress" && ev.status !== activeFilters.status) return false;
   }
   return true;
 }
 
+// ─── BUILD YEAR CALENDAR ──────────────────────────────────────────────────────
+function buildMiniCalendars() {
+  // Build day→events lookup for all events
+  const dayMap = {}; // key: "M-D"
+  events.forEach(ev => {
+    for (let d = ev.startDay; d <= ev.endDay; d++) {
+      const key = `${ev.month}-${d}`;
+      if (!dayMap[key]) dayMap[key] = [];
+      dayMap[key].push(ev);
+    }
+  });
+
+  const grid = document.getElementById('mini-cals-grid');
+  grid.innerHTML = MONTHS.map(m => buildMiniCal(m, dayMap)).join('');
+}
+
+function buildMiniCal(m, dayMap) {
+  const year = 2026;
+  const daysInMonth = new Date(year, m.num, 0).getDate();
+  const firstWeekday = new Date(year, m.num - 1, 1).getDay(); // 0=Sun
+
+  // Get events this month
+  const monthEvs = events.filter(e => e.month === m.num);
+  const hasEventsInMonth = monthEvs.length > 0;
+
+  // Day headers
+  const hdr = ['S','M','T','W','T','F','S'].map(d =>
+    `<div class="mc-day-hdr">${d}</div>`
+  ).join('');
+
+  // Empty leading cells
+  let cells = '';
+  for (let i = 0; i < firstWeekday; i++) {
+    cells += `<div class="mc-day mc-empty"></div>`;
+  }
+
+  // Day cells
+  for (let day = 1; day <= daysInMonth; day++) {
+    const isToday = (m.num === TODAY_M && day === TODAY_D);
+    const isPast = (m.num < TODAY_M) || (m.num === TODAY_M && day < TODAY_D);
+    const key = `${m.num}-${day}`;
+    const dayEvs = dayMap[key] || [];
+    const hasEv = dayEvs.length > 0;
+    const isMulti = dayEvs.length > 1;
+
+    let cls = 'mc-day';
+    let tooltip = '';
+
+    if (isToday) {
+      cls += ' mc-today';
+      tooltip = 'Today';
+      if (hasEv) tooltip += ': ' + dayEvs.map(e => e.name).join(' + ');
+    } else if (hasEv) {
+      const t = dayEvs[0].type;
+      const tCls = isMulti ? 'mc-event-multi' :
+                   t === 'conference' ? 'mc-event-conf' :
+                   t === 'retreat'    ? 'mc-event-ret'  :
+                   t === 'sports'     ? 'mc-event-sport' :
+                                        'mc-event-faith';
+      cls += ` mc-event ${tCls}`;
+      tooltip = dayEvs.map(e => e.name).join(' + ');
+    } else if (isPast) {
+      cls += ' mc-past';
+    }
+
+    cells += `<div class="${cls}"${tooltip ? ` title="${tooltip}"` : ''}><span class="cal-day-num">${day}</span></div>`;
+  }
+
+  // Event list for this month (compact)
+  const evListHtml = monthEvs.slice(0, 3).map(ev => {
+    const dotCls = ev.type === 'conference' ? 'conf' :
+                   ev.type === 'retreat'    ? 'ret'  :
+                   ev.type === 'sports'     ? 'sport': 'faith';
+    const shortName = ev.name.length > 28 ? ev.name.substring(0,26) + '…' : ev.name;
+    return `<div class="mc-ev-item"><div class="mc-ev-dot ${dotCls}"></div>${shortName}</div>`;
+  }).join('') + (monthEvs.length > 3 ? `<div class="mc-ev-item" style="color:var(--gold)">+${monthEvs.length - 3} more</div>` : '');
+
+  return `
+    <div class="mini-cal-card ${hasEventsInMonth ? 'has-events' : ''}">
+      <div class="mc-head">
+        <div class="mc-month-name">${m.name}</div>
+        <div class="mc-qtr">${m.qtr}</div>
+      </div>
+      <div class="mc-days-grid">
+        ${hdr}
+        ${cells}
+      </div>
+      <div class="mc-event-list">
+        ${evListHtml}
+      </div>
+    </div>`;
+}
+
 // ─── BUILD PHASE BAR ──────────────────────────────────────────────────────────
 function buildPhaseBar(phaseDone, phaseActive) {
-  let segs = "";
+  let segs = '';
   for (let i = 1; i <= 7; i++) {
-    let cls = "ph-seg";
-    if (i <= phaseDone) cls += " done";
-    else if (i === phaseActive) cls += " active";
-    segs += `<div class="${cls}"></div>`;
+    let c = 'ph-seg';
+    if (i <= phaseDone) c += ' done';
+    else if (i === phaseActive) c += ' active';
+    segs += `<div class="${c}"></div>`;
   }
-  const pct = phaseActive > 0
-    ? `Phase ${phaseActive} of 7`
-    : phaseDone === 7 ? "All 7 Phases Complete" : "Not Started";
+  const label = phaseActive > 0
+    ? `Phase ${phaseActive} active`
+    : phaseDone === 7 ? 'All 7 phases complete'
+    : 'Not started';
   return `
     <div class="phase-bar-wrap">
-      <div class="phase-bar-label">
-        <span>Phase Progress</span>
-        <span>${pct}</span>
-      </div>
+      <div class="phase-bar-label"><span>Preparation Progress</span><span>${label}</span></div>
       <div class="phase-bar">${segs}</div>
     </div>`;
 }
 
 // ─── BUILD STATUS BADGE ───────────────────────────────────────────────────────
 function statusBadge(ev) {
-  if (ev.postponed) return `<span class="status-badge st-postponed">⏸ Postponed</span>`;
-  if (ev.tbd)       return `<span class="status-badge st-tbd">◌ TBD</span>`;
-  switch (ev.status) {
-    case "complete":   return `<span class="status-badge st-complete">✓ Complete</span>`;
-    case "inprogress": return `<span class="status-badge st-inprogress">● In Progress</span>`;
-    case "pending":    return `<span class="status-badge st-pending">○ Pending</span>`;
-    default: return "";
-  }
+  if (ev.postponed)      return `<span class="status-badge st-postponed">⏸ Postponed</span>`;
+  if (ev.tbd)            return `<span class="status-badge st-tbd">◌ TBD</span>`;
+  if (ev.status === 'complete')   return `<span class="status-badge st-complete">✓ Complete</span>`;
+  if (ev.status === 'inprogress') return `<span class="status-badge st-inprogress">● In Progress</span>`;
+  return `<span class="status-badge st-pending">○ Pending</span>`;
 }
 
 // ─── BUILD METRICS BLOCK ──────────────────────────────────────────────────────
 function buildMetrics(ev) {
-  const fmt = (val, cls) => val
-    ? `<span class="m-val ${cls||''}">${val}</span>`
-    : `<span class="m-val tbd-val">—</span>`;
+  const m = (val, goldClass) => val
+    ? `<span class="m-val${goldClass ? ' gold' : ''}">${val}</span>`
+    : `<span class="m-val tbd-v">—</span>`;
 
-  // Always show: MQLs, SQLs, Pipeline | Deals, Revenue, ROI
+  const roiHtml = ev.roi
+    ? `<span class="m-val${ev.roi.includes('TBD') ? ' tbd-v' : ''}" style="font-size:${ev.roi.includes('TBD') ? '9' : '14'}px">${ev.roi}</span>`
+    : `<span class="m-val tbd-v">—</span>`;
+
   return `
     <div class="card-metrics">
-      <div class="metrics-head">⚡ Sales Targets</div>
+      <div class="metrics-head">Sales Targets</div>
       <div class="metrics-grid">
-        <div class="metric-item">${fmt(ev.mqls,'blue')}<span class="m-lbl">Target MQLs</span></div>
-        <div class="metric-item">${fmt(ev.sqls,'')}<span class="m-lbl">Target SQLs</span></div>
-        <div class="metric-item">${fmt(ev.deals,'')}<span class="m-lbl">Target Deals</span></div>
-        <div class="metric-item">${fmt(ev.pipeline,'green')}<span class="m-lbl">Pipeline</span></div>
-        <div class="metric-item">${fmt(ev.revenue,'')}<span class="m-lbl">Revenue</span></div>
-        <div class="metric-item">
-          ${ev.roi
-            ? `<span class="m-val ${ev.roi.includes('TBD') ? 'tbd-val' : ''}">${ev.roi}</span>`
-            : `<span class="m-val tbd-val">—</span>`
-          }
-          <span class="m-lbl">ROI</span>
-        </div>
+        <div class="metric-item">${m(ev.mqls,false)}<span class="m-lbl">MQLs</span></div>
+        <div class="metric-item">${m(ev.sqls,false)}<span class="m-lbl">SQLs</span></div>
+        <div class="metric-item">${m(ev.deals,false)}<span class="m-lbl">Deals</span></div>
+        <div class="metric-item">${m(ev.pipeline,true)}<span class="m-lbl">Pipeline</span></div>
+        <div class="metric-item">${m(ev.revenue,false)}<span class="m-lbl">Revenue</span></div>
+        <div class="metric-item">${roiHtml}<span class="m-lbl">ROI</span></div>
       </div>
     </div>`;
 }
@@ -1228,10 +1167,10 @@ function buildMetrics(ev) {
 function buildCard(ev) {
   const cardCls = `event-card ${ev.tbd ? 'is-tbd' : ''} ${ev.postponed ? 'is-postponed' : ''}`;
   const conflictHtml = ev.conflict
-    ? `<div class="conflict-mini">⚠️ ${ev.conflict}</div>` : "";
+    ? `<div class="conflict-mini">${ev.conflict}</div>` : '';
 
   return `
-    <div class="${cardCls}" data-quarter="${ev.quarter}" data-type="${ev.type}" data-status="${ev.status}">
+    <div class="${cardCls}">
       <div class="card-bar ${ev.barClass}"></div>
       <div class="card-body">
         <div class="card-top-row">
@@ -1254,76 +1193,48 @@ function buildCard(ev) {
     </div>`;
 }
 
-// ─── RENDER TIMELINE STRIP ────────────────────────────────────────────────────
-function renderTimeline(visibleEvents) {
-  const dotColors = { conference:"#1D4ED8", retreat:"#D97706", sports:"#059669", faith:"#DC2626" };
-  const strip = document.getElementById("timeline-strip");
-  strip.innerHTML = MONTHS.map(m => {
-    const monthEvs = visibleEvents.filter(e => e.month === m.num);
-    const isCurrent = m.num === 2; // February 2026
-    const dots = monthEvs.map(e =>
-      `<div class="tm-dot" style="background:${dotColors[e.type]}" title="${e.name}"></div>`
-    ).join("");
-    return `
-      <div class="tm-month ${monthEvs.length > 0 ? 'has-events' : ''} ${isCurrent ? 'current' : ''}">
-        <a href="#month-${m.num}">
-          <div class="tm-month-name">${m.abbr}</div>
-          <div class="tm-dots">${dots}</div>
-          <div class="tm-count">${monthEvs.length > 0 ? monthEvs.length + (monthEvs.length === 1 ? " event" : " events") : ""}</div>
-        </a>
-      </div>`;
-  }).join("");
-}
-
-// ─── RENDER MAIN CONTENT ──────────────────────────────────────────────────────
+// ─── RENDER MONTHLY SECTIONS ──────────────────────────────────────────────────
 function render() {
-  const visibleEvents = events.filter(matchesFilters);
-  renderTimeline(visibleEvents);
-
-  const main = document.getElementById("main-content");
-  let html = "";
+  const visible = events.filter(matchesFilters);
+  const main = document.getElementById('main-content');
+  let html = '';
 
   for (const m of MONTHS) {
-    const monthEvs = visibleEvents
+    const hasAny = events.some(e => e.month === m.num);
+    if (!hasAny) continue; // skip months with no events ever
+
+    const monthEvs = visible
       .filter(e => e.month === m.num)
-      .sort((a, b) => a.id - b.id);
+      .sort((a, b) => a.startDay - b.startDay);
 
-    // Check if this month has ANY events in the full set (for empty-month display)
-    const hasAnyInMonth = events.some(e => e.month === m.num);
-    if (!hasAnyInMonth && filters.quarter === "all" && filters.type === "all" && filters.status === "all") continue;
-    if (monthEvs.length === 0 && (filters.quarter !== "all" || filters.type !== "all" || filters.status !== "all")) continue;
-    if (monthEvs.length === 0 && !hasAnyInMonth) continue;
-    // Always skip truly empty months (no events at all)
-    if (!hasAnyInMonth) continue;
+    if (monthEvs.length === 0 && (activeFilters.quarter !== 'all' || activeFilters.type !== 'all' || activeFilters.status !== 'all')) continue;
+    if (monthEvs.length === 0) continue;
 
-    // Budget total for this month
     const budgetTotal = monthEvs.reduce((sum, e) => {
-      const n = parseInt(e.budget.replace(/[$,K]/g, '') || "0");
-      return sum + (e.budget.includes("K") ? n * 1000 : n);
+      const raw = e.budget.replace(/[$,]/g, '');
+      return sum + (parseFloat(raw) || 0);
     }, 0);
-    const budgetStr = monthEvs.length > 0 && budgetTotal > 0
-      ? `$${budgetTotal.toLocaleString()}` : "";
 
     html += `
-      <div class="month-section" id="month-${m.num}">
-        <span class="month-anchor"></span>
+      <div class="month-section">
+        <span id="month-${m.num}" class="month-anchor"></span>
         <div class="month-header">
           <span class="month-name-text">${m.name}</span>
           <span class="month-qtr-badge">${m.qtr}</span>
           <div class="month-line"></div>
-          ${budgetStr ? `<span class="month-budget-total">${budgetStr} budgeted</span>` : ""}
+          ${budgetTotal > 0 ? `<span class="month-budget-total">$${budgetTotal.toLocaleString()} budgeted</span>` : ''}
         </div>
-        ${monthEvs.length === 0
-          ? `<p class="no-events-msg">No events this month match the current filter.</p>`
-          : `<div class="events-grid">${monthEvs.map(buildCard).join("")}</div>`
-        }
+        <div class="events-grid">
+          ${monthEvs.map(buildCard).join('')}
+        </div>
       </div>`;
   }
 
-  main.innerHTML = html || `<p style="text-align:center;color:#94A3B8;padding:48px;">No events match the selected filters.</p>`;
+  main.innerHTML = html || `<p style="text-align:center;color:var(--gray-400);padding:48px;font-size:14px;">No events match the selected filters.</p>`;
 }
 
 // ─── INIT ──────────────────────────────────────────────────────────────────────
+buildMiniCalendars();
 render();
 </script>
 </body>
