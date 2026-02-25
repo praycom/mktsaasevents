@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRAY.COM 2026 — Internal Event Briefs</title>
+  <style>
+    :root {
+      --black:       #0B0C0D;
+      --black-soft:  #1A1B1D;
+      --black-mid:   #252628;
+      --black-light: #3A3B3E;
+      --white:       #FFFFFF;
+      --off-white:   #F9F9F8;
+      --gray-50:     #F4F4F2;
+      --gray-100:    #EBEBEA;
+      --gray-200:    #D5D5D3;
+      --gray-400:    #A3A3A1;
+      --gray-600:    #636361;
+      --gold:        #E3AF4A;
+      --gold-light:  #FBF2DC;
+      --gold-muted:  rgba(227,175,74,0.12);
+      --gold-border: rgba(227,175,74,0.35);
+      --gold-dark:   #C49432;
+      --green:       #16A34A;
+      --orange:      #F97316;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #D8D8D6;
+      color: var(--black);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* ─── SIDE NAV ──────────────────────────────────────────────── */
+    .side-nav {
+      position: fixed; left: 0; top: 0; bottom: 0;
+      width: 210px;
+      background: var(--black);
+      overflow-y: auto;
+      z-index: 200;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.1) transparent;
+    }
+    .nav-header {
+      padding: 18px 14px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky; top: 0;
+      background: var(--black);
+      z-index: 1;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .nav-logo-mark {
+      width: 28px; height: 28px; background: var(--gold); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 9px; font-weight: 900; color: var(--black); flex-shrink: 0;
+    }
+    .nav-logo-text { font-size: 13px; font-weight: 800; color: var(--white); }
+    .nav-logo-text span { color: var(--gold); }
+    .nav-subtitle { font-size: 9px; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.6px; }
+    .nav-confidential {
+      margin-top: 8px;
+      font-size: 8px; font-weight: 800; color: var(--gold);
+      text-transform: uppercase; letter-spacing: 1px;
+      border: 1px solid var(--gold-border); border-radius: 3px;
+      padding: 2px 6px; display: inline-block;
+    }
+    .nav-items { padding: 8px 8px; }
+    .nav-group-label {
+      font-size: 8px; font-weight: 800; color: rgba(255,255,255,0.2);
+      text-transform: uppercase; letter-spacing: 0.8px;
+      padding: 10px 8px 4px;
+    }
+    .nav-item {
+      display: flex; align-items: center; gap: 7px;
+      padding: 5px 8px; border-radius: 5px;
+      text-decoration: none; margin-bottom: 1px;
+      transition: background 0.12s;
+    }
+    .nav-item:hover { background: rgba(255,255,255,0.06); }
+    .nav-num { font-size: 8px; font-weight: 700; color: var(--gold); width: 16px; flex-shrink: 0; }
+    .nav-name { font-size: 10px; color: var(--gray-400); line-height: 1.3; flex: 1; }
+    .nav-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .dot-complete   { background: var(--green); }
+    .dot-inprogress { background: var(--gold); }
+    .dot-pending    { background: var(--gray-600); }
+    .dot-tbd        { background: var(--orange); }
+
+    /* ─── MAIN CONTENT ──────────────────────────────────────────── */
+    main {
+      margin-left: 210px;
+      padding: 28px 28px 60px;
+      display: flex; flex-direction: column; align-items: center; gap: 36px;
+    }
+
+    /* ─── BRIEF PAGE ────────────────────────────────────────────── */
+    .brief-page {
+      width: 816px;
+      min-height: 1056px;
+      background: var(--white);
+      box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      scroll-margin-top: 28px;
+    }
+
+    /* Header */
+    .brief-header {
+      background: var(--black);
+      padding: 14px 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 3px solid var(--gold);
+      flex-shrink: 0;
+    }
+    .bh-left { display: flex; align-items: center; gap: 12px; }
+    .bh-logo { display: flex; align-items: center; gap: 8px; }
+    .bh-logo-mark {
+      width: 30px; height: 30px; background: var(--gold); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-weight: 900; color: var(--black);
+    }
+    .bh-logo-text { font-size: 13px; font-weight: 800; color: var(--white); }
+    .bh-logo-text span { color: var(--gold); }
+    .bh-divider { width: 1px; height: 24px; background: rgba(255,255,255,0.15); }
+    .bh-label { font-size: 10px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.6px; }
+    .bh-right { display: flex; align-items: center; gap: 8px; }
+    .bh-confidential {
+      font-size: 8px; font-weight: 800; color: var(--gold);
+      text-transform: uppercase; letter-spacing: 1px;
+      border: 1px solid var(--gold-border); padding: 2px 7px; border-radius: 3px;
+    }
+    .bh-evnum { font-size: 9px; color: var(--gray-600); }
+
+    /* Status badges */
+    .status-badge {
+      font-size: 8px; font-weight: 800; padding: 3px 9px;
+      border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .st-complete   { background: var(--green); color: white; }
+    .st-inprogress { background: var(--gold); color: var(--black); }
+    .st-pending    { background: var(--gray-200); color: var(--gray-600); }
+    .st-tbd        { background: var(--orange); color: white; }
+
+    /* Hero section */
+    .brief-hero { padding: 22px 28px 18px; border-bottom: 1px solid var(--gray-100); flex-shrink: 0; }
+    .brief-type-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .type-chip {
+      font-size: 8px; font-weight: 800; padding: 2px 9px;
+      border-radius: 20px; text-transform: uppercase; letter-spacing: 0.4px;
+    }
+    .chip-conf  { background: var(--gold); color: var(--black); }
+    .chip-ret   { background: var(--black); color: var(--white); }
+    .chip-sport { background: transparent; color: var(--gold-dark); border: 1.5px solid var(--gold); }
+    .chip-faith { background: var(--gold-muted); color: var(--gold-dark); border: 1px solid var(--gold-border); }
+
+    .brief-name { font-size: 26px; font-weight: 900; color: var(--black); line-height: 1.1; margin-bottom: 10px; }
+    .brief-tbd-flag {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: #FFF7ED; border: 1px solid #FED7AA;
+      border-radius: 5px; padding: 3px 10px;
+      font-size: 9px; font-weight: 700; color: #C2410C;
+      margin-bottom: 8px;
+    }
+    .brief-meta-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .meta-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--gray-600); }
+    .meta-item strong { color: var(--black); font-weight: 700; }
+    .meta-icon { font-size: 13px; }
+
+    /* Stats bar */
+    .brief-stats { display: flex; border-bottom: 1px solid var(--gray-100); flex-shrink: 0; }
+    .stat-cell {
+      flex: 1; padding: 14px 16px; border-right: 1px solid var(--gray-100);
+      text-align: center;
+    }
+    .stat-cell:last-child { border-right: none; }
+    .sc-val { font-size: 20px; font-weight: 800; color: var(--gold); line-height: 1; margin-bottom: 3px; }
+    .sc-val.dark { color: var(--black); }
+    .sc-lbl { font-size: 8px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* Section */
+    .brief-section { padding: 16px 28px; border-bottom: 1px solid var(--gray-100); flex-shrink: 0; }
+    .section-title {
+      font-size: 8px; font-weight: 800; color: var(--gray-400);
+      text-transform: uppercase; letter-spacing: 0.8px;
+      margin-bottom: 12px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .section-title::after { content: ''; flex: 1; height: 1px; background: var(--gray-100); }
+
+    /* Metrics grid */
+    .metrics-grid {
+      display: grid; grid-template-columns: repeat(6, 1fr);
+      gap: 1px; background: var(--gray-100);
+      border: 1px solid var(--gray-100); border-radius: 8px; overflow: hidden;
+    }
+    .metric-cell { background: var(--white); padding: 12px 8px; text-align: center; }
+    .mc-val { font-size: 17px; font-weight: 800; color: var(--black); line-height: 1; margin-bottom: 3px; }
+    .mc-val.gold { color: var(--gold); }
+    .mc-val.na   { font-size: 11px; color: var(--gray-400); font-weight: 600; }
+    .mc-lbl { font-size: 8px; font-weight: 600; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.4px; }
+
+    /* Phase bar */
+    .phase-track { display: flex; gap: 4px; margin-bottom: 8px; }
+    .phase-seg { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+    .ph-bar { height: 7px; border-radius: 3px; background: var(--gray-100); }
+    .ph-bar.done   { background: var(--gold); }
+    .ph-bar.active { background: var(--gold); opacity: 0.45; }
+    .ph-num { font-size: 8px; font-weight: 700; color: var(--gray-400); text-align: center; }
+    .ph-num.done   { color: var(--gold-dark); }
+    .ph-num.active { color: var(--gold); }
+    .phase-labels { display: flex; gap: 4px; }
+    .ph-lbl { flex: 1; font-size: 7.5px; color: var(--gray-400); text-align: center; line-height: 1.25; }
+    .ph-lbl.done   { color: var(--gray-600); }
+    .ph-lbl.active { color: var(--black); font-weight: 700; }
+    .phase-status-row {
+      margin-top: 8px; font-size: 10px; font-weight: 600; color: var(--gray-600);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .phase-status-row .ps-dot { width: 6px; height: 6px; border-radius: 50%; }
+
+    /* Notes */
+    .note-item {
+      display: flex; align-items: flex-start; gap: 8px;
+      padding: 8px 12px; border-radius: 6px; margin-bottom: 6px;
+      font-size: 11px; line-height: 1.45;
+    }
+    .note-item:last-child { margin-bottom: 0; }
+    .note-icon { flex-shrink: 0; font-size: 14px; line-height: 1; }
+    .note-text { flex: 1; }
+    .note-text strong { font-weight: 700; }
+    .n-conflict { background: #FFF7ED; border: 1px solid #FED7AA; color: #92400E; }
+    .n-tbd      { background: #FFF7ED; border: 1px solid #FED7AA; color: #92400E; }
+    .n-info     { background: #F0F9FF; border: 1px solid #BAE6FD; color: #0369A1; }
+    .n-action   { background: #F0FDF4; border: 1px solid #BBF7D0; color: #166534; }
+    .n-neutral  { background: var(--off-white); border: 1px solid var(--gray-100); color: var(--gray-600); }
+
+    /* Footer */
+    .brief-footer {
+      margin-top: auto;
+      padding: 11px 28px;
+      background: var(--black);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .bf-text { font-size: 8px; color: var(--gray-600); }
+    .bf-evnum { font-size: 8px; font-weight: 700; color: var(--gold); }
+
+    /* ─── PRINT ─────────────────────────────────────────────────── */
+    @media print {
+      body { background: white; }
+      .side-nav { display: none; }
+      main { margin-left: 0; padding: 0; gap: 0; }
+      .brief-page { box-shadow: none; border-radius: 0; page-break-after: always; width: 100%; min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="side-nav" id="side-nav">
+  <div class="nav-header">
+    <div class="nav-logo">
+      <div class="nav-logo-mark">P.</div>
+      <div class="nav-logo-text">PRAY<span>.COM</span></div>
+    </div>
+    <div class="nav-subtitle">2026 · Internal Event Briefs</div>
+    <div class="nav-confidential">⚿ Confidential</div>
+  </div>
+  <div class="nav-items" id="nav-items"></div>
+</nav>
+
+<main id="main-content"></main>
+
+<script>
+// ─── PHASE LABELS ──────────────────────────────────────────────────────────────
+const PHASE_LABELS = [
+  'Research &\nQualification',
+  'Planning &\nRegistration',
+  'Logistics &\nOperations',
+  'Personnel &\nTraining',
+  'Pre-Event\nExecution',
+  'Post-Event\nFollow-Up',
+  'Analysis &\nReporting'
+];
+
+// ─── EVENT DATA ────────────────────────────────────────────────────────────────
+const events = [
+  {
+    id:1, name:"Dunham Summit",
+    dateStr:"Jan 6–8, 2026", month:1, quarter:"Q1",
+    location:"Lake Buena Vista, FL",
+    type:"conference", typeLabel:"Conference (Speaking)",
+    chipClass:"chip-conf",
+    status:"complete", phaseDone:7, phaseActive:0, tbd:false,
+    budget:"$45,000", attendees:"35",
+    mqls:"30", sqls:"13.5", deals:"1.89", pipeline:"$948K", revenue:"$81K", roi:"0.81×",
+    conflict:null,
+    notes:[
+      {cls:"n-action", icon:"✓", text:"<strong>All 7 phases complete.</strong> Full post-event data available in CRM. Use this event as an ROI benchmark for smaller speaking engagements."},
+      {cls:"n-info",   icon:"📊", text:"Final ROI: 0.81× — strong relationship / brand-building event. 30 MQLs collected; follow-up cadence should be in final stage."},
+      {cls:"n-neutral",icon:"📋", text:"AE Assigned: Review closed-won conversion data to validate pipeline assumptions for future Dunham-style events."}
+    ]
+  },
+  {
+    id:2, name:"Pastors Retreat (1)",
+    dateStr:"Apr 22–24, 2026", month:4, quarter:"Q2",
+    location:"San Diego, CA",
+    type:"retreat", typeLabel:"PRAY Retreat (Hosted)",
+    chipClass:"chip-ret",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
+    budget:"$80,000", attendees:"18",
+    mqls:"18", sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
+    conflict:null,
+    notes:[
+      {cls:"n-action", icon:"🔴", text:"<strong>ACTION REQUIRED:</strong> 18 pastor attendees confirmed — prepare personalized welcome packages, name-specific agendas, and 1:1 conversation briefs for each attendee."},
+      {cls:"n-info",   icon:"🏨", text:"Hosted retreat in San Diego, CA. PRAY.COM covers all costs. Logistics (hotel block, meals, activities) in Phase 2 planning."},
+      {cls:"n-neutral",icon:"📋", text:"Retreat ROI measured by relationship depth, not pipeline. Ensure post-retreat follow-up includes personal handwritten note from leadership within 48 hrs."}
+    ]
+  },
+  {
+    id:3, name:"NRB Convention",
+    dateStr:"Feb 17–20, 2026", month:2, quarter:"Q1",
+    location:"Nashville, TN",
+    type:"conference", typeLabel:"Conference (Booth + Speaking)",
+    chipClass:"chip-conf",
+    status:"inprogress", phaseDone:5, phaseActive:6, tbd:false,
+    budget:"$450,000", attendees:"6,000",
+    mqls:"655", sqls:"307.9", deals:"43.1", pipeline:"$4.89M", revenue:"$2.89M", roi:"5.41×",
+    conflict:null,
+    notes:[
+      {cls:"n-action", icon:"🔴", text:"<strong>PRIORITY — Phase 6 Active (Post-Event Follow-Up):</strong> 655 MQLs must be entered into CRM within 72 hours of show close. All badge scans exported and segmented by priority tier."},
+      {cls:"n-action", icon:"📧", text:"Follow-up email sequences (Tier 1, 2, 3) must launch within 48 hours of event close. AEs take ownership of Tier 1 accounts immediately."},
+      {cls:"n-info",   icon:"💰", text:"Largest event of Q1 at $450K budget. Projected ROI: 5.41× with $4.89M pipeline. All demo slots tracked and assigned to AEs."},
+      {cls:"n-neutral",icon:"🎙️", text:"Speaking session(s) completed. Ensure recordings and slide decks are shared with marketing for content repurposing."}
+    ]
+  },
+  {
+    id:4, name:"April Event (TBD)",
+    dateStr:"Apr 27–29, 2026", month:4, quarter:"Q2",
+    location:"Dallas, TX",
+    type:"sports", typeLabel:"Sports / VIP Mini Event",
+    chipClass:"chip-sport",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:true,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:"⚠ Scheduling conflict: Outcomes Conference (Apr 28–30) is also in Dallas. Coordinate team logistics — same-city overlap is an opportunity.",
+    notes:[
+      {cls:"n-tbd",    icon:"⚠️", text:"<strong>Event TBD:</strong> Specific game/matchup not yet confirmed. Game selection, ticket block, and venue details pending. Update once finalized."},
+      {cls:"n-conflict",icon:"⚠️",text:"<strong>CONFLICT:</strong> Outcomes Conference (Apr 28–30) is also in Dallas. Opportunity to cross-invite select Outcomes contacts to the VIP night. Coordinate AE coverage."},
+      {cls:"n-action", icon:"📋", text:"Phase 2 (Planning & Registration) active. Finalize: guest list of 23, transportation, hospitality suite if applicable, PRAY.COM branded gifting."}
+    ]
+  },
+  {
+    id:5, name:"America Reads the Bible",
+    dateStr:"Apr 20–21, 2026", month:4, quarter:"Q2",
+    location:"Washington, D.C.",
+    type:"conference", typeLabel:"Conference (TBD Participation)",
+    chipClass:"chip-conf",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
+    budget:"$35,000", attendees:"—",
+    mqls:"70", sqls:"31.5", deals:"4.41", pipeline:"$2.21M", revenue:"$190K", roi:"4.43×",
+    conflict:null,
+    notes:[
+      {cls:"n-info",  icon:"ℹ️", text:"Participation level TBD — confirm speaking slot, sponsorship tier, or attendee-only presence with event organizers. Deadline for decisions: March 2026."},
+      {cls:"n-action",icon:"🎯", text:"High-value faith-sector audience in Washington D.C. Ideal for positioning PRAY.COM with faith-based policy, denominational, and national ministry contacts."},
+      {cls:"n-neutral",icon:"📋", text:"Target: 70 MQLs. Projected pipeline: $2.21M. Ensure demo iPad stations or QR lead capture are provisioned for the team."}
+    ]
+  },
+  {
+    id:6, name:"MegaMetro (Senior Pastors)",
+    dateStr:"Apr 26–28, 2026", month:4, quarter:"Q2",
+    location:"Boston, MA",
+    type:"conference", typeLabel:"Conference (TBD Participation)",
+    chipClass:"chip-conf",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
+    budget:"$34,850", attendees:"—",
+    mqls:"64", sqls:"28.8", deals:"4.03", pipeline:"$2.02M", revenue:"$173.7K", roi:"3.98×",
+    conflict:null,
+    notes:[
+      {cls:"n-info",  icon:"⛪", text:"Audience: senior pastors from large/mega churches. Prime segment for PRAY.COM's church engagement platform. Personalized demos critical."},
+      {cls:"n-action",icon:"📋", text:"Confirm participation type (booth, sponsor, attendee) before March. Prepare senior pastor-specific use case deck: congregation engagement + digital giving."},
+      {cls:"n-neutral",icon:"💡", text:"Boston venue — coordinate with local AE for pre-event 1:1 meeting scheduling with key attendees. Target: 64 MQLs, $2.02M pipeline."}
+    ]
+  },
+  {
+    id:7, name:"Outcomes Conference (CLA)",
+    dateStr:"Apr 28–30, 2026", month:4, quarter:"Q2",
+    location:"Dallas, TX",
+    type:"conference", typeLabel:"Conference (Booth + Speaking)",
+    chipClass:"chip-conf",
+    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
+    budget:"$34,850", attendees:"1,000",
+    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"0.56×",
+    conflict:"⚠ April Event (TBD) also in Dallas Apr 27–29 — coordinate team & cross-leverage same-city presence.",
+    notes:[
+      {cls:"n-action", icon:"🔴", text:"<strong>PAST-DUE:</strong> Blog post sponsorship deadline was Jan 30 — follow up with Donna Bostick immediately. Program ad deadline was Feb 20 — confirm status."},
+      {cls:"n-info",   icon:"📬", text:"Key Contact: <strong>Donna Bostick</strong> — Donna.Bostick@ChristianLeadershipAlliance.org · Christian Leadership Alliance event coordinator."},
+      {cls:"n-action", icon:"📋", text:"<strong>ACTION:</strong> Register all booth personnel by April 1 deadline. Secure booth load-in window (Apr 27–28) and teardown (Apr 30 afternoon). Confirm speaker slots for Max Bard (Tue Apr 28, 2:00–3:30 PM) and Ryan Beck (Wed Apr 29, 10:30 AM–12:00 PM)."},
+      {cls:"n-action", icon:"📊", text:"Post-event: Contact Donna Bostick to obtain attendee list for follow-up CRM entry. All 20 MQLs should be in CRM within 48 hrs of event close."}
+    ]
+  },
+  {
+    id:8, name:"May Event (TBD)",
+    dateStr:"May 15–16, 2026", month:5, quarter:"Q2",
+    location:"Houston, TX",
+    type:"sports", typeLabel:"Sports / VIP Mini Event",
+    chipClass:"chip-sport",
+    status:"inprogress", phaseDone:0, phaseActive:1, tbd:true,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null,
+    notes:[
+      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Game/matchup and venue in Houston, TX not yet confirmed. Phase 1 (Research) active — evaluate Houston-area sporting events in May 2026 timeframe."},
+      {cls:"n-action",icon:"📋", text:"Once confirmed: finalize 23-person guest list, ticket block, hospitality suite, and branded experience details. Coordinate with Houston-area AE."},
+      {cls:"n-neutral",icon:"💡", text:"Houston market — strong presence of large churches and Christian nonprofits. VIP list should prioritize high-potential local accounts."}
+    ]
+  },
+  {
+    id:9, name:"America Prays National Mall",
+    dateStr:"May 18, 2026", month:5, quarter:"Q2",
+    location:"Philadelphia, PA",
+    type:"faith", typeLabel:"America Prays (Hosted)",
+    chipClass:"chip-faith",
+    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false,
+    budget:"$50,000", attendees:"—",
+    mqls:"N/A", sqls:null, deals:null, pipeline:null, revenue:null, roi:"Mission / Awareness Event",
+    conflict:null,
+    notes:[
+      {cls:"n-info",  icon:"🙏", text:"National prayer gathering in Philadelphia, PA. PRAY.COM is a hosting partner. ROI is mission/awareness-based — not measured in pipeline. Align with brand and faith values."},
+      {cls:"n-action",icon:"📋", text:"Coordinate with PRAY.COM marketing for on-site presence strategy (signage, app downloads, brand booth). Ensure team wear/brand assets are prepared."},
+      {cls:"n-neutral",icon:"💡", text:"Secondary objective: ministry partner relationship-building. Identify 10–15 key ministry leaders in attendance for post-event personalized outreach from AE team."}
+    ]
+  },
+  {
+    id:10, name:"June Event (TBD)",
+    dateStr:"Jun 19–21, 2026", month:6, quarter:"Q2",
+    location:"Dallas, TX",
+    type:"sports", typeLabel:"Sports / VIP Mini Event",
+    chipClass:"chip-sport",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
+    budget:"$30,000", attendees:"18",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:"⚠ BCI Conference (Jun 19–20) is in Atlanta same weekend — team split required. Minimum 1 AE each location.",
+    notes:[
+      {cls:"n-tbd",    icon:"⚠️", text:"<strong>Event TBD:</strong> Game/matchup in Dallas not yet confirmed. No phases started. Decision needed by April 2026 to allow proper lead time."},
+      {cls:"n-conflict",icon:"⚠️",text:"<strong>CRITICAL CONFLICT:</strong> BCI Conference (Jun 19–20) is in Atlanta the same weekend. Two separate teams required. Plan team assignments now to avoid staffing gaps."},
+      {cls:"n-action", icon:"📋", text:"Once confirmed: build 18-person invite list, secure ticket block, arrange hospitality. Dallas AE takes ownership of this event."}
+    ]
+  },
+  {
+    id:11, name:"SBC VIP Event",
+    dateStr:"Jun 6–8, 2026", month:6, quarter:"Q2",
+    location:"Orlando, FL",
+    type:"sports", typeLabel:"Sports / VIP Mini Event (Hosted)",
+    chipClass:"chip-sport",
+    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false,
+    budget:"$32,200", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.52×",
+    conflict:null,
+    notes:[
+      {cls:"n-info",  icon:"⛪", text:"Hosted adjacent to the SBC Annual Meeting in Orlando. High-value audience: Southern Baptist denomination leaders, church planters, and missions directors."},
+      {cls:"n-action",icon:"📋", text:"Phase 1 (Research) active. Coordinate guest list with SBC Annual Meeting attendee data. Target: denomination leaders, executive pastors, and church tech decision-makers."},
+      {cls:"n-neutral",icon:"💡", text:"Opportunity to position PRAY.COM as the SBC's preferred digital discipleship platform. Follow up within 24 hrs of event with personalized meeting invites."}
+    ]
+  },
+  {
+    id:12, name:"BCI Conference",
+    dateStr:"Jun 19–20, 2026", month:6, quarter:"Q2",
+    location:"Atlanta, GA",
+    type:"conference", typeLabel:"Conference (Sponsor Only)",
+    chipClass:"chip-conf",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:false,
+    budget:"$15,000", attendees:"—",
+    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"2.62×",
+    conflict:"⚠ June Event (TBD, Dallas) is the same weekend — team split required. Assign at least 1 AE to each location.",
+    notes:[
+      {cls:"n-conflict",icon:"⚠️",text:"<strong>CONFLICT:</strong> June Event (Jun 19–21, Dallas) is the same weekend. Assign a dedicated team to Atlanta for BCI; separate team handles Dallas VIP event."},
+      {cls:"n-info",   icon:"ℹ️", text:"Sponsor-only presence. Confirm sponsorship deliverables (logo placement, session slots, lead lists) with BCI organizers. Deliverables drive AE follow-up quality."},
+      {cls:"n-action", icon:"📋", text:"No phases started. Begin planning by April 2026. Secure sponsor package, confirm on-site AE assignment, and prepare sponsor collateral."}
+    ]
+  },
+  {
+    id:13, name:"Pastors Retreat (2)",
+    dateStr:"Jun 24–26, 2026", month:6, quarter:"Q2",
+    location:"TBD",
+    type:"retreat", typeLabel:"PRAY Retreat (Hosted)",
+    chipClass:"chip-ret",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:false,
+    budget:"$80,000", attendees:"18",
+    mqls:"18", sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
+    conflict:null,
+    notes:[
+      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Location TBD:</strong> Venue for Retreat (2) not yet selected. Begin venue search by March 2026 — target resort/retreat destination with dedicated meeting space."},
+      {cls:"n-neutral",icon:"🏨", text:"Same structure as Pastors Retreat (1) in San Diego. 18 invited pastors, hosted by PRAY.COM. Apply learnings from Retreat (1) to improve experience."},
+      {cls:"n-action", icon:"📋", text:"No phases started. Priority tasks: select venue, build updated invite list (include new relationships from April events), finalize logistics and gifting program."}
+    ]
+  },
+  {
+    id:14, name:"Q3 Sporting Event — July (TBD)",
+    dateStr:"Jul 31, 2026", month:7, quarter:"Q3",
+    location:"TBD",
+    type:"sports", typeLabel:"Sports / VIP Mini Event",
+    chipClass:"chip-sport",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null,
+    notes:[
+      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Q3 July sporting event placeholder. Game, team, location, and city not yet determined. Planning begins Q2 2026."},
+      {cls:"n-action",icon:"📋", text:"Evaluate MLB, NBA, or other major sporting events in July 2026. Target city based on highest concentration of prospective ministry accounts. Begin Q1 planning."},
+      {cls:"n-neutral",icon:"💡", text:"Apply VIP mini-event playbook from Q1/Q2 sports events. Maintain consistent 23-guest format, branded gifting, and post-event follow-up cadence."}
+    ]
+  },
+  {
+    id:15, name:"Q3 Sporting Event — September (TBD)",
+    dateStr:"Sep 1, 2026", month:9, quarter:"Q3",
+    location:"TBD",
+    type:"sports", typeLabel:"Sports / VIP Mini Event",
+    chipClass:"chip-sport",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null,
+    notes:[
+      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Q3 September sporting event placeholder. NFL season opens in September — consider leveraging NFL kickoff weekend for VIP event."},
+      {cls:"n-action",icon:"📋", text:"Evaluate NFL opener, MLB playoffs (late September), or college football games. Target city based on AE territory priorities for Q3 pipeline needs."},
+      {cls:"n-neutral",icon:"💡", text:"September event should target accounts that progressed from Q2 events but haven't yet closed. Design guest list around late-stage pipeline acceleration."}
+    ]
+  },
+  {
+    id:16, name:"Family Reunion",
+    dateStr:"Oct 27, 2026", month:10, quarter:"Q4",
+    location:"TBD",
+    type:"conference", typeLabel:"Conference (TBD Participation)",
+    chipClass:"chip-conf",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:false,
+    budget:"$10,600", attendees:"—",
+    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"4.12×",
+    conflict:null,
+    notes:[
+      {cls:"n-info",  icon:"ℹ️", text:"Annual faith-sector leadership gathering. Participation level (attendee, sponsor, speaker) TBD. Confirm status with event organizers in Q3 2026."},
+      {cls:"n-neutral",icon:"📋", text:"Budget: $10,600 — lean event. Plan for strategic 2–3 person team presence. Focus on relationship-deepening with existing accounts and warm introductions."},
+      {cls:"n-action",icon:"🎯", text:"Q4 timing is ideal for year-end budget conversations. Prioritize prospects with Q4 buying windows in the guest list / attendee targeting."}
+    ]
+  },
+  {
+    id:17, name:"November Sporting Event — RightNow Adjacent (TBD)",
+    dateStr:"Nov 4–6, 2026", month:11, quarter:"Q4",
+    location:"Dallas, TX",
+    type:"sports", typeLabel:"Sports / VIP Mini Event",
+    chipClass:"chip-sport",
+    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
+    budget:"$30,000", attendees:"23",
+    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
+    conflict:null,
+    notes:[
+      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Planned adjacent to the RightNow Media conference in Dallas (Nov 4–6). Game/matchup TBD — leverage Dallas Cowboys, Mavericks, or Stars schedule."},
+      {cls:"n-info",  icon:"💡", text:"Strategic positioning: RightNow Media attendees are prime PRAY.COM prospects (church media & ministry tech buyers). Cross-leverage event timing for maximum audience exposure."},
+      {cls:"n-action",icon:"📋", text:"Coordinate RightNow Media attendance alongside VIP sporting event. Ideal format: attend RightNow by day, VIP event evening of Nov 5. Guest list from RightNow attendees."}
+    ]
+  }
+];
+
+// ─── STATUS HELPERS ────────────────────────────────────────────────────────────
+function statusBadge(ev) {
+  if (ev.tbd)             return `<span class="status-badge st-tbd">⚠ TBD</span>`;
+  if (ev.status === 'complete')   return `<span class="status-badge st-complete">✓ Complete</span>`;
+  if (ev.status === 'inprogress') return `<span class="status-badge st-inprogress">● In Progress</span>`;
+  return `<span class="status-badge st-pending">○ Pending</span>`;
+}
+
+function navDotClass(ev) {
+  if (ev.tbd) return 'dot-tbd';
+  if (ev.status === 'complete')   return 'dot-complete';
+  if (ev.status === 'inprogress') return 'dot-inprogress';
+  return 'dot-pending';
+}
+
+function metricVal(v, cls) {
+  if (v == null) return `<div class="mc-val na">—</div>`;
+  return `<div class="mc-val ${cls||''}">${v}</div>`;
+}
+
+// ─── BUILD PHASE BAR ───────────────────────────────────────────────────────────
+function buildPhaseBar(phaseDone, phaseActive) {
+  let track = '', labelRow = '';
+  const shortLabels = ['Research', 'Planning', 'Logistics', 'Personnel', 'Execution', 'Post-Event', 'Analysis'];
+  for (let i = 1; i <= 7; i++) {
+    const isDone   = i <= phaseDone;
+    const isActive = i === phaseActive;
+    const cls = isDone ? 'done' : isActive ? 'active' : '';
+    track += `<div class="phase-seg">
+      <div class="ph-bar ${cls}"></div>
+      <div class="ph-num ${cls}">${i}</div>
+    </div>`;
+    labelRow += `<div class="ph-lbl ${cls}">${shortLabels[i-1]}</div>`;
+  }
+
+  let statusText, statusColor;
+  if (phaseDone === 7) {
+    statusText = 'All 7 phases complete'; statusColor = '#16A34A';
+  } else if (phaseActive > 0) {
+    statusText = `Phase ${phaseActive} Active — ${PHASE_LABELS[phaseActive-1].replace('\n', ' ')}`;
+    statusColor = '#E3AF4A';
+  } else {
+    statusText = 'Not yet started'; statusColor = '#A3A3A1';
+  }
+
+  return `
+    <div class="phase-track">${track}</div>
+    <div class="phase-labels">${labelRow}</div>
+    <div class="phase-status-row">
+      <div class="ps-dot" style="background:${statusColor}"></div>
+      <span>${statusText}</span>
+    </div>`;
+}
+
+// ─── BUILD NOTES ───────────────────────────────────────────────────────────────
+function buildNotes(ev) {
+  let html = '';
+  if (ev.conflict) {
+    html += `<div class="note-item n-conflict"><span class="note-icon">⚠️</span><span class="note-text">${ev.conflict}</span></div>`;
+  }
+  ev.notes.forEach(n => {
+    html += `<div class="note-item ${n.cls}"><span class="note-icon">${n.icon}</span><span class="note-text">${n.text}</span></div>`;
+  });
+  return html;
+}
+
+// ─── BUILD PAGE ────────────────────────────────────────────────────────────────
+function buildPage(ev, idx) {
+  const tbdFlag = ev.tbd
+    ? `<div class="brief-tbd-flag">⚠ Event Details TBD — Specific game/matchup/venue not yet confirmed</div>`
+    : '';
+
+  const statsBar = `
+    <div class="brief-stats">
+      <div class="stat-cell"><div class="sc-val">${ev.budget}</div><div class="sc-lbl">Event Budget</div></div>
+      <div class="stat-cell"><div class="sc-val dark">${ev.attendees}</div><div class="sc-lbl">Target Attendees</div></div>
+      <div class="stat-cell"><div class="sc-val dark">${ev.quarter}</div><div class="sc-lbl">Quarter</div></div>
+      <div class="stat-cell"><div class="sc-val dark">${ev.phaseDone === 7 ? '7/7' : ev.phaseActive > 0 ? `Phase ${ev.phaseActive}` : '—'}</div><div class="sc-lbl">Current Phase</div></div>
+    </div>`;
+
+  const metricsGrid = `
+    <div class="metrics-grid">
+      <div class="metric-cell">${metricVal(ev.mqls,'')}<div class="mc-lbl">MQLs</div></div>
+      <div class="metric-cell">${metricVal(ev.sqls,'')}<div class="mc-lbl">SQLs</div></div>
+      <div class="metric-cell">${metricVal(ev.deals,'')}<div class="mc-lbl">Deals</div></div>
+      <div class="metric-cell">${metricVal(ev.pipeline,'gold')}<div class="mc-lbl">Pipeline</div></div>
+      <div class="metric-cell">${metricVal(ev.revenue,'')}<div class="mc-lbl">Revenue</div></div>
+      <div class="metric-cell">${metricVal(ev.roi,'gold')}<div class="mc-lbl">ROI</div></div>
+    </div>`;
+
+  return `
+    <div class="brief-page" id="ev-${ev.id}">
+      <div class="brief-header">
+        <div class="bh-left">
+          <div class="bh-logo">
+            <div class="bh-logo-mark">P.</div>
+            <div class="bh-logo-text">PRAY<span>.COM</span></div>
+          </div>
+          <div class="bh-divider"></div>
+          <div class="bh-label">Internal Event Brief</div>
+        </div>
+        <div class="bh-right">
+          <span class="bh-evnum">Event ${String(idx+1).padStart(2,'0')} of 17</span>
+          <div class="bh-confidential">⚿ Confidential</div>
+          ${statusBadge(ev)}
+        </div>
+      </div>
+
+      <div class="brief-hero">
+        <div class="brief-type-row">
+          <span class="type-chip ${ev.chipClass}">${ev.typeLabel}</span>
+        </div>
+        ${tbdFlag}
+        <div class="brief-name">${ev.name}</div>
+        <div class="brief-meta-row">
+          <div class="meta-item"><span class="meta-icon">📅</span><strong>${ev.dateStr}</strong></div>
+          <div class="meta-item"><span class="meta-icon">📍</span><strong>${ev.location}</strong></div>
+          <div class="meta-item"><span class="meta-icon">🏷</span>${ev.quarter}</div>
+        </div>
+      </div>
+
+      ${statsBar}
+
+      <div class="brief-section">
+        <div class="section-title">Sales Targets &amp; Projections</div>
+        ${metricsGrid}
+      </div>
+
+      <div class="brief-section">
+        <div class="section-title">Preparation Progress — 7 Phase Cycle</div>
+        ${buildPhaseBar(ev.phaseDone, ev.phaseActive)}
+      </div>
+
+      <div class="brief-section" style="flex:1;">
+        <div class="section-title">Team Notes &amp; Action Items</div>
+        ${buildNotes(ev)}
+      </div>
+
+      <div class="brief-footer">
+        <span class="bf-text">PRAY.COM · 2026 Events · Internal Brief · Sales Team Reference · Confidential</span>
+        <span class="bf-evnum">${ev.name} · ${ev.dateStr} · ${ev.location}</span>
+      </div>
+    </div>`;
+}
+
+// ─── RENDER ────────────────────────────────────────────────────────────────────
+const quarterGroups = {Q1:[],Q2:[],Q3:[],Q4:[]};
+events.forEach(ev => quarterGroups[ev.quarter].push(ev));
+
+// Build nav
+const navItems = document.getElementById('nav-items');
+['Q1','Q2','Q3','Q4'].forEach(q => {
+  const grpEvs = quarterGroups[q];
+  if (!grpEvs.length) return;
+  navItems.innerHTML += `<div class="nav-group-label">${q}</div>`;
+  grpEvs.forEach(ev => {
+    navItems.innerHTML += `
+      <a href="#ev-${ev.id}" class="nav-item">
+        <span class="nav-num">${String(ev.id).padStart(2,'0')}</span>
+        <span class="nav-name">${ev.name}</span>
+        <span class="nav-dot ${navDotClass(ev)}"></span>
+      </a>`;
+  });
+});
+
+// Build pages
+const main = document.getElementById('main-content');
+main.innerHTML = events.map((ev, i) => buildPage(ev, i)).join('');
+</script>
+</body>
+</html>
