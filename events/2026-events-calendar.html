@@ -218,6 +218,10 @@
       border-radius: 10px;
       overflow: hidden;
       transition: border-color 0.15s;
+      cursor: pointer;
+      display: block;
+      color: inherit;
+      text-decoration: none;
     }
     .mini-cal-card:hover { border-color: var(--gold-border); }
     .mini-cal-card.has-events { border-color: rgba(227,175,74,0.2); }
@@ -555,6 +559,49 @@
     }
 
     /* ═══════════════════════════════════════════════════════
+       MONTH QUICK-NAV
+    ════════════════════════════════════════════════════════ */
+    .month-nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray-100);
+      padding: 8px 48px;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 68px;
+      z-index: 200;
+    }
+    .mnav-label {
+      font-size: 10px; font-weight: 700; color: var(--gray-400);
+      text-transform: uppercase; letter-spacing: 0.6px;
+      padding-right: 4px; flex-shrink: 0;
+    }
+    .mnav-pill {
+      display: inline-flex; align-items: center;
+      font-size: 11px; font-weight: 800;
+      color: var(--gray-600);
+      padding: 4px 13px;
+      border-radius: 20px;
+      border: 1px solid var(--gray-200);
+      background: var(--off-white);
+      text-decoration: none;
+      transition: all 0.15s;
+      letter-spacing: 0.3px;
+    }
+    .mnav-pill:hover {
+      background: var(--black);
+      color: var(--gold);
+      border-color: var(--black);
+    }
+    .mnav-pill.active-month {
+      background: var(--black);
+      color: var(--gold);
+      border-color: var(--black);
+    }
+
+    /* ═══════════════════════════════════════════════════════
        UTILITY
     ════════════════════════════════════════════════════════ */
     .hidden { display: none !important; }
@@ -686,6 +733,13 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════════ -->
+<!--  MONTH QUICK-NAV                                        -->
+<!-- ════════════════════════════════════════════════════════ -->
+<nav class="month-nav" id="month-nav">
+  <!-- Rendered by JS -->
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════ -->
 <!--  CONFLICT ALERT                                         -->
 <!-- ════════════════════════════════════════════════════════ -->
 <div class="conflict-wrap">
@@ -694,12 +748,12 @@
     <div>
       <div class="conflict-row">
         <span class="conflict-date">Apr 27–30</span>
-        <span class="conflict-events">Rangers vs. Yankees (TBD) + Outcomes Conference — both in Dallas, TX</span>
+        <span class="conflict-events">April Event (TBD) + Outcomes Conference — both in Dallas, TX</span>
         <span class="conflict-res">→ Same city — coordinate &amp; leverage overlap</span>
       </div>
       <div class="conflict-row">
         <span class="conflict-date">Jun 19–21</span>
-        <span class="conflict-events">Rangers vs. Padres (TBD) in Dallas + BCI Conference in Atlanta</span>
+        <span class="conflict-events">June Event (TBD) in Dallas + BCI Conference in Atlanta</span>
         <span class="conflict-res">→ Split team required</span>
       </div>
     </div>
@@ -746,7 +800,7 @@
         </tr>
         <tr>
           <td>Sports / VIP Mini Events</td>
-          <td>Rangers/Yankees, Astros/Rangers, Rangers/Padres, SBC VIP, Q3 July, Q3 Sep, November</td>
+          <td>April Event, May Event, June Event, SBC VIP, Q3 July, Q3 Sep, November</td>
           <td class="amt">$212,200</td>
         </tr>
         <tr>
@@ -811,7 +865,7 @@ const events = [
     conflict:null
   },
   {
-    id:4, name:"Rangers vs. Yankees — VIP Game Night (TBD)",
+    id:4, name:"April Event (TBD)",
     dateStr:"Apr 27–29, 2026", month:4, startDay:27, endDay:29, quarter:"Q2",
     location:"Dallas, TX",
     type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
@@ -852,10 +906,10 @@ const events = [
     status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
     budget:"$34,850", attendees:"1,000",
     mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"0.56×",
-    conflict:"⚠ Rangers vs. Yankees (Apr 27–29, Dallas) — same city"
+    conflict:"⚠ April Event (Apr 27–29, Dallas) — same city"
   },
   {
-    id:8, name:"VIP Dinner + Astros vs. Rangers (TBD)",
+    id:8, name:"May Event (TBD)",
     dateStr:"May 15–16, 2026", month:5, startDay:15, endDay:16, quarter:"Q2",
     location:"Houston, TX",
     type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
@@ -877,7 +931,7 @@ const events = [
     conflict:null
   },
   {
-    id:10, name:"Rangers vs. Padres — Father's Day VIP Night (TBD)",
+    id:10, name:"June Event (TBD)",
     dateStr:"Jun 19–21, 2026", month:6, startDay:19, endDay:21, quarter:"Q2",
     location:"Dallas, TX",
     type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
@@ -907,7 +961,7 @@ const events = [
     status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
     budget:"$15,000", attendees:"—",
     mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"2.62×",
-    conflict:"⚠ Rangers vs. Padres (Jun 19–21, Dallas) same weekend — split team"
+    conflict:"⚠ June Event (Jun 19–21, Dallas) same weekend — split team"
   },
   {
     id:13, name:"Pastors Retreat (2)",
@@ -1085,29 +1139,25 @@ function buildMiniCal(m, dayMap) {
     cells += `<div class="${cls}"${tooltip ? ` title="${tooltip}"` : ''}><span class="cal-day-num">${day}</span></div>`;
   }
 
-  // Event list for this month (compact)
-  const evListHtml = monthEvs.slice(0, 3).map(ev => {
-    const dotCls = ev.type === 'conference' ? 'conf' :
-                   ev.type === 'retreat'    ? 'ret'  :
-                   ev.type === 'sports'     ? 'sport': 'faith';
-    const shortName = ev.name.length > 28 ? ev.name.substring(0,26) + '…' : ev.name;
-    return `<div class="mc-ev-item"><div class="mc-ev-dot ${dotCls}"></div>${shortName}</div>`;
-  }).join('') + (monthEvs.length > 3 ? `<div class="mc-ev-item" style="color:var(--gold)">+${monthEvs.length - 3} more</div>` : '');
+  const evCount = monthEvs.length;
+  const evCountHtml = evCount > 0
+    ? `<span style="font-size:9px;color:var(--gold);font-weight:700;">${evCount} event${evCount > 1 ? 's' : ''}</span>`
+    : '';
 
   return `
-    <div class="mini-cal-card ${hasEventsInMonth ? 'has-events' : ''}">
+    <a href="#month-${m.num}" class="mini-cal-card ${hasEventsInMonth ? 'has-events' : ''}">
       <div class="mc-head">
         <div class="mc-month-name">${m.name}</div>
-        <div class="mc-qtr">${m.qtr}</div>
+        <div style="display:flex;align-items:center;gap:6px;">
+          ${evCountHtml}
+          <div class="mc-qtr">${m.qtr}</div>
+        </div>
       </div>
       <div class="mc-days-grid">
         ${hdr}
         ${cells}
       </div>
-      <div class="mc-event-list">
-        ${evListHtml}
-      </div>
-    </div>`;
+    </a>`;
 }
 
 // ─── BUILD PHASE BAR ──────────────────────────────────────────────────────────
@@ -1233,8 +1283,20 @@ function render() {
   main.innerHTML = html || `<p style="text-align:center;color:var(--gray-400);padding:48px;font-size:14px;">No events match the selected filters.</p>`;
 }
 
+// ─── BUILD MONTH NAV ──────────────────────────────────────────────────────────
+function buildMonthNav() {
+  const nav = document.getElementById('month-nav');
+  if (!nav) return;
+  const monthsWithEvents = MONTHS.filter(m => events.some(e => e.month === m.num));
+  nav.innerHTML = '<span class="mnav-label">Jump to</span>' +
+    monthsWithEvents.map(m =>
+      `<a href="#month-${m.num}" class="mnav-pill">${m.abbr}</a>`
+    ).join('');
+}
+
 // ─── INIT ──────────────────────────────────────────────────────────────────────
 buildMiniCalendars();
+buildMonthNav();
 render();
 </script>
 </body>
