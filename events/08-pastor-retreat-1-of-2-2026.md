@@ -15,7 +15,7 @@
 - **Format:** PRAY Retreat
 - **Date(s):** April 22-24, 2026
 - **Location:** San Diego, CA
-- **Venue:** Manchester Grand Hyatt Hotel, 1 Market Pl, San Diego, CA 92101
+- **Venue:** The Andaz, San Diego, 600 F Street, San Diego, CA 92101
 - **Website:** TBD
 - **Participation:** Hosting
 - **Size:** Small
@@ -113,9 +113,18 @@ To build deep, meaningful relationships with senior pastors and church leaders w
 **On-Site / Live**
 - **Facilitator:** Commander Jimmy May, retired Navy SEAL (CEO, Sushi Assassin / Founder, Beyond the Brotherhood nonprofit)
 - Critical moments:
-  - **Day 1 (Apr 22):** Welcome & Check-in at Manchester Grand Hyatt; Escape from Restraints ice breaker (led by Jimmy May) — sets the tone for trust and team
-  - **Day 2 (Apr 23):** "Leading Change in Your Organization – Tech Focus Discussion" — Jimmy May shares SEAL team lessons on leadership in high-change environments (no recording allowed); Group shooting activity — transport to range, breakfast burritos, pistols/rifles/sniper rifle instruction with Jimmy May + additional SEAL operators, BBQ lunch at Range House (all weapons, ammo, range fees, transport, video, demolition photo included)
-  - **Day 3 (Apr 24):** Closing sessions and departure
+  - **Day 1 (Apr 22):**
+    - 2:00 PM — Base Check-In & Tactical Issue · *Hotel Lobby* · Arrival, credentialing, and issuance of tactical gear. Mission officially begins.
+    - 5:00 PM — Tactical Orientation & Welcome Provisions · *Hotel Executive Studio* · Initial alignment, team formation, and shared provisions to set the tone for brotherhood.
+  - **Day 2 (Apr 23):**
+    - 7:00 AM — Deployment from Base · *Hotel Lobby* · Transport to off-site tactical training location.
+    - 8:00 AM — Morning Provisions · *Range* · Breakfast served on-site prior to training.
+    - 9:00 AM — Precision Tactical Training & Field Provisions · *Range* · Guided training, decision-making under pressure, and BBQ-style field lunch.
+    - 3:30 PM — Mission Pause · *At Your Discretion* · Free time to reset, reflect, or explore before evening briefing.
+    - 6:30 PM — Leadership Dinner & Navy SEAL Command Keynote · *Hotel Executive Studio* · Dinner followed by a Navy SEAL–led leadership briefing on clarity, discipline, and execution.
+  - **Day 3 (Apr 24):**
+    - 7:00 AM — Morning Provisions & Mission Debrief · *Hotel Executive Studio* · Strategic reflection, key takeaways, and forward deployment alignment.
+    - 10:00 AM — Departures · *Hotel Executive Studio* · Individual departures as the mission transitions into 90-Day Deployment.
 - Conversion moment: Business development conversations happen organically during activities and meals — not in formal pitch settings. Discovery calls are scheduled post-retreat.
 
 **Post-Event**
@@ -251,9 +260,9 @@ To build deep, meaningful relationships with senior pastors and church leaders w
 - [ ] Prepare name badges and materials
 
 ### Event Days (April 22-24, 2026)
-- [ ] Day 1 (Apr 22): Attendees arrive at SAN airport 2:00–4:30 PM → check-in at Manchester Grand Hyatt; Escape from Restraints ice breaker (Jimmy May, Navy SEAL)
-- [ ] Day 2 (Apr 23): "Leading Change in Your Organization – Tech Focus Discussion" (Jimmy May, no recording); Group shooting activity at range — breakfast burritos, pistols/rifles/sniper rifles with SEAL instructors, BBQ lunch at Range House
-- [ ] Day 3 (Apr 24): Closing sessions and departure
+- [ ] Day 1 (Apr 22): 2:00 PM — Base Check-In & Tactical Issue (Hotel Lobby, The Andaz); 5:00 PM — Tactical Orientation & Welcome Provisions (Hotel Executive Studio)
+- [ ] Day 2 (Apr 23): 7:00 AM — Deployment from Base; 8:00 AM — Morning Provisions (Range); 9:00 AM — Precision Tactical Training & Field Provisions (Range, BBQ lunch); 3:30 PM — Mission Pause (free time); 6:30 PM — Leadership Dinner & Navy SEAL Command Keynote (Hotel Executive Studio)
+- [ ] Day 3 (Apr 24): 7:00 AM — Morning Provisions & Mission Debrief (Hotel Executive Studio); 10:00 AM — Departures
 - [ ] Capture feedback throughout
 - [ ] Daily team check-ins
 
