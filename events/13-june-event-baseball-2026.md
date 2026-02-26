@@ -1,4 +1,4 @@
-# Rangers vs. Padres — Father's Day VIP Night 2026
+# Rangers vs. Padres — Father's Day VIP Night (TBD) 2026
 
 ## SNAPSHOT
 

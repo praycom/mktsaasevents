@@ -1,4 +1,4 @@
-# VIP Dinner + Astros vs. Rangers 2026
+# VIP Dinner + Astros vs. Rangers (TBD) 2026
 
 ## SNAPSHOT
 

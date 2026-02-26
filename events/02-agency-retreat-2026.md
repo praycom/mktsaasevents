@@ -1,4 +1,4 @@
-# Agency Retreat 2026
+# Pastors Retreat (1) 2026
 
 ## SNAPSHOT
 
@@ -19,8 +19,6 @@
 - **Participation:** Hosting
 - **Size:** Small
 - **Budget:** $80,000
-
-> **Staffing note:** Pastor Retreat 1 of 2 was previously scheduled April 22-24. Confirm there is no overlap or reschedule one of the two retreats to avoid team conflicts.
 
 ### Summary
 An exclusive PRAY retreat designed to foster relationships with prospects and engage key customers, thereby enhancing retention and driving upselling opportunities.
@@ -155,8 +153,8 @@ Brief narrative summary tying this event to PRAY.COM's mission, growth strategy,
 | On-Site Decisions | |
 
 ### Known Risks
-- **Risk:** Date conflict — Pastor Retreat 1 of 2 was previously scheduled April 22-24
-- **Mitigation plan:** Confirm Pastor Retreat dates have been shifted; resolve before sending invitations
+- **Risk:**
+- **Mitigation plan:**
 - **Owner:**
 
 ### Critical Dependencies
@@ -205,12 +203,11 @@ Brief narrative summary tying this event to PRAY.COM's mission, growth strategy,
 
 ## TO-DO LIST WITH DATES
 
-> **Note:** This retreat was postponed from January to April 22-24. Today is Feb 23 — this event is 8 weeks away. Begin immediately.
+> **Note:** This retreat was postponed from January to April 22-24. Today is Feb 24 — this event is 8 weeks away. Begin immediately.
 
-### URGENT — Start Now (Week of Feb 23, 2026)
+### URGENT — Start Now (Week of Feb 24, 2026)
 - [ ] Reconfirm San Diego venue for new April 22-24 dates
 - [ ] Update save-the-dates and notify all previously invited guests of new dates
-- [ ] Confirm Pastor Retreat 1 of 2 conflict is resolved
 - [ ] Reassign any team members impacted by the date change
 
 ### 6 Weeks Before Event (March 11, 2026)

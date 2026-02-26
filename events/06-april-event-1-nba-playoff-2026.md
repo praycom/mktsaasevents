@@ -1,4 +1,4 @@
-# Rangers vs. Yankees — VIP Game Night 2026
+# Rangers vs. Yankees — VIP Game Night (TBD) 2026
 
 ## SNAPSHOT
 

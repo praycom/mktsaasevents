@@ -4,7 +4,7 @@
 
 This document provides a unified view of all 2026 events with preparation milestones mapped to the standard deliverable framework.
 
-**Today's Date:** February 23, 2026
+**Today's Date:** February 24, 2026
 
 ---
 
@@ -52,6 +52,18 @@ This document provides a unified view of all 2026 events with preparation milest
 ### 1. Dunham Summit
 **Event Date:** January 6-8, 2026 | **Location:** Lake Buena Vista, FL | **Type:** Conference (Speaking)
 
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $45,000 |
+| Target Attendees | 35 |
+| Target MQLs | 30 |
+| Target SQLs | 13.5 |
+| Target Deals | 1.89 |
+| Target Pipeline | $948,408 |
+| Target Revenue | $81,431 |
+| Target ROI | 0.81x |
+
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
 | Phase 1: Mission & Strategy | Sep 16 - Oct 14, 2025 | Primary objective defined, Meeting & deal targets set, Faith alignment approved | Complete |
@@ -64,8 +76,15 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 2. Agency Retreat *(Postponed)*
+### 2. Pastors Retreat (1) *(Postponed)*
 **Event Date:** April 22-24, 2026 | **Location:** San Diego | **Type:** PRAY Retreat (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $80,000 |
+| Target Attendees | 18 |
+| Target MQLs | 18 |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -82,6 +101,18 @@ This document provides a unified view of all 2026 events with preparation milest
 ### 3. NRB Convention
 **Event Date:** February 17-20, 2026 | **Location:** Nashville, TN | **Type:** Conference (Booth + Speaking)
 
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $450,000 |
+| Target Attendees | 6,000 |
+| Target MQLs | 655 |
+| Target SQLs | 307.9 |
+| Target Deals | 43.1 |
+| Target Pipeline | $4,892,124 |
+| Target Revenue | $2,885,718 |
+| Target ROI | 5.41x |
+
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
 | Phase 1: Mission & Strategy | Oct 28 - Nov 25, 2025 | Primary objective defined, Meeting & deal targets set, Speaking CTA defined, Faith alignment approved | Complete |
@@ -94,38 +125,20 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 4. March Event 1 / TBD
-**Event Date:** March 1, 2026 | **Location:** TBD | **Type:** PRAY Mini Event (Hosted)
-
-| Phase | Dates | Key Deliverables | Status |
-|-------|-------|------------------|--------|
-| Phase 1: Mission & Strategy | Nov 9 - Dec 7, 2025 | Event purpose approved, Success targets set, Budget approved, Faith guardrails documented | Complete |
-| Phase 2: Theme & Audience | Dec 21, 2025 - Jan 4, 2026 | Visual identity finalized, ICP list finalized, Attendee journey documented | Complete |
-| Phase 3: Systems & Planning | Jan 18 - Feb 1, 2026 | Platforms configured, Registration & emails live | Complete |
-| Phase 4: Final Prep | Feb 15-28, 2026 | On-site experience flow finalized, Staffing plan locked, Approvals complete | In Progress |
-| Phase 5: Execution | Mar 1, 2026 | Event execution | Pending |
-| Phase 6: Follow-up | Mar 2-8, 2026 | Nurture plan activated, Thank you emails sent, Leads uploaded to CRM | Pending |
-| Phase 7: ROI Analysis | Mar 31, 2026 | Performance report delivered | Pending |
-
----
-
-### 5. March Event 2 / TBD
-**Event Date:** March 19, 2026 | **Location:** TBD | **Type:** PRAY Mini Event (Hosted)
-
-| Phase | Dates | Key Deliverables | Status |
-|-------|-------|------------------|--------|
-| Phase 1: Mission & Strategy | Nov 27 - Dec 25, 2025 | Event purpose approved, Success targets set, Budget approved, Faith guardrails documented | Complete |
-| Phase 2: Theme & Audience | Jan 8-22, 2026 | Visual identity finalized, ICP list finalized, Attendee journey documented | Complete |
-| Phase 3: Systems & Planning | Feb 5-19, 2026 | Platforms configured, Registration & emails live | In Progress |
-| Phase 4: Final Prep | Mar 5-18, 2026 | On-site experience flow finalized, Staffing plan locked, Approvals complete | Pending |
-| Phase 5: Execution | Mar 19, 2026 | Event execution | Pending |
-| Phase 6: Follow-up | Mar 20-26, 2026 | Nurture plan activated, Thank you emails sent, Leads uploaded to CRM | Pending |
-| Phase 7: ROI Analysis | Apr 18, 2026 | Performance report delivered | Pending |
-
----
-
-### 6. Rangers vs. Yankees — VIP Game Night
+### 4. Rangers vs. Yankees — VIP Game Night (TBD)
 **Event Date:** April 27-29, 2026 | **Location:** Dallas, TX | **Type:** PRAY Mini Event (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $30,000 |
+| Target Attendees | 23 |
+| Target MQLs | 23 |
+| Target SQLs | 18.4 |
+| Target Deals | 1.84 |
+| Target Pipeline | $89,792 |
+| Target Revenue | $48,800 |
+| Target ROI | 0.63x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -141,8 +154,19 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 7. America Reads the Bible
+### 5. America Reads the Bible
 **Event Date:** April 20-21, 2026 | **Location:** Washington, D.C. | **Type:** Conference (TBD participation)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $35,000 |
+| Target MQLs | 70 |
+| Target SQLs | 31.5 |
+| Target Deals | 4.41 |
+| Target Pipeline | $2,212,951 |
+| Target Revenue | $190,005 |
+| Target ROI | 4.43x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -156,25 +180,19 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 8. Pastor Retreat 1 of 2
-**Event Date:** April 22-24, 2026 | **Location:** TBD | **Type:** PRAY Retreat (Hosted)
-
-| Phase | Dates | Key Deliverables | Status |
-|-------|-------|------------------|--------|
-| Phase 1: Mission & Strategy | Dec 31, 2025 - Jan 28, 2026 | Event purpose approved, Success targets set, Budget approved, Faith guardrails documented | Complete |
-| Phase 2: Theme & Audience | Feb 11-25, 2026 | Visual identity finalized, Messaging framework aligned, ICP list finalized | In Progress |
-| Phase 3: Systems & Planning | Mar 11-25, 2026 | Platforms configured, Critical path & risk register approved | Pending |
-| Phase 4: Final Prep | Apr 8-21, 2026 | On-site experience flow finalized, Staffing plan locked, Approvals complete | Pending |
-| Phase 5: Execution | Apr 22-24, 2026 | Event execution | Pending |
-| Phase 6: Follow-up | Apr 25 - May 1, 2026 | 90-day nurture plan activated, Thank you emails sent | Pending |
-| Phase 7: ROI Analysis | May 24, 2026 | Performance report delivered | Pending |
-
-> **CONFLICT:** Same dates as Agency Retreat — resolve scheduling
-
----
-
-### 9. MegaMetro (Senior Pastors)
+### 6. MegaMetro (Senior Pastors)
 **Event Date:** April 26-28, 2026 | **Location:** Boston, MA | **Type:** Conference (TBD participation)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $34,850 |
+| Target MQLs | 64 |
+| Target SQLs | 28.8 |
+| Target Deals | 4.03 |
+| Target Pipeline | $2,023,270 |
+| Target Revenue | $173,719 |
+| Target ROI | 3.98x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -188,8 +206,20 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 10. Outcomes Conference (CLA)
+### 7. Outcomes Conference (CLA)
 **Event Date:** April 28-30, 2026 | **Location:** Dallas, TX | **Type:** Conference (Booth + Speaking)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $34,850 |
+| Target Attendees | 1,000 |
+| Target MQLs | 20 |
+| Target SQLs | 9 |
+| Target Deals | 1.26 |
+| Target Pipeline | $632,272 |
+| Target Revenue | $54,287 |
+| Target ROI | 0.56x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -205,8 +235,20 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 11. VIP Dinner + Astros vs. Rangers
+### 8. VIP Dinner + Astros vs. Rangers (TBD)
 **Event Date:** May 15-16, 2026 | **Location:** Houston, TX | **Type:** PRAY Mini Event (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $30,000 |
+| Target Attendees | 23 |
+| Target MQLs | 23 |
+| Target SQLs | 18.4 |
+| Target Deals | 1.84 |
+| Target Pipeline | $89,792 |
+| Target Revenue | $48,800 |
+| Target ROI | 0.63x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -220,8 +262,14 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 12. America Prays National Mall
+### 9. America Prays National Mall
 **Event Date:** May 18, 2026 | **Location:** Philadelphia, PA | **Type:** America Prays (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $50,000 |
+| Target ROI | TBD (Awareness / Faith Event) |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -235,8 +283,20 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 13. Rangers vs. Padres — Father's Day VIP Night
+### 10. Rangers vs. Padres — Father's Day VIP Night (TBD)
 **Event Date:** June 19-21, 2026 | **Location:** Dallas, TX | **Type:** PRAY Mini Event (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $30,000 |
+| Target Attendees | 18 |
+| Target MQLs | 23 |
+| Target SQLs | 18.4 |
+| Target Deals | 1.84 |
+| Target Pipeline | $89,792 |
+| Target Revenue | $48,800 |
+| Target ROI | 0.63x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -252,8 +312,20 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 14. SBC VIP Event
+### 11. SBC VIP Event
 **Event Date:** June 6-8, 2026 | **Location:** Orlando, FL | **Type:** PRAY Mini Event (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $32,200 |
+| Target Attendees | 23 |
+| Target MQLs | 23 |
+| Target SQLs | 18.4 |
+| Target Deals | 1.84 |
+| Target Pipeline | $89,792 |
+| Target Revenue | $48,800 |
+| Target ROI | 0.52x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -267,8 +339,19 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 15. BCI Conference
+### 12. BCI Conference
 **Event Date:** June 19-20, 2026 | **Location:** Atlanta, GA | **Type:** Conference (Sponsor Only)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $15,000 |
+| Target MQLs | 20 |
+| Target SQLs | 9 |
+| Target Deals | 1.26 |
+| Target Pipeline | $632,272 |
+| Target Revenue | $54,287 |
+| Target ROI | 2.62x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -284,23 +367,15 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 16. PRAY Event - America Prays 250
-**Event Date:** June 20, 2026 | **Location:** TBD | **Type:** PRAY Event (Hosted)
-
-| Phase | Dates | Key Deliverables | Status |
-|-------|-------|------------------|--------|
-| Phase 1: Mission & Strategy | Feb 28 - Mar 28, 2026 | Event purpose approved, Success targets set, Budget approved, Faith guardrails documented | Pending |
-| Phase 2: Theme & Audience | Apr 11-25, 2026 | Visual identity finalized, Messaging framework aligned, ICP list finalized | Pending |
-| Phase 3: Systems & Planning | May 9-23, 2026 | Platforms configured, Registration & emails live | Pending |
-| Phase 4: Final Prep | Jun 6-19, 2026 | On-site experience flow finalized, Staffing plan locked | Pending |
-| Phase 5: Execution | Jun 20, 2026 | America Prays 250 event | Pending |
-| Phase 6: Follow-up | Jun 21-27, 2026 | 90-day nurture plan activated, Thank you emails sent | Pending |
-| Phase 7: ROI Analysis | Jul 20, 2026 | Performance report delivered | Pending |
-
----
-
-### 17. Pastor Retreat 2 of 2
+### 13. Pastors Retreat (2)
 **Event Date:** June 24-26, 2026 | **Location:** TBD | **Type:** PRAY Retreat (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $80,000 |
+| Target Attendees | 18 |
+| Target MQLs | 18 |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -314,8 +389,20 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 18. Q3 Sporting Event (July)
+### 14. Q3 Sporting Event — July (TBD)
 **Event Date:** July 31, 2026 | **Location:** TBD | **Type:** PRAY Mini Event (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $30,000 |
+| Target Attendees | 23 |
+| Target MQLs | 23 |
+| Target SQLs | 18.4 |
+| Target Deals | 1.84 |
+| Target Pipeline | $89,792 |
+| Target Revenue | $48,800 |
+| Target ROI | 0.63x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -329,8 +416,20 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 19. Q3 Sporting Event (September)
+### 15. Q3 Sporting Event — September (TBD)
 **Event Date:** September 1, 2026 | **Location:** TBD | **Type:** PRAY Mini Event (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $30,000 |
+| Target Attendees | 23 |
+| Target MQLs | 23 |
+| Target SQLs | 18.4 |
+| Target Deals | 1.84 |
+| Target Pipeline | $89,792 |
+| Target Revenue | $48,800 |
+| Target ROI | 0.63x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -344,8 +443,19 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 20. Family Reunion
+### 16. Family Reunion
 **Event Date:** October 27, 2026 | **Location:** TBD | **Type:** Conference (TBD participation)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $10,600 |
+| Target MQLs | 20 |
+| Target SQLs | 9 |
+| Target Deals | 1.26 |
+| Target Pipeline | $632,272 |
+| Target Revenue | $54,287 |
+| Target ROI | 4.12x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -359,23 +469,20 @@ This document provides a unified view of all 2026 events with preparation milest
 
 ---
 
-### 21. RockRMS Conference
-**Event Date:** November 3-5, 2026 | **Location:** Phoenix, AZ | **Type:** Conference (TBD participation)
-
-| Phase | Dates | Key Deliverables | Status |
-|-------|-------|------------------|--------|
-| Phase 1: Mission & Strategy | Jul 13 - Aug 10, 2026 | Primary objective defined, Success targets set, Faith alignment approved | Pending |
-| Phase 2: Theme & Audience | Aug 24 - Sep 7, 2026 | Messaging aligned, Target personas defined | Pending |
-| Phase 3: Systems & Planning | Sep 21 - Oct 5, 2026 | Lead capture configured, Run-of-show coordination | Pending |
-| Phase 4: Final Prep | Oct 20 - Nov 2, 2026 | Staffing completed, On-site owner assigned | Pending |
-| Phase 5: Execution | Nov 3-5, 2026 | Event execution | Pending |
-| Phase 6: Follow-up | Nov 6-12, 2026 | Post-event nurture activated | Pending |
-| Phase 7: ROI Analysis | Dec 5, 2026 | Funnel report delivered | Pending |
-
----
-
-### 22. November Sporting Event (RightNow Adjacent)
+### 17. November Sporting Event — RightNow Adjacent (TBD)
 **Event Date:** November 4-6, 2026 | **Location:** Dallas, TX | **Type:** PRAY Mini Event (Hosted)
+
+**Event Goals**
+| Metric | Target |
+|--------|--------|
+| Budget | $30,000 |
+| Target Attendees | 23 |
+| Target MQLs | 23 |
+| Target SQLs | 18.4 |
+| Target Deals | 1.84 |
+| Target Pipeline | $89,792 |
+| Target Revenue | $48,800 |
+| Target ROI | 0.63x |
 
 | Phase | Dates | Key Deliverables | Status |
 |-------|-------|------------------|--------|
@@ -387,33 +494,25 @@ This document provides a unified view of all 2026 events with preparation milest
 | Phase 6: Follow-up | Nov 7-13, 2026 | Nurture plan activated, Thank you emails sent | Pending |
 | Phase 7: ROI Analysis | Dec 6, 2026 | Performance report delivered | Pending |
 
-> **Note:** Overlaps with RockRMS Conference (Nov 3-5, Phoenix) — different cities, split team required
-
 ---
 
 ## Conflict Summary
 
 | Dates | Events | Location(s) | Resolution Needed |
 |-------|--------|-------------|-------------------|
-| Apr 22-24 | Agency Retreat + Pastor Retreat 1 of 2 | San Diego + TBD | **Reschedule one** |
 | Apr 27-30 | Rangers vs. Yankees + Outcomes Conference | Dallas + Dallas | Same city — leverage overlap |
 | Jun 19-21 | Rangers vs. Padres + BCI Conference | Dallas + Atlanta | Split team |
-| Jun 19-20 | BCI Conference + America Prays 250 | Atlanta + TBD | Split team |
-| Nov 3-6 | RockRMS + November Sporting Event | Phoenix + Dallas | Split team |
 
 ---
 
-## Urgent Actions (Week of Feb 23, 2026)
+## Urgent Actions (Week of Feb 24, 2026)
 
 These events are in active phases or need immediate attention:
 
 | Event | Current Phase | Key Deliverables Due |
 |-------|---------------|----------------------|
 | NRB Convention | Phase 6 | Post-event nurture activated, Leads uploaded to CRM |
-| March Event 1 | Phase 4 | On-site experience flow finalized, Staffing plan locked |
-| March Event 2 | Phase 3 | Platforms configured, Registration & emails live |
-| Agency Retreat | Phase 2 | Visual identity finalized, ICP list finalized |
-| Pastor Retreat 1 | Phase 2 | Visual identity finalized, ICP list finalized |
+| Pastors Retreat (1) | Phase 2 | Visual identity finalized, ICP list finalized |
 | Rangers vs. Yankees | Phase 2 | Visual identity finalized, Invitation strategy approved |
 | America Reads the Bible | Phase 2 | Messaging aligned, Target personas defined |
 | MegaMetro | Phase 2 | Messaging aligned, Target personas defined |
@@ -429,9 +528,8 @@ These events are in active phases or need immediate attention:
 | Category | Events | Total Budget |
 |----------|--------|--------------|
 | Major Conferences | NRB, Outcomes | $484,850 |
-| PRAY Retreats | Agency, Pastor 1, Pastor 2 | $240,000 |
-| Signature Events | America Prays 250 | $375,000 |
-| Industry Conferences | Dunham, America Reads, MegaMetro, BCI, RockRMS, Family Reunion | $162,350 |
-| Mini Events / VIP | March 1 & 2, Rangers/Yankees, Astros/Rangers, Rangers/Padres, SBC, Q3 July & Sep, November | $292,200 |
+| PRAY Retreats | Pastors Retreat (1), Pastors Retreat (2) | $160,000 |
+| Industry Conferences | Dunham, America Reads, MegaMetro, BCI, Family Reunion | $140,450 |
+| Mini Events / VIP | Rangers/Yankees, Astros/Rangers, Rangers/Padres, SBC, Q3 July & Sep, November | $212,200 |
 | National Events | America Prays National Mall | $50,000 |
-| **TOTAL** | **22 events** | **$1,583,400** |
+| **TOTAL** | **17 events** | **$1,047,500** |

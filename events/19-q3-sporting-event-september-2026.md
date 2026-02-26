@@ -1,4 +1,4 @@
-# Q3 Sporting Event (September) 2026
+# Q3 Sporting Event — September (TBD) 2026
 
 ## SNAPSHOT
 

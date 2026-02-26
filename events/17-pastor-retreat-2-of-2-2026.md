@@ -1,4 +1,4 @@
-# Pastor Retreat (Partnerships) 2 of 2 - 2026
+# Pastors Retreat (2) 2026
 
 ## SNAPSHOT
 

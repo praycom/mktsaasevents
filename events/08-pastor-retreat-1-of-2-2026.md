@@ -14,7 +14,8 @@
 
 - **Format:** PRAY Retreat
 - **Date(s):** April 22-24, 2026
-- **Location:** TBD
+- **Location:** San Diego, CA
+- **Venue:** The Andaz, San Diego, 600 F Street, San Diego, CA 92101
 - **Website:** TBD
 - **Participation:** Hosting
 - **Size:** Small
@@ -61,16 +62,16 @@ To build deep, meaningful relationships with senior pastors and church leaders w
 
 | Element | Definition |
 |---------|------------|
-| Theme Name | |
-| Spiritual Anchor | (Scripture / Principle) |
-| Core Message | |
-| Attendee Should Feel | |
-| Attendee Should Say | |
+| Theme Name | Faith, Fellowship, and Fearless Adventures |
+| Spiritual Anchor | Hebrews 10:24 — "Spur one another on toward love and good deeds" |
+| Core Message | PRAY.COM equips faith leaders to lead boldly — through deep community, restful adventure, and real conversations about digital ministry |
+| Attendee Should Feel | Renewed, deeply connected, and inspired to lead with courage and conviction |
+| Attendee Should Say | "This was unlike any conference — I left with new relationships, new energy, and a clear next step for my ministry" |
 
 ### Visual Identity
-- **Primary colors:**
-- **Typography:**
-- **Key imagery/metaphors:**
+- **Primary colors:** PRAY.COM brand palette (Black #0B0C0D, White #FFFFFF, Gold #E3AF4A)
+- **Typography:** Consistent with PRAY.COM brand standards
+- **Key imagery/metaphors:** Military precision, adventure, brotherhood/sisterhood, faith under fire, wide-open landscapes, bold leadership
 
 ---
 
@@ -106,16 +107,29 @@ To build deep, meaningful relationships with senior pastors and church leaders w
 ### Attendee Journey
 
 **Pre-Event**
-- Key message:
-- CTA:
+- Key message: An exclusive, invitation-only retreat for faith leaders — combining deep community, adventure, and conversations that matter. No cost to selected leaders. Space is limited.
+- CTA: Accept your personal invitation; arrive at SAN airport between 2:00–4:30 PM on April 22
 
 **On-Site / Live**
+- **Facilitator:** Commander Jimmy May, retired Navy SEAL (CEO, Sushi Assassin / Founder, Beyond the Brotherhood nonprofit)
 - Critical moments:
-- Conversion moment:
+  - **Day 1 (Apr 22):**
+    - 2:00 PM — Base Check-In & Tactical Issue · *Hotel Lobby* · Arrival, credentialing, and issuance of tactical gear. Mission officially begins.
+    - 5:00 PM — Tactical Orientation & Welcome Provisions · *Hotel Executive Studio* · Initial alignment, team formation, and shared provisions to set the tone for brotherhood.
+  - **Day 2 (Apr 23):**
+    - 7:00 AM — Deployment from Base · *Hotel Lobby* · Transport to off-site tactical training location.
+    - 8:00 AM — Morning Provisions · *Range* · Breakfast served on-site prior to training.
+    - 9:00 AM — Precision Tactical Training & Field Provisions · *Range* · Guided training, decision-making under pressure, and BBQ-style field lunch.
+    - 3:30 PM — Mission Pause · *At Your Discretion* · Free time to reset, reflect, or explore before evening briefing.
+    - 6:30 PM — Leadership Dinner & Navy SEAL Command Keynote · *Hotel Executive Studio* · Dinner followed by a Navy SEAL–led leadership briefing on clarity, discipline, and execution.
+  - **Day 3 (Apr 24):**
+    - 7:00 AM — Morning Provisions & Mission Debrief · *Hotel Executive Studio* · Strategic reflection, key takeaways, and forward deployment alignment.
+    - 10:00 AM — Departures · *Hotel Executive Studio* · Individual departures as the mission transitions into 90-Day Deployment.
+- Conversion moment: Business development conversations happen organically during activities and meals — not in formal pitch settings. Discovery calls are scheduled post-retreat.
 
 **Post-Event**
-- First follow-up:
-- Relationship goal:
+- First follow-up: Within 24 hours — personalized thank-you with reference to shared experience
+- Relationship goal: Schedule discovery calls within 14 days; transition active prospects to sales; deepen existing client relationships for upsell/expansion
 
 ### Conversion Mechanics
 
@@ -246,9 +260,9 @@ To build deep, meaningful relationships with senior pastors and church leaders w
 - [ ] Prepare name badges and materials
 
 ### Event Days (April 22-24, 2026)
-- [ ] Day 1 (Apr 22): Arrive and welcome reception
-- [ ] Day 2 (Apr 23): Full retreat sessions
-- [ ] Day 3 (Apr 24): Closing sessions and departure
+- [ ] Day 1 (Apr 22): 2:00 PM — Base Check-In & Tactical Issue (Hotel Lobby, The Andaz); 5:00 PM — Tactical Orientation & Welcome Provisions (Hotel Executive Studio)
+- [ ] Day 2 (Apr 23): 7:00 AM — Deployment from Base; 8:00 AM — Morning Provisions (Range); 9:00 AM — Precision Tactical Training & Field Provisions (Range, BBQ lunch); 3:30 PM — Mission Pause (free time); 6:30 PM — Leadership Dinner & Navy SEAL Command Keynote (Hotel Executive Studio)
+- [ ] Day 3 (Apr 24): 7:00 AM — Morning Provisions & Mission Debrief (Hotel Executive Studio); 10:00 AM — Departures
 - [ ] Capture feedback throughout
 - [ ] Daily team check-ins
 

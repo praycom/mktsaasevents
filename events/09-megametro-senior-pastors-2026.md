@@ -8,18 +8,18 @@
 | Phase 2: Content development & outreach | Feb 15, 2026 - Mar 01, 2026 | In Progress |
 | Phase 3: Final preparation & promotional push | Mar 15-29, 2026 | Pending |
 | Phase 4: Final confirmations & team briefings | Apr 12-25, 2026 | Pending |
-| Phase 5: Execution | Apr 26-28, 2026 | Pending |
-| Phase 6: CRM updates, Feedback & Follow-up | Apr 29, 2026 - May 05, 2026 | Pending |
+| Phase 5: Execution | Apr 26-29, 2026 | Pending |
+| Phase 6: CRM updates, Feedback & Follow-up | Apr 30, 2026 - May 06, 2026 | Pending |
 | Phase 7: ROI analysis | May 28, 2026 | Pending |
 
 - **Format:** Conference
-- **Date(s):** April 26-28, 2026
+- **Date(s):** April 26-29, 2026
 - **Location:** Boston, MA
 - **Venue:** Four Seasons Hotel Boston
 - **Website:** megametro.org
-- **Participation:** TBD
+- **Participation:** Platinum Sponsor
 - **Size:** Medium
-- **Budget:** $34,850
+- **Budget:** $40,000
 
 ### Summary
 MEGA METRO is a conference designed for church leaders and pastors, scheduled to take place in Boston. It provides encouragement, personal growth, and equips attendees to better serve and lead their churches.
@@ -88,6 +88,26 @@ MegaMetro attracts senior pastors from large churches - a key segment of our ICP
 - **Must have:** Senior leadership role at church with 1000+ members
 - **Disqualifiers:**
 
+### Platinum Sponsorship — Included Benefits
+
+PRAY.COM participates as a **Platinum Sponsor** ($40,000 — limited to 3 slots).
+
+**Platinum-Exclusive Benefits:**
+- Host one featured event (choice of: Night at the JFK Presidential Library, Wives Brunch, or Lunch at Prudential Tower / View Boston)
+- 7-minute pre-session presentation to full conference audience
+
+**All Tier 1 (Base) Benefits Included:**
+| Benefit | Detail |
+|---------|--------|
+| 5-minute filmed interview | Promoted across MegaMetro channels |
+| Attendee email list | One-time use for post-conference outreach |
+| Pre-meal prayer + 30-second ad | Prime visibility at meal sessions |
+| Exhibit table in foyer | High-traffic location, all conference days |
+| Full session access | All sessions for sponsor team |
+| Pre & post session slides | Branded slides shown before and after each session |
+| Recognition in program | Named in official conference program |
+| Hotel room at Four Seasons | One complimentary night included |
+
 ### Promotion Channels Overview
 
 | Channel | Owner | Status |
@@ -134,6 +154,38 @@ MegaMetro attracts senior pastors from large churches - a key segment of our ICP
 
 ## OPERATIONAL READINESS
 
+### Conference Itinerary
+
+| Day | Session / Activity | Detail |
+|-----|--------------------|--------|
+| **Sunday, Apr 26** | Welcome Reception | Sanctuary — 6th Floor, Four Seasons Hotel Boston |
+| **Monday, Apr 27** | Breakfast | Four Seasons |
+| | Worship | |
+| | Session 1 — Pastors | Joby Martin |
+| | Session 1 — Wives | Lysa TerKeurst (Phillips) |
+| | Lunch | View Boston — Prudential Center |
+| | Afternoon / Evening | Free |
+| **Tuesday, Apr 28** | Breakfast | |
+| | Worship | |
+| | Session 2 — Pastors & Wives | Ben Stuart |
+| | Break | |
+| | Session 3 — Pastors | Whiteboard format |
+| | Session 3 — Wives | Panel discussion |
+| | Lunch | Four Seasons |
+| | Session 4 | TBD |
+| | Free Time | |
+| | Evening | Depart for JFK Presidential Library — Welcome Reception, Self-Guided Tour, Dinner with Tommy Nelson |
+| **Wednesday, Apr 29** | Breakfast | |
+| | Worship & Prayer | Daniel Henderson |
+| | Session 5 — Pastors & Wives | Rebecca McLaughlin |
+| | Adjourn | |
+
+### Platinum Sponsor Activities
+- **PRAY.COM hosts:** One of the three featured events (JFK Library Night, Wives Brunch, or Prudential Tower Lunch)
+- **Pre-session presentation:** 7 minutes before a main session
+- **Pre-meal prayer + 30-sec ad:** At one of the meal sessions
+- **Exhibit table:** Foyer, all conference days
+
 ### Readiness Checklist
 
 | Area | Status | Owner |
@@ -142,6 +194,10 @@ MegaMetro attracts senior pastors from large churches - a key segment of our ICP
 | Run of Show | | |
 | Systems | | |
 | Assets | | |
+| Featured event selection (JFK Library / Wives Brunch / Prudential Lunch) | | |
+| 7-min pre-session presentation prepared | | |
+| Exhibit table setup | | |
+| Travel & hotel booked (Four Seasons Boston) | | |
 
 ---
 
@@ -235,14 +291,18 @@ MegaMetro attracts senior pastors from large churches - a key segment of our ICP
 - [ ] Confirm meeting schedule with prospects
 - [ ] Prepare lead capture system
 
-### Event Days (April 26-28, 2026)
-- [ ] Day 1 (Apr 26): Arrive and setup
-- [ ] Day 2 (Apr 27): Full conference day
-- [ ] Day 3 (Apr 28): Final sessions and wrap-up
+### Event Days (April 26-29, 2026)
+- [ ] Day 1 (Apr 26): Arrive — Welcome Reception, Sanctuary 6th Floor
+- [ ] Day 2 (Apr 27): Sessions (Joby Martin / Lysa TerKeurst) + Lunch at View Boston (Prudential)
+- [ ] Day 3 (Apr 28): Sessions (Ben Stuart, Whiteboard, etc.) + **PRAY.COM hosted event (JFK Library / Wives Brunch / Prudential Lunch)** + Dinner with Tommy Nelson
+- [ ] Day 4 (Apr 29): Sessions (Daniel Henderson, Rebecca McLaughlin) + Adjourn
+- [ ] Deliver 7-min pre-session presentation
+- [ ] Host pre-meal prayer + 30-sec ad
+- [ ] Staff exhibit table in foyer daily
 - [ ] Capture leads and contacts
 - [ ] Daily team debrief
 
-### Post-Event Week (April 29 - May 5, 2026)
+### Post-Event Week (April 30 - May 6, 2026)
 - [ ] Day 1: Send thank you emails to all contacts
 - [ ] Day 2-3: Upload all leads to CRM
 - [ ] Day 5: Begin follow-up calls

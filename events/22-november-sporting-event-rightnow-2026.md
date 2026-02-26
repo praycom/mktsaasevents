@@ -1,4 +1,4 @@
-# November Sporting Event (Right Now Adjacent) 2026
+# November Sporting Event — RightNow Adjacent (TBD) 2026
 
 ## SNAPSHOT
 
