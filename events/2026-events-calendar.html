@@ -813,8 +813,8 @@
     <div class="hd-right">
       <div class="hd-today">📅 February 24, 2026</div>
       <div class="hd-counts">
-        <div class="hd-count"><strong>17</strong><span>Events</span></div>
-        <div class="hd-count"><strong>$1,052,650</strong><span>Budget</span></div>
+        <div class="hd-count"><strong>16</strong><span>Events</span></div>
+        <div class="hd-count"><strong>$1,002,800</strong><span>Budget</span></div>
       </div>
     </div>
   </div>
@@ -844,15 +844,15 @@
 <!-- ════════════════════════════════════════════════════════ -->
 <div class="stats-bar">
   <div class="stat-item">
-    <span class="stat-val">17</span>
+    <span class="stat-val">16</span>
     <span class="stat-lbl">Total Events</span>
   </div>
   <div class="stat-item">
-    <span class="stat-val">$1,052,650</span>
+    <span class="stat-val">$1,002,800</span>
     <span class="stat-lbl">Total Budget</span>
   </div>
   <div class="stat-item">
-    <span class="stat-val">1,076</span>
+    <span class="stat-val">1,053</span>
     <span class="stat-lbl">Target MQLs</span>
   </div>
   <div class="stat-item">
@@ -865,7 +865,7 @@
     <span class="stat-sub">Dunham Summit</span>
   </div>
   <div class="stat-item">
-    <span class="stat-val">9</span>
+    <span class="stat-val">8</span>
     <span class="stat-lbl">● In Progress</span>
   </div>
   <div class="stat-item">
@@ -920,20 +920,8 @@
 </nav>
 
 <!-- ═══════════════════════════════════════════════════════ -->
-<!--  CONFLICT ALERT                                         -->
+<!--  CONFLICT ALERT (no active conflicts for FY 2026)       -->
 <!-- ════════════════════════════════════════════════════════ -->
-<div class="conflict-wrap">
-  <div class="conflict-box">
-    <div class="conflict-head">⚠ Team Scheduling Conflicts</div>
-    <div>
-      <div class="conflict-row">
-        <span class="conflict-date">Apr 27–30</span>
-        <span class="conflict-events">April Event 1 (Rangers vs. Yankees) + Outcomes Conference — both in Dallas, TX</span>
-        <span class="conflict-res">→ Same city — coordinate &amp; leverage overlap</span>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- ═══════════════════════════════════════════════════════ -->
 <!--  MONTHLY DETAIL SECTIONS                                -->
@@ -960,7 +948,7 @@
       <tbody>
         <tr>
           <td>Major Conferences</td>
-          <td>NRB Convention, Outcomes Conference</td>
+          <td>NRB International Christian Media Convention, Outcomes Conference</td>
           <td class="amt">$484,850</td>
         </tr>
         <tr>
@@ -971,12 +959,12 @@
         <tr>
           <td>Industry Conferences</td>
           <td>Dunham Summit, America Reads, MegaMetro, BCI, Family Reunion</td>
-          <td class="amt">$145,600</td>
+          <td class="amt">$125,750</td>
         </tr>
         <tr>
           <td>Sports / VIP Mini Events</td>
-          <td>April Event, May Event, June Event, SBC VIP, Q3 July, Q3 Sep, November</td>
-          <td class="amt">$212,200</td>
+          <td>May Event, June Event, SBC VIP, Q3 July, Q3 Sep, November</td>
+          <td class="amt">$182,200</td>
         </tr>
         <tr>
           <td>National Faith Events</td>
@@ -985,8 +973,8 @@
         </tr>
         <tr>
           <td>TOTAL</td>
-          <td>17 events · FY 2026</td>
-          <td class="amt">$1,052,650</td>
+          <td>16 events · FY 2026</td>
+          <td class="amt">$1,002,800</td>
         </tr>
       </tbody>
     </table>
@@ -1040,35 +1028,24 @@ const events = [
     conflict:null
   },
   {
-    id:4, name:"April Event 1 - Rangers vs. Yankees",
-    dateStr:"Apr 27–28, 2026", month:4, startDay:27, endDay:28, quarter:"Q2",
-    location:"Dallas, TX — Globe Life Field",
-    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
-    chipClass:"chip-sport", barClass:"bar-sport",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"15", deals:"1.5", pipeline:"$7.4K", revenue:"$23.7K", roi:"−21.0%",
-    conflict:"⚠ Outcomes Conference (Apr 28–30, Dallas) — same city, coordinate teams"
-  },
-  {
     id:5, name:"America Reads the Bible",
     dateStr:"Apr 19–25, 2026", month:4, startDay:19, endDay:25, quarter:"Q2",
     location:"Washington, D.C. — Museum of the Bible",
     type:"conference", typeLabel:"Conference (TBD Participation)",
     chipClass:"chip-conf", barClass:"bar-conf",
     status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
-    budget:"$35,000", attendees:"—",
-    mqls:"70", sqls:"29", deals:"1.2", pipeline:"$590.1K", revenue:"$50.7K", roi:"44.8%",
+    budget:"$35,000", attendees:"1",
+    mqls:"70", sqls:"29", deals:"1", pipeline:"$590.1K", revenue:"$50.7K", roi:"44.8%",
     conflict:null
   },
   {
     id:6, name:"MegaMetro (Senior Pastors)",
     dateStr:"Apr 26–29, 2026", month:4, startDay:26, endDay:29, quarter:"Q2",
     location:"Boston, MA — Four Seasons Hotel",
-    type:"conference", typeLabel:"Conference (Platinum Sponsor)",
+    type:"conference", typeLabel:"Conference (Sponsor — $15K Tier)",
     chipClass:"chip-conf", barClass:"bar-conf",
     status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
-    budget:"$34,850", attendees:"—",
+    budget:"$15,000", attendees:"—",
     mqls:"64", sqls:"27", deals:"1.1", pipeline:"$539.5K", revenue:"$46.3K", roi:"32.9%",
     conflict:null
   },
