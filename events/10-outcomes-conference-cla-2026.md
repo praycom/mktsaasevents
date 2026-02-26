@@ -125,7 +125,7 @@ As a **Premier Sponsor**, PRAY.COM receives the following CLA-provided marketing
 | CLA Higher Thinking Blog (3 months) | CLA | In Progress |
 | Social (PRAY.COM) | | Pending |
 | Social (CLA pre-event posts) | CLA | Pending |
-| Speaker Promotion (Max Bard / Ryan Beck) | Speakers | Pending |
+| Speaker Promotion (Max Bard / Aaron Magnuson) | Speakers | Pending |
 | Conference Website (Premier logo) | CLA | Active |
 | Mobile App (Featured Sponsor) | CLA | Pending |
 | Attendee Tote Bag Insert | PRAY.COM | Pending |
@@ -158,7 +158,7 @@ As a **Premier Sponsor**, PRAY.COM receives the following CLA-provided marketing
 - Critical moments:
   - Tuesday April 28, 5:30–7:00 PM: Grand Opening Reception — first high-traffic booth engagement
   - Tuesday April 28, 2:00–3:30 PM: Max Bard session — "AI Secrets for Creating Cinematic Content"
-  - Wednesday April 29, 10:30 AM–12:00 PM: Ryan Beck session — "AI for Ministry Leaders"
+  - Wednesday April 29, 10:30 AM–12:00 PM: Aaron Magnuson session — "AI for Ministry Leaders"
   - Wednesday April 29, daily booth hours 10:00 AM–5:30 PM
   - Thursday April 30, booth hours 10:00 AM–2:00 PM
 - Conversion moment: Post-session demo and meeting booking at the Grand Foyer booth
@@ -195,10 +195,14 @@ As a **Premier Sponsor**, PRAY.COM receives the following CLA-provided marketing
 
 ### Booth Details (Premier Level)
 - **Booth type:** Grand Foyer Sponsored Booth (prime location, main floor)
-- **Size:** 10' x 6'
-- **Included furnishings:** 6' skirted table, 2 chairs, 1 wastebasket, 1 ID sign
+- **Booth number:** Space #312
+- **Size:** 10' x 6' (30 sq ft total)
+- **Included furnishings:** 6' skirted table, 2 chairs, 1 wastebasket, 1 ID sign (small white booth sign)
 - **Booth personnel (complimentary):** 4 registrations
 - **Full-conference registrations (complimentary):** 4
+- **Layout notes:** Former parking garage — ceiling heights variable; no columns; doors/exits on one side, air intake on other side
+- **Extra space opportunity:** Some northward expansion possible (near booth 412 / across from 510 open area) if fire marshal permits
+- **Optional — Author Book Signing:** CLA offered the opportunity to host a book signing at our booth to increase foot traffic. Authors available: Rob McKenna (Wild Leaders) and Scott Rodin (The FOCUS Group). Decision needed.
 
 ### Readiness Checklist
 
@@ -299,9 +303,11 @@ As a **Premier Sponsor**, PRAY.COM receives the following CLA-provided marketing
 #### Session 2 — Internet & Technology Track
 - **Session title:** AI for Ministry Leaders
 - **Track:** Internet and Technology
-- **Speaker:** Ryan Beck, CTO, PRAY.COM
+- **Speaker:** Aaron Magnuson, Partnerships Executive, PRAY.COM
 - **Date & Time:** Wednesday, April 29, 2026 | 10:30 AM – 12:00 PM
 - **CTA:** Visit PRAY.COM's Premier booth in the Grand Foyer; schedule a personalized demo
+
+> **Note:** The official conference program may still list Ryan Beck (CTO) as speaker. Aaron Magnuson (Partnerships Executive) is the confirmed speaker for this session.
 
 ---
 
@@ -319,13 +325,13 @@ As a **Premier Sponsor**, PRAY.COM receives the following CLA-provided marketing
 
 ### 10 Weeks Before Event (February 18, 2026)
 - [ ] Finalize booth design concept
-- [x] Confirm speaking topics and speakers (Max Bard + Ryan Beck)
+- [x] Confirm speaking topics and speakers (Max Bard + Aaron Magnuson)
 - [ ] Create event page on internal wiki/Confluence
 - [ ] Set up CRM tracking
 
 ### 8 Weeks Before Event (March 4, 2026)
 - [ ] Order booth displays and materials
-- [ ] Develop presentation content (Max Bard + Ryan Beck sessions)
+- [ ] Develop presentation content (Max Bard + Aaron Magnuson sessions)
 - [ ] Create promotional email sequences
 - [ ] Book travel and accommodations (Hyatt Regency DFW International Airport)
 - [ ] Confirm tote bag promotional item and initiate shipping to CLA
@@ -360,7 +366,7 @@ As a **Premier Sponsor**, PRAY.COM receives the following CLA-provided marketing
 - [ ] Day 0 (Apr 27): Arrive and prep
 - [ ] Day 1 (Apr 28): Load-in 8:00 AM–4:00 PM; Grand Opening Reception 5:30–7:00 PM
 - [ ] Day 1 (Apr 28): Max Bard session — 2:00–3:30 PM (Marketing & Communications)
-- [ ] Day 2 (Apr 29): Ryan Beck session — 10:30 AM–12:00 PM (Internet & Technology)
+- [ ] Day 2 (Apr 29): Aaron Magnuson session — 10:30 AM–12:00 PM (Internet & Technology)
 - [ ] Day 2 (Apr 29): Full exhibit hall day (10:00 AM–5:30 PM)
 - [ ] Day 3 (Apr 30): Final exhibit hall day (10:00 AM–2:00 PM); Teardown 2:00–6:00 PM
 - [ ] Daily team debrief
