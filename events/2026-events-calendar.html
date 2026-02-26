@@ -931,11 +931,6 @@
         <span class="conflict-events">April Event (TBD) + Outcomes Conference — both in Dallas, TX</span>
         <span class="conflict-res">→ Same city — coordinate &amp; leverage overlap</span>
       </div>
-      <div class="conflict-row">
-        <span class="conflict-date">Jun 19–21</span>
-        <span class="conflict-events">June Event (TBD) in Dallas + BCI Conference in Atlanta</span>
-        <span class="conflict-res">→ Split team required</span>
-      </div>
     </div>
   </div>
 </div>
@@ -1119,7 +1114,7 @@ const events = [
     status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
     budget:"$30,000", attendees:"18",
     mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:"⚠ BCI Conference (Jun 19–20, Atlanta) same weekend — split team"
+    conflict:null
   },
   {
     id:11, name:"SBC VIP Event",
@@ -1134,14 +1129,14 @@ const events = [
   },
   {
     id:12, name:"BCI Conference",
-    dateStr:"Jun 19–20, 2026", month:6, startDay:19, endDay:20, quarter:"Q2",
-    location:"Atlanta, GA",
+    dateStr:"Jun 25–26, 2026", month:6, startDay:25, endDay:26, quarter:"Q2",
+    location:"Chicago, IL",
     type:"conference", typeLabel:"Conference (Sponsor Only)",
     chipClass:"chip-conf", barClass:"bar-conf",
     status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
     budget:"$15,000", attendees:"—",
     mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"2.62×",
-    conflict:"⚠ June Event (Jun 19–21, Dallas) same weekend — split team"
+    conflict:null
   },
   {
     id:13, name:"Pastors Retreat (2)",
