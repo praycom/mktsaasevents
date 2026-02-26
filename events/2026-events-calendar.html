@@ -1252,10 +1252,11 @@ function matchesFilters(ev) {
 }
 
 // ─── BUILD YEAR CALENDAR ──────────────────────────────────────────────────────
-function buildMiniCalendars() {
-  // Build day→events lookup for all events
+function buildMiniCalendars(filteredEvs) {
+  if (!filteredEvs) filteredEvs = events;
+  // Build day→events lookup for filtered events only
   const dayMap = {}; // key: "M-D"
-  events.forEach(ev => {
+  filteredEvs.forEach(ev => {
     for (let d = ev.startDay; d <= ev.endDay; d++) {
       const key = `${ev.month}-${d}`;
       if (!dayMap[key]) dayMap[key] = [];
@@ -1264,16 +1265,17 @@ function buildMiniCalendars() {
   });
 
   const grid = document.getElementById('mini-cals-grid');
-  grid.innerHTML = MONTHS.map(m => buildMiniCal(m, dayMap)).join('');
+  grid.innerHTML = MONTHS.map(m => buildMiniCal(m, dayMap, filteredEvs)).join('');
 }
 
-function buildMiniCal(m, dayMap) {
+function buildMiniCal(m, dayMap, filteredEvs) {
+  if (!filteredEvs) filteredEvs = events;
   const year = 2026;
   const daysInMonth = new Date(year, m.num, 0).getDate();
   const firstWeekday = new Date(year, m.num - 1, 1).getDay(); // 0=Sun
 
-  // Get events this month
-  const monthEvs = events.filter(e => e.month === m.num);
+  // Get filtered events this month
+  const monthEvs = filteredEvs.filter(e => e.month === m.num);
   const hasEventsInMonth = monthEvs.length > 0;
 
   // Day headers
@@ -1430,6 +1432,7 @@ function buildCard(ev) {
 // ─── RENDER MONTHLY SECTIONS ──────────────────────────────────────────────────
 function render() {
   const visible = events.filter(matchesFilters);
+  buildMiniCalendars(visible);
   const main = document.getElementById('main-content');
   let html = '';
 
