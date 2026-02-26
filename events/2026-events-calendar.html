@@ -1005,195 +1005,7 @@
 const TODAY_Y = 2026, TODAY_M = 2, TODAY_D = 24;
 
 // ─── EVENT DATA ───────────────────────────────────────────────────────────────
-const events = [
-  {
-    id:1, name:"Dunham Summit",
-    dateStr:"Jan 6–8, 2026", month:1, startDay:6, endDay:8, quarter:"Q1",
-    location:"Lake Buena Vista, FL",
-    type:"conference", typeLabel:"Conference (Speaking)",
-    chipClass:"chip-conf", barClass:"bar-conf",
-    status:"complete", phaseDone:7, phaseActive:0, tbd:false, postponed:false,
-    budget:"$45,000", attendees:"35",
-    mqls:"30", sqls:"13.5", deals:"1.89", pipeline:"$948K", revenue:"$81K", roi:"0.81×",
-    conflict:null
-  },
-  {
-    id:2, name:"Pastors Retreat (1)",
-    dateStr:"Apr 22–24, 2026", month:4, startDay:22, endDay:24, quarter:"Q2",
-    location:"San Diego, CA — The Andaz",
-    type:"retreat", typeLabel:"PRAY Retreat",
-    chipClass:"chip-ret", barClass:"bar-ret",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
-    budget:"$80,000", attendees:"18",
-    mqls:"18", sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
-    conflict:null
-  },
-  {
-    id:3, name:"NRB Convention",
-    dateStr:"Feb 17–20, 2026", month:2, startDay:17, endDay:20, quarter:"Q1",
-    location:"Nashville, TN",
-    type:"conference", typeLabel:"Conference (Booth + Speaking)",
-    chipClass:"chip-conf", barClass:"bar-conf",
-    status:"inprogress", phaseDone:5, phaseActive:6, tbd:false, postponed:false,
-    budget:"$450,000", attendees:"6,000",
-    mqls:"655", sqls:"307.9", deals:"43.1", pipeline:"$4.89M", revenue:"$2.89M", roi:"5.41×",
-    conflict:null
-  },
-  {
-    id:4, name:"April Event (TBD)",
-    dateStr:"Apr 27–29, 2026", month:4, startDay:27, endDay:29, quarter:"Q2",
-    location:"Dallas, TX",
-    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
-    chipClass:"chip-sport", barClass:"bar-sport",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:true, postponed:false,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:"⚠ Outcomes Conference (Apr 28–30, Dallas) — same city, coordinate teams"
-  },
-  {
-    id:5, name:"America Reads the Bible",
-    dateStr:"Apr 20–21, 2026", month:4, startDay:20, endDay:21, quarter:"Q2",
-    location:"Washington, D.C.",
-    type:"conference", typeLabel:"Conference (TBD Participation)",
-    chipClass:"chip-conf", barClass:"bar-conf",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
-    budget:"$35,000", attendees:"—",
-    mqls:"70", sqls:"31.5", deals:"4.41", pipeline:"$2.21M", revenue:"$190K", roi:"4.43×",
-    conflict:null
-  },
-  {
-    id:6, name:"MegaMetro (Senior Pastors)",
-    dateStr:"Apr 26–29, 2026", month:4, startDay:26, endDay:29, quarter:"Q2",
-    location:"Boston, MA — Four Seasons Hotel",
-    type:"conference", typeLabel:"Conference (Platinum Sponsor)",
-    chipClass:"chip-conf", barClass:"bar-conf",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
-    budget:"$40,000", attendees:"—",
-    mqls:"64", sqls:"28.8", deals:"4.03", pipeline:"$2.02M", revenue:"$173.7K", roi:"3.98×",
-    conflict:null
-  },
-  {
-    id:7, name:"Outcomes Conference (CLA)",
-    dateStr:"Apr 28–30, 2026", month:4, startDay:28, endDay:30, quarter:"Q2",
-    location:"Dallas, TX",
-    type:"conference", typeLabel:"Conference (Booth + Speaking)",
-    chipClass:"chip-conf", barClass:"bar-conf",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false, postponed:false,
-    budget:"$34,850", attendees:"1,000",
-    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"0.56×",
-    conflict:"⚠ April Event (Apr 27–29, Dallas) — same city"
-  },
-  {
-    id:8, name:"May Event (TBD)",
-    dateStr:"May 15–16, 2026", month:5, startDay:15, endDay:16, quarter:"Q2",
-    location:"Houston, TX",
-    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
-    chipClass:"chip-sport", barClass:"bar-sport",
-    status:"inprogress", phaseDone:0, phaseActive:1, tbd:true, postponed:false,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null
-  },
-  {
-    id:9, name:"America Prays National Mall",
-    dateStr:"May 18, 2026", month:5, startDay:18, endDay:18, quarter:"Q2",
-    location:"Philadelphia, PA",
-    type:"faith", typeLabel:"America Prays (Hosted)",
-    chipClass:"chip-faith", barClass:"bar-faith",
-    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false, postponed:false,
-    budget:"$50,000", attendees:"—",
-    mqls:"N/A", sqls:null, deals:null, pipeline:null, revenue:null, roi:"TBD — Awareness / Faith Event",
-    conflict:null
-  },
-  {
-    id:10, name:"June Event (TBD)",
-    dateStr:"Jun 19–21, 2026", month:6, startDay:19, endDay:21, quarter:"Q2",
-    location:"Dallas, TX",
-    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
-    chipClass:"chip-sport", barClass:"bar-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
-    budget:"$30,000", attendees:"18",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null
-  },
-  {
-    id:11, name:"SBC VIP Event",
-    dateStr:"Jun 6–8, 2026", month:6, startDay:6, endDay:8, quarter:"Q2",
-    location:"Orlando, FL",
-    type:"sports", typeLabel:"PRAY Mini Event (Hosted)",
-    chipClass:"chip-sport", barClass:"bar-sport",
-    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false, postponed:false,
-    budget:"$32,200", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.52×",
-    conflict:null
-  },
-  {
-    id:12, name:"BCI Conference",
-    dateStr:"Jun 25–26, 2026", month:6, startDay:25, endDay:26, quarter:"Q2",
-    location:"Chicago, IL",
-    type:"conference", typeLabel:"Conference (Sponsor Only)",
-    chipClass:"chip-conf", barClass:"bar-conf",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
-    budget:"$15,000", attendees:"—",
-    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"2.62×",
-    conflict:null
-  },
-  {
-    id:13, name:"Pastors Retreat (2)",
-    dateStr:"Jun 24–26, 2026", month:6, startDay:24, endDay:26, quarter:"Q2",
-    location:"TBD",
-    type:"retreat", typeLabel:"PRAY Retreat",
-    chipClass:"chip-ret", barClass:"bar-ret",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
-    budget:"$80,000", attendees:"18",
-    mqls:"18", sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
-    conflict:null
-  },
-  {
-    id:14, name:"Q3 Sporting Event — July (TBD)",
-    dateStr:"Jul 31, 2026", month:7, startDay:31, endDay:31, quarter:"Q3",
-    location:"TBD",
-    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
-    chipClass:"chip-sport", barClass:"bar-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null
-  },
-  {
-    id:15, name:"Q3 Sporting Event — September (TBD)",
-    dateStr:"Sep 1, 2026", month:9, startDay:1, endDay:1, quarter:"Q3",
-    location:"TBD",
-    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
-    chipClass:"chip-sport", barClass:"bar-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null
-  },
-  {
-    id:16, name:"Family Reunion",
-    dateStr:"Oct 27, 2026", month:10, startDay:27, endDay:27, quarter:"Q4",
-    location:"TBD",
-    type:"conference", typeLabel:"Conference (TBD Participation)",
-    chipClass:"chip-conf", barClass:"bar-conf",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:false, postponed:false,
-    budget:"$10,600", attendees:"—",
-    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"4.12×",
-    conflict:null
-  },
-  {
-    id:17, name:"November Sporting Event — RightNow Adjacent (TBD)",
-    dateStr:"Nov 4–6, 2026", month:11, startDay:4, endDay:6, quarter:"Q4",
-    location:"Dallas, TX",
-    type:"sports", typeLabel:"PRAY Mini Event — Sports / VIP",
-    chipClass:"chip-sport", barClass:"bar-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true, postponed:false,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null
-  }
-];
+let events = []; // populated via fetch below
 
 // ─── MONTH META ───────────────────────────────────────────────────────────────
 const MONTHS = [
@@ -1491,9 +1303,15 @@ function buildMonthNav() {
 }
 
 // ─── INIT ──────────────────────────────────────────────────────────────────────
-buildMiniCalendars();
-buildMonthNav();
-render();
+fetch('data/events.json')
+  .then(r => r.json())
+  .then(data => {
+    events = data;
+    buildMiniCalendars();
+    buildMonthNav();
+    render();
+  })
+  .catch(err => console.error('Failed to load events:', err));
 </script>
 </body>
 </html>

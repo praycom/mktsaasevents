@@ -287,284 +287,7 @@ const PHASE_LABELS = [
 ];
 
 // ─── EVENT DATA ────────────────────────────────────────────────────────────────
-const events = [
-  {
-    id:1, name:"Dunham Summit",
-    dateStr:"Jan 6–8, 2026", month:1, quarter:"Q1",
-    location:"Lake Buena Vista, FL",
-    type:"conference", typeLabel:"Conference (Speaking)",
-    chipClass:"chip-conf",
-    status:"complete", phaseDone:7, phaseActive:0, tbd:false,
-    budget:"$45,000", attendees:"35",
-    mqls:"30", sqls:"13.5", deals:"1.89", pipeline:"$948K", revenue:"$81K", roi:"0.81×",
-    conflict:null,
-    notes:[
-      {cls:"n-action", icon:"✓", text:"<strong>All 7 phases complete.</strong> Full post-event data available in CRM. Use this event as an ROI benchmark for smaller speaking engagements."},
-      {cls:"n-info",   icon:"📊", text:"Final ROI: 0.81× — strong relationship / brand-building event. 30 MQLs collected; follow-up cadence should be in final stage."},
-      {cls:"n-neutral",icon:"📋", text:"AE Assigned: Review closed-won conversion data to validate pipeline assumptions for future Dunham-style events."}
-    ]
-  },
-  {
-    id:2, name:"Pastors Retreat (1)",
-    dateStr:"Apr 22–24, 2026", month:4, quarter:"Q2",
-    location:"San Diego, CA",
-    type:"retreat", typeLabel:"PRAY Retreat (Hosted)",
-    chipClass:"chip-ret",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
-    budget:"$80,000", attendees:"18",
-    mqls:"18", sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
-    conflict:null,
-    notes:[
-      {cls:"n-action", icon:"🔴", text:"<strong>ACTION REQUIRED:</strong> Invitation-only retreat — prepare personalized welcome packages, name-specific agendas, and 1:1 conversation briefs for each attendee. No cost to selected leaders."},
-      {cls:"n-info",   icon:"🏨", text:"<strong>Venue: The Andaz, San Diego</strong> — 600 F Street, San Diego, CA 92101. Check-in 2:00 PM on Apr 22."},
-      {cls:"n-info",   icon:"🎯", text:"<strong>Theme: \"Faith, Fellowship, and Fearless Adventures\"</strong> — Facilitator: Commander Jimmy May, retired Navy SEAL. <strong>Day 1:</strong> 2 PM Base Check-In (Hotel Lobby) → 5 PM Tactical Orientation & Welcome Provisions (Executive Studio). <strong>Day 2:</strong> 7 AM Deploy to off-site range → 8 AM Breakfast on-site → 9 AM Precision Tactical Training + BBQ field lunch → 3:30 PM Mission Pause (free time) → 6:30 PM Leadership Dinner & SEAL Command Keynote (Executive Studio). <strong>Day 3:</strong> 7 AM Morning Debrief (Executive Studio) → 10 AM Departures."},
-      {cls:"n-neutral",icon:"📋", text:"Retreat ROI measured by relationship depth. Business dev conversations happen organically during activities — not in formal pitch settings. Post-retreat: personal thank-you within 24 hrs, discovery calls within 14 days."}
-    ]
-  },
-  {
-    id:3, name:"NRB Convention",
-    dateStr:"Feb 17–20, 2026", month:2, quarter:"Q1",
-    location:"Nashville, TN",
-    type:"conference", typeLabel:"Conference (Booth + Speaking)",
-    chipClass:"chip-conf",
-    status:"inprogress", phaseDone:5, phaseActive:6, tbd:false,
-    budget:"$450,000", attendees:"6,000",
-    mqls:"655", sqls:"307.9", deals:"43.1", pipeline:"$4.89M", revenue:"$2.89M", roi:"5.41×",
-    conflict:null,
-    notes:[
-      {cls:"n-action", icon:"🔴", text:"<strong>PRIORITY — Phase 6 Active (Post-Event Follow-Up):</strong> 655 MQLs must be entered into CRM within 72 hours of show close. All badge scans exported and segmented by priority tier."},
-      {cls:"n-action", icon:"📧", text:"Follow-up email sequences (Tier 1, 2, 3) must launch within 48 hours of event close. AEs take ownership of Tier 1 accounts immediately."},
-      {cls:"n-info",   icon:"💰", text:"Largest event of Q1 at $450K budget. Projected ROI: 5.41× with $4.89M pipeline. All demo slots tracked and assigned to AEs."},
-      {cls:"n-neutral",icon:"🎙️", text:"Speaking session(s) completed. Ensure recordings and slide decks are shared with marketing for content repurposing."}
-    ]
-  },
-  {
-    id:4, name:"April Event (TBD)",
-    dateStr:"Apr 27–29, 2026", month:4, quarter:"Q2",
-    location:"Dallas, TX",
-    type:"sports", typeLabel:"Sports / VIP Mini Event",
-    chipClass:"chip-sport",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:true,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:"⚠ Scheduling conflict: Outcomes Conference (Apr 28–30) is also in Dallas. Coordinate team logistics — same-city overlap is an opportunity.",
-    notes:[
-      {cls:"n-tbd",    icon:"⚠️", text:"<strong>Event TBD:</strong> Specific game/matchup not yet confirmed. Game selection, ticket block, and venue details pending. Update once finalized."},
-      {cls:"n-conflict",icon:"⚠️",text:"<strong>CONFLICT:</strong> Outcomes Conference (Apr 28–30) is also in Dallas. Opportunity to cross-invite select Outcomes contacts to the VIP night. Coordinate AE coverage."},
-      {cls:"n-action", icon:"📋", text:"Phase 2 (Planning & Registration) active. Finalize: guest list of 23, transportation, hospitality suite if applicable, PRAY.COM branded gifting."}
-    ]
-  },
-  {
-    id:5, name:"America Reads the Bible",
-    dateStr:"Apr 20–21, 2026", month:4, quarter:"Q2",
-    location:"Washington, D.C.",
-    type:"conference", typeLabel:"Conference (TBD Participation)",
-    chipClass:"chip-conf",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
-    budget:"$35,000", attendees:"—",
-    mqls:"70", sqls:"31.5", deals:"4.41", pipeline:"$2.21M", revenue:"$190K", roi:"4.43×",
-    conflict:null,
-    notes:[
-      {cls:"n-info",  icon:"ℹ️", text:"Participation level TBD — confirm speaking slot, sponsorship tier, or attendee-only presence with event organizers. Deadline for decisions: March 2026."},
-      {cls:"n-action",icon:"🎯", text:"High-value faith-sector audience in Washington D.C. Ideal for positioning PRAY.COM with faith-based policy, denominational, and national ministry contacts."},
-      {cls:"n-neutral",icon:"📋", text:"Target: 70 MQLs. Projected pipeline: $2.21M. Ensure demo iPad stations or QR lead capture are provisioned for the team."}
-    ]
-  },
-  {
-    id:6, name:"MegaMetro (Senior Pastors)",
-    dateStr:"Apr 26–29, 2026", month:4, quarter:"Q2",
-    location:"Boston, MA — Four Seasons Hotel",
-    type:"conference", typeLabel:"Conference (Platinum Sponsor)",
-    chipClass:"chip-conf",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
-    budget:"$40,000", attendees:"—",
-    mqls:"64", sqls:"28.8", deals:"4.03", pipeline:"$2.02M", revenue:"$173.7K", roi:"3.98×",
-    conflict:null,
-    notes:[
-      {cls:"n-action",icon:"⭐", text:"<strong>Platinum Sponsor ($40,000).</strong> PRAY.COM hosts one featured event — choose between: Night at JFK Presidential Library, Wives Brunch, or Lunch at Prudential Tower / View Boston. Decision needed."},
-      {cls:"n-info",  icon:"📅", text:"<strong>Full itinerary (4 days):</strong> Sun Apr 26 — Welcome Reception (Sanctuary, 6th Fl). Mon Apr 27 — Sessions (Joby Martin / Lysa TerKeurst) + Lunch at View Boston. Tue Apr 28 — Sessions (Ben Stuart, Whiteboard) + PRAY.COM hosted event + Dinner w/ Tommy Nelson at JFK Library. Wed Apr 29 — Sessions (Daniel Henderson, Rebecca McLaughlin) + Adjourn."},
-      {cls:"n-action",icon:"🎙️", text:"<strong>Platinum deliverables:</strong> Host one featured event, 7-min pre-session presentation, pre-meal prayer + 30-sec ad, exhibit table in foyer, attendee email list (one-time use), filmed 5-min interview, Four Seasons hotel room."},
-      {cls:"n-info",  icon:"⛪", text:"Audience: senior pastors from large/mega churches (1,000+ members). Prime segment for PRAY.COM's church engagement platform. Target: 64 MQLs, $2.02M pipeline."}
-    ]
-  },
-  {
-    id:7, name:"Outcomes Conference (CLA)",
-    dateStr:"Apr 28–30, 2026", month:4, quarter:"Q2",
-    location:"Dallas, TX",
-    type:"conference", typeLabel:"Conference (Booth + Speaking)",
-    chipClass:"chip-conf",
-    status:"inprogress", phaseDone:1, phaseActive:2, tbd:false,
-    budget:"$34,850", attendees:"1,000",
-    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"0.56×",
-    conflict:"⚠ April Event (TBD) also in Dallas Apr 27–29 — coordinate team & cross-leverage same-city presence.",
-    notes:[
-      {cls:"n-action", icon:"🔴", text:"<strong>PAST-DUE:</strong> Blog post sponsorship deadline was Jan 30 — follow up with Donna Bostick immediately. Program ad deadline was Feb 20 — confirm status."},
-      {cls:"n-info",   icon:"📬", text:"Key Contact: <strong>Donna Bostick</strong> — Donna.Bostick@ChristianLeadershipAlliance.org · Christian Leadership Alliance event coordinator."},
-      {cls:"n-action", icon:"📋", text:"<strong>ACTION:</strong> Register all booth personnel by April 1 deadline. Secure booth load-in window (Apr 27–28) and teardown (Apr 30 afternoon). Booth Space <strong>#312</strong> (10'×6', 30 sq ft) in Grand Foyer — former parking garage, variable ceiling. Extra space opportunity near booth 412/across from 510. Confirm speaker slots: Max Bard (Tue Apr 28, 2:00–3:30 PM) and <strong>Aaron Magnuson, Partnerships Executive</strong> (Wed Apr 29, 10:30 AM–12:00 PM) — note: official program may still list Ryan Beck (CTO); notify CLA of change."},
-      {cls:"n-info",   icon:"📚", text:"Optional: author book signing opportunity at booth — Rob McKenna (<em>Becoming a Brave Leader</em>) and Scott Rodin (<em>The Steward Leader</em>) may be available. Coordinate with Donna Bostick."},
-      {cls:"n-action", icon:"📊", text:"Post-event: Contact Donna Bostick to obtain attendee list for follow-up CRM entry. All 20 MQLs should be in CRM within 48 hrs of event close."}
-    ]
-  },
-  {
-    id:8, name:"May Event (TBD)",
-    dateStr:"May 15–16, 2026", month:5, quarter:"Q2",
-    location:"Houston, TX",
-    type:"sports", typeLabel:"Sports / VIP Mini Event",
-    chipClass:"chip-sport",
-    status:"inprogress", phaseDone:0, phaseActive:1, tbd:true,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null,
-    notes:[
-      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Game/matchup and venue in Houston, TX not yet confirmed. Phase 1 (Research) active — evaluate Houston-area sporting events in May 2026 timeframe."},
-      {cls:"n-action",icon:"📋", text:"Once confirmed: finalize 23-person guest list, ticket block, hospitality suite, and branded experience details. Coordinate with Houston-area AE."},
-      {cls:"n-neutral",icon:"💡", text:"Houston market — strong presence of large churches and Christian nonprofits. VIP list should prioritize high-potential local accounts."}
-    ]
-  },
-  {
-    id:9, name:"America Prays National Mall",
-    dateStr:"May 18, 2026", month:5, quarter:"Q2",
-    location:"Philadelphia, PA",
-    type:"faith", typeLabel:"America Prays (Hosted)",
-    chipClass:"chip-faith",
-    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false,
-    budget:"$50,000", attendees:"—",
-    mqls:"N/A", sqls:null, deals:null, pipeline:null, revenue:null, roi:"Mission / Awareness Event",
-    conflict:null,
-    notes:[
-      {cls:"n-info",  icon:"🙏", text:"National prayer gathering in Philadelphia, PA. PRAY.COM is a hosting partner. ROI is mission/awareness-based — not measured in pipeline. Align with brand and faith values."},
-      {cls:"n-action",icon:"📋", text:"Coordinate with PRAY.COM marketing for on-site presence strategy (signage, app downloads, brand booth). Ensure team wear/brand assets are prepared."},
-      {cls:"n-neutral",icon:"💡", text:"Secondary objective: ministry partner relationship-building. Identify 10–15 key ministry leaders in attendance for post-event personalized outreach from AE team."}
-    ]
-  },
-  {
-    id:10, name:"June Event (TBD)",
-    dateStr:"Jun 19–21, 2026", month:6, quarter:"Q2",
-    location:"Dallas, TX",
-    type:"sports", typeLabel:"Sports / VIP Mini Event",
-    chipClass:"chip-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
-    budget:"$30,000", attendees:"18",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null,
-    notes:[
-      {cls:"n-tbd",    icon:"⚠️", text:"<strong>Event TBD:</strong> Game/matchup in Dallas not yet confirmed. No phases started. Decision needed by April 2026 to allow proper lead time."},
-      {cls:"n-action", icon:"📋", text:"Once confirmed: build 18-person invite list, secure ticket block, arrange hospitality. Dallas AE takes ownership of this event."}
-    ]
-  },
-  {
-    id:11, name:"SBC VIP Event",
-    dateStr:"Jun 6–8, 2026", month:6, quarter:"Q2",
-    location:"Orlando, FL",
-    type:"sports", typeLabel:"Sports / VIP Mini Event (Hosted)",
-    chipClass:"chip-sport",
-    status:"inprogress", phaseDone:0, phaseActive:1, tbd:false,
-    budget:"$32,200", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.52×",
-    conflict:null,
-    notes:[
-      {cls:"n-info",  icon:"⛪", text:"Hosted adjacent to the SBC Annual Meeting in Orlando. High-value audience: Southern Baptist denomination leaders, church planters, and missions directors."},
-      {cls:"n-action",icon:"📋", text:"Phase 1 (Research) active. Coordinate guest list with SBC Annual Meeting attendee data. Target: denomination leaders, executive pastors, and church tech decision-makers."},
-      {cls:"n-neutral",icon:"💡", text:"Opportunity to position PRAY.COM as the SBC's preferred digital discipleship platform. Follow up within 24 hrs of event with personalized meeting invites."}
-    ]
-  },
-  {
-    id:12, name:"BCI Conference",
-    dateStr:"Jun 25–26, 2026", month:6, quarter:"Q2",
-    location:"Chicago, IL",
-    type:"conference", typeLabel:"Conference (Sponsor Only)",
-    chipClass:"chip-conf",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:false,
-    budget:"$15,000", attendees:"—",
-    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"2.62×",
-    conflict:null,
-    notes:[
-      {cls:"n-info",   icon:"ℹ️", text:"Sponsor-only presence at BCI Conference in Chicago, IL (Jun 25–26). Website: <a href='https://www.bciexperience.com' target='_blank'>www.bciexperience.com</a>. Medium-sized event."},
-      {cls:"n-info",   icon:"ℹ️", text:"Confirm sponsorship deliverables (logo placement, session slots, lead lists) with BCI organizers. Deliverables drive AE follow-up quality."},
-      {cls:"n-action", icon:"📋", text:"No phases started. Begin planning by April 2026. Secure sponsor package, confirm on-site AE assignment, and prepare sponsor collateral."}
-    ]
-  },
-  {
-    id:13, name:"Pastors Retreat (2)",
-    dateStr:"Jun 24–26, 2026", month:6, quarter:"Q2",
-    location:"TBD",
-    type:"retreat", typeLabel:"PRAY Retreat (Hosted)",
-    chipClass:"chip-ret",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:false,
-    budget:"$80,000", attendees:"18",
-    mqls:"18", sqls:null, deals:null, pipeline:null, revenue:null, roi:null,
-    conflict:null,
-    notes:[
-      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Location TBD:</strong> Venue for Retreat (2) not yet selected. Begin venue search by March 2026 — target resort/retreat destination with dedicated meeting space."},
-      {cls:"n-neutral",icon:"🏨", text:"Same structure as Pastors Retreat (1) in San Diego. 18 invited pastors, hosted by PRAY.COM. Apply learnings from Retreat (1) to improve experience."},
-      {cls:"n-action", icon:"📋", text:"No phases started. Priority tasks: select venue, build updated invite list (include new relationships from April events), finalize logistics and gifting program."}
-    ]
-  },
-  {
-    id:14, name:"Q3 Sporting Event — July (TBD)",
-    dateStr:"Jul 31, 2026", month:7, quarter:"Q3",
-    location:"TBD",
-    type:"sports", typeLabel:"Sports / VIP Mini Event",
-    chipClass:"chip-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null,
-    notes:[
-      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Q3 July sporting event placeholder. Game, team, location, and city not yet determined. Planning begins Q2 2026."},
-      {cls:"n-action",icon:"📋", text:"Evaluate MLB, NBA, or other major sporting events in July 2026. Target city based on highest concentration of prospective ministry accounts. Begin Q1 planning."},
-      {cls:"n-neutral",icon:"💡", text:"Apply VIP mini-event playbook from Q1/Q2 sports events. Maintain consistent 23-guest format, branded gifting, and post-event follow-up cadence."}
-    ]
-  },
-  {
-    id:15, name:"Q3 Sporting Event — September (TBD)",
-    dateStr:"Sep 1, 2026", month:9, quarter:"Q3",
-    location:"TBD",
-    type:"sports", typeLabel:"Sports / VIP Mini Event",
-    chipClass:"chip-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null,
-    notes:[
-      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Q3 September sporting event placeholder. NFL season opens in September — consider leveraging NFL kickoff weekend for VIP event."},
-      {cls:"n-action",icon:"📋", text:"Evaluate NFL opener, MLB playoffs (late September), or college football games. Target city based on AE territory priorities for Q3 pipeline needs."},
-      {cls:"n-neutral",icon:"💡", text:"September event should target accounts that progressed from Q2 events but haven't yet closed. Design guest list around late-stage pipeline acceleration."}
-    ]
-  },
-  {
-    id:16, name:"Family Reunion",
-    dateStr:"Oct 27, 2026", month:10, quarter:"Q4",
-    location:"TBD",
-    type:"conference", typeLabel:"Conference (TBD Participation)",
-    chipClass:"chip-conf",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:false,
-    budget:"$10,600", attendees:"—",
-    mqls:"20", sqls:"9", deals:"1.26", pipeline:"$632K", revenue:"$54.3K", roi:"4.12×",
-    conflict:null,
-    notes:[
-      {cls:"n-info",  icon:"ℹ️", text:"Annual faith-sector leadership gathering. Participation level (attendee, sponsor, speaker) TBD. Confirm status with event organizers in Q3 2026."},
-      {cls:"n-neutral",icon:"📋", text:"Budget: $10,600 — lean event. Plan for strategic 2–3 person team presence. Focus on relationship-deepening with existing accounts and warm introductions."},
-      {cls:"n-action",icon:"🎯", text:"Q4 timing is ideal for year-end budget conversations. Prioritize prospects with Q4 buying windows in the guest list / attendee targeting."}
-    ]
-  },
-  {
-    id:17, name:"November Sporting Event — RightNow Adjacent (TBD)",
-    dateStr:"Nov 4–6, 2026", month:11, quarter:"Q4",
-    location:"Dallas, TX",
-    type:"sports", typeLabel:"Sports / VIP Mini Event",
-    chipClass:"chip-sport",
-    status:"pending", phaseDone:0, phaseActive:0, tbd:true,
-    budget:"$30,000", attendees:"23",
-    mqls:"23", sqls:"18.4", deals:"1.84", pipeline:"$89.8K", revenue:"$48.8K", roi:"0.63×",
-    conflict:null,
-    notes:[
-      {cls:"n-tbd",   icon:"⚠️", text:"<strong>Event TBD:</strong> Planned adjacent to the RightNow Media conference in Dallas (Nov 4–6). Game/matchup TBD — leverage Dallas Cowboys, Mavericks, or Stars schedule."},
-      {cls:"n-info",  icon:"💡", text:"Strategic positioning: RightNow Media attendees are prime PRAY.COM prospects (church media & ministry tech buyers). Cross-leverage event timing for maximum audience exposure."},
-      {cls:"n-action",icon:"📋", text:"Coordinate RightNow Media attendance alongside VIP sporting event. Ideal format: attend RightNow by day, VIP event evening of Nov 5. Guest list from RightNow attendees."}
-    ]
-  }
-];
+let events = []; // populated via fetch below
 
 // ─── STATUS HELPERS ────────────────────────────────────────────────────────────
 function statusBadge(ev) {
@@ -712,28 +435,38 @@ function buildPage(ev, idx) {
 }
 
 // ─── RENDER ────────────────────────────────────────────────────────────────────
-const quarterGroups = {Q1:[],Q2:[],Q3:[],Q4:[]};
-events.forEach(ev => quarterGroups[ev.quarter].push(ev));
+function renderAll() {
+  const quarterGroups = {Q1:[],Q2:[],Q3:[],Q4:[]};
+  events.forEach(ev => quarterGroups[ev.quarter].push(ev));
 
-// Build nav
-const navItems = document.getElementById('nav-items');
-['Q1','Q2','Q3','Q4'].forEach(q => {
-  const grpEvs = quarterGroups[q];
-  if (!grpEvs.length) return;
-  navItems.innerHTML += `<div class="nav-group-label">${q}</div>`;
-  grpEvs.forEach(ev => {
-    navItems.innerHTML += `
-      <a href="#ev-${ev.id}" class="nav-item">
-        <span class="nav-num">${String(ev.id).padStart(2,'0')}</span>
-        <span class="nav-name">${ev.name}</span>
-        <span class="nav-dot ${navDotClass(ev)}"></span>
-      </a>`;
+  // Build nav
+  const navItems = document.getElementById('nav-items');
+  ['Q1','Q2','Q3','Q4'].forEach(q => {
+    const grpEvs = quarterGroups[q];
+    if (!grpEvs.length) return;
+    navItems.innerHTML += `<div class="nav-group-label">${q}</div>`;
+    grpEvs.forEach(ev => {
+      navItems.innerHTML += `
+        <a href="#ev-${ev.id}" class="nav-item">
+          <span class="nav-num">${String(ev.id).padStart(2,'0')}</span>
+          <span class="nav-name">${ev.name}</span>
+          <span class="nav-dot ${navDotClass(ev)}"></span>
+        </a>`;
+    });
   });
-});
 
-// Build pages
-const main = document.getElementById('main-content');
-main.innerHTML = events.map((ev, i) => buildPage(ev, i)).join('');
+  // Build pages
+  const main = document.getElementById('main-content');
+  main.innerHTML = events.map((ev, i) => buildPage(ev, i)).join('');
+}
+
+fetch('../data/events.json')
+  .then(r => r.json())
+  .then(data => {
+    events = data;
+    renderAll();
+  })
+  .catch(err => console.error('Failed to load events:', err));
 </script>
 </body>
 </html>
