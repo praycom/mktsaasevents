@@ -82,15 +82,16 @@
     .hd-nav-pill {
       display: inline-flex; align-items: center;
       font-size: 11px; font-weight: 700;
-      color: var(--gray-400);
-      padding: 3px 11px;
+      color: var(--white);
+      padding: 4px 13px;
       border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.09);
       text-decoration: none;
       transition: all 0.15s;
       white-space: nowrap;
       flex-shrink: 0;
+      cursor: pointer;
     }
     .hd-nav-pill:hover {
       background: var(--gold);
@@ -127,21 +128,24 @@
     .res-btn {
       display: inline-flex; align-items: center; gap: 5px;
       font-size: 11px; font-weight: 600;
-      color: var(--gray-400);
       padding: 4px 12px;
       border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(255,255,255,0.04);
+      border: 1px solid;
       text-decoration: none;
       transition: all 0.15s;
       white-space: nowrap;
       flex-shrink: 0;
     }
-    .res-btn:hover {
-      background: var(--gold);
-      color: var(--black);
-      border-color: var(--gold);
-    }
+    .res-btn:hover { filter: brightness(1.25); }
+
+    /* Per-service colors */
+    .res-btn-confluence { color:#4C9AFF; background:rgba(0,82,204,0.18); border-color:rgba(76,154,255,0.35); }
+    .res-btn-jira       { color:#57D9A3; background:rgba(0,135,90,0.18); border-color:rgba(87,217,163,0.35); }
+    .res-btn-drive      { color:#FBBC04; background:rgba(251,188,4,0.12); border-color:rgba(251,188,4,0.35); }
+    .res-btn-internal   { color:#B8A9F5; background:rgba(101,84,192,0.18); border-color:rgba(184,169,245,0.35); }
+    .res-btn-external   { color:#4DD0E1; background:rgba(0,176,200,0.14); border-color:rgba(77,208,225,0.35); }
+    .res-btn-hubspot    { color:#FF8F73; background:rgba(255,122,89,0.15); border-color:rgba(255,143,115,0.35); }
+
     .res-sep {
       color: rgba(255,255,255,0.12);
       font-size: 10px;
@@ -151,15 +155,19 @@
     .res-ramp {
       margin-left: auto;
       display: inline-flex; align-items: center; gap: 6px;
-      font-size: 11px; font-weight: 600;
-      color: var(--gold);
-      background: var(--gold-muted);
-      border: 1px solid var(--gold-border);
+      font-size: 11px; font-weight: 700;
+      color: #4ADE80;
+      background: rgba(74,222,128,0.12);
+      border: 1px solid rgba(74,222,128,0.35);
       border-radius: 20px;
-      padding: 4px 12px;
+      padding: 4px 13px;
       white-space: nowrap;
       flex-shrink: 0;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.15s;
     }
+    .res-ramp:hover { background: rgba(74,222,128,0.22); }
     .hd-left { display: flex; align-items: center; gap: 18px; }
     .hd-logo {
       display: flex;
@@ -673,16 +681,7 @@
        MONTH QUICK-NAV
     ════════════════════════════════════════════════════════ */
     .month-nav {
-      background: var(--white);
-      border-bottom: 1px solid var(--gray-100);
-      padding: 8px 48px;
-      display: flex;
-      gap: 6px;
-      align-items: center;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 88px;
-      z-index: 200;
+      display: none;
     }
     .mnav-label {
       font-size: 10px; font-weight: 700; color: var(--gray-400);
@@ -767,18 +766,18 @@
 <!-- ════════════════════════════════════════════════════════ -->
 <div class="resources-bar">
   <span class="res-lbl">Resources</span>
-  <a class="res-btn" href="https://prayinc.atlassian.net/wiki/spaces/MARK/pages/4889149441/2026+Event+Tracker" target="_blank">📄 Confluence Pages</a>
+  <a class="res-btn res-btn-confluence" href="https://prayinc.atlassian.net/wiki/spaces/MARK/pages/4889149441/2026+Event+Tracker" target="_blank">📄 Confluence Pages</a>
   <span class="res-sep">·</span>
-  <a class="res-btn" href="https://prayinc.atlassian.net/jira/plans/247/scenarios/248/timeline?vid=286" target="_blank">✅ Jira Tasks</a>
+  <a class="res-btn res-btn-jira" href="https://prayinc.atlassian.net/jira/plans/247/scenarios/248/timeline?vid=286" target="_blank">✅ Jira Tasks</a>
   <span class="res-sep">·</span>
-  <a class="res-btn" href="https://drive.google.com/drive/u/0/folders/1-Q0qwO-yytuJ18P67QooHCNP7R4EAWUE?hl=pt-br" target="_blank">📁 Drive Repositories</a>
+  <a class="res-btn res-btn-drive" href="https://drive.google.com/drive/u/0/folders/1-Q0qwO-yytuJ18P67QooHCNP7R4EAWUE?hl=pt-br" target="_blank">📁 Drive Repositories</a>
   <span class="res-sep">·</span>
-  <a class="res-btn" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/internal-briefs.html" target="_blank">🔒 Internal One-Pagers</a>
+  <a class="res-btn res-btn-internal" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/internal-briefs.html" target="_blank">🔒 Internal One-Pagers</a>
   <span class="res-sep">·</span>
-  <a class="res-btn" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/external-onepagers.html" target="_blank">🌐 Customer-Facing One-Pagers</a>
+  <a class="res-btn res-btn-external" href="https://nayluchetti-tech.github.io/mktsaasevents/events/one-pagers/external-onepagers.html" target="_blank">🌐 Customer-Facing One-Pagers</a>
   <span class="res-sep">·</span>
-  <a class="res-btn" href="https://app.hubspot.com/reports-dashboard/2592247/view/16725333" target="_blank">📊 HubSpot Dashboard</a>
-  <span class="res-ramp">💳 Event purchases → Ramp Card</span>
+  <a class="res-btn res-btn-hubspot" href="https://app.hubspot.com/reports-dashboard/2592247/view/16725333" target="_blank">📊 HubSpot Dashboard</a>
+  <a class="res-ramp" href="https://app.ramp.com/home/" target="_blank">💳 Ramp Card</a>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════ -->
