@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Update — PRAY.COM 2026 Events</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black:       #0B0C0D;
+      --black-soft:  #1A1B1D;
+      --black-mid:   #252628;
+      --white:       #FFFFFF;
+      --gray-50:     #F4F4F2;
+      --gray-100:    #EBEBEA;
+      --gray-200:    #D5D5D3;
+      --gray-400:    #A3A3A1;
+      --gray-600:    #636361;
+      --gold:        #E3AF4A;
+      --gold-light:  #FBF2DC;
+      --gold-muted:  rgba(227,175,74,0.12);
+      --gold-border: rgba(227,175,74,0.35);
+      --gold-dark:   #C49432;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #D8D8D6;
+      color: var(--black);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* ─── SIDE NAV ─────────────────────────────────────────── */
+    .side-nav {
+      position: fixed; left: 0; top: 0; bottom: 0; width: 210px;
+      background: var(--black); overflow-y: auto; z-index: 200;
+      scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent;
+      display: flex; flex-direction: column;
+    }
+    .nav-header {
+      padding: 18px 14px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky; top: 0; background: var(--black); z-index: 1;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+    .nav-logo-mark {
+      width: 28px; height: 28px; background: var(--gold); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 9px; font-weight: 900; color: var(--black); flex-shrink: 0;
+    }
+    .nav-logo-text { font-size: 13px; font-weight: 800; color: var(--white); }
+    .nav-logo-text span { color: var(--gold); }
+    .nav-subtitle { font-size: 9px; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.6px; }
+    .nav-section { padding: 12px 8px 0; }
+    .nav-section-label {
+      font-size: 8px; font-weight: 800; color: rgba(255,255,255,0.2);
+      text-transform: uppercase; letter-spacing: 0.8px; padding: 8px 8px 4px;
+    }
+    .nav-link {
+      display: flex; align-items: center; gap: 7px;
+      padding: 6px 8px; border-radius: 5px; text-decoration: none;
+      margin-bottom: 1px; transition: background 0.12s;
+      font-size: 10px; color: var(--gray-400); line-height: 1.3;
+    }
+    .nav-link:hover { background: rgba(255,255,255,0.06); color: var(--white); }
+    .nav-link.active { background: var(--gold-muted); color: var(--gold); }
+    .nav-link-icon { font-size: 12px; flex-shrink: 0; }
+    .nav-spacer { flex: 1; }
+
+    /* ─── MAIN ─────────────────────────────────────────────── */
+    main {
+      margin-left: 210px; padding: 28px 28px 60px;
+      display: flex; flex-direction: column; align-items: center; gap: 20px;
+    }
+
+    /* ─── HERO CARD ─────────────────────────────────────────── */
+    .hero-card {
+      width: 100%; max-width: 860px;
+      background: var(--black); border-radius: 12px;
+      overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+      border-bottom: 3px solid var(--gold);
+      padding: 28px 32px 24px;
+    }
+    .hero-eyebrow {
+      font-size: 9px; font-weight: 800; color: var(--gold);
+      text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;
+    }
+    .hero-title {
+      font-size: 28px; font-weight: 900; color: var(--white);
+      line-height: 1.1; margin-bottom: 10px;
+    }
+    .hero-subtitle {
+      font-size: 13px; color: var(--gray-400); line-height: 1.65;
+      max-width: 620px; margin-bottom: 22px;
+    }
+    .hero-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .hero-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 12px; font-weight: 700; padding: 8px 18px;
+      border-radius: 8px; text-decoration: none; transition: all 0.15s;
+    }
+    .hero-btn-primary { background: var(--gold); color: var(--black); }
+    .hero-btn-primary:hover { background: var(--gold-dark); }
+    .hero-btn-ghost {
+      background: rgba(255,255,255,0.08); color: var(--white);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .hero-btn-ghost:hover { background: rgba(255,255,255,0.14); }
+
+    /* ─── DOC CARD ──────────────────────────────────────────── */
+    .doc-card {
+      width: 100%; max-width: 860px;
+      background: var(--white); border-radius: 12px; overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 0 0 1px rgba(0,0,0,0.05);
+    }
+    .card-title {
+      font-size: 9px; font-weight: 800; color: var(--gray-400);
+      text-transform: uppercase; letter-spacing: 0.8px;
+      display: flex; align-items: center; gap: 8px;
+      padding: 18px 24px 0;
+    }
+    .card-title::after { content: ''; flex: 1; height: 1px; background: var(--gray-100); }
+
+    /* ─── ARCHITECTURE BLOCK ────────────────────────────────── */
+    .arch-wrap { margin: 16px 24px 24px; }
+    .arch-block {
+      background: var(--black); border-radius: 10px; overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .arch-topbar {
+      display: flex; align-items: center; gap: 6px;
+      padding: 10px 16px;
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .arch-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .arch-dot-r { background: #FF5F57; }
+    .arch-dot-y { background: #FEBC2E; }
+    .arch-dot-g { background: #28C840; }
+    .arch-file-label {
+      font-size: 9px; color: rgba(255,255,255,0.28);
+      margin-left: 6px; font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+    .arch-pre {
+      padding: 22px 28px;
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 12px; line-height: 2;
+      color: rgba(255,255,255,0.4);
+      overflow-x: auto; white-space: pre;
+    }
+
+    /* ─── SOURCE GRID ───────────────────────────────────────── */
+    .source-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+      padding: 18px 24px 24px;
+    }
+    .source-box {
+      border: 1px solid var(--gray-100); border-radius: 10px; overflow: hidden;
+    }
+    .source-head {
+      display: flex; align-items: center; gap: 10px;
+      padding: 13px 16px; border-bottom: 1px solid var(--gray-100);
+    }
+    .source-head-sheets    { background: rgba(52,168,83,0.06); }
+    .source-head-confluence { background: rgba(0,82,204,0.06); }
+    .source-icon { font-size: 20px; }
+    .source-title { font-size: 13px; font-weight: 800; color: var(--black); }
+    .source-desc  { font-size: 10px; color: var(--gray-600); margin-top: 1px; }
+    .source-cta {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 10px; font-weight: 700; padding: 4px 12px; border-radius: 20px;
+      text-decoration: none; margin: 10px 16px 4px; transition: all 0.12s;
+    }
+    .source-cta-sheets     { color: #16A34A; background: rgba(22,163,74,0.08); border: 1px solid rgba(22,163,74,0.25); }
+    .source-cta-sheets:hover { background: rgba(22,163,74,0.15); }
+    .source-cta-confluence { color: #1D4ED8; background: rgba(0,82,204,0.08); border: 1px solid rgba(0,82,204,0.25); }
+    .source-cta-confluence:hover { background: rgba(0,82,204,0.15); }
+    .source-fields { padding: 8px 16px 14px; display: flex; flex-direction: column; gap: 1px; }
+    .field-group-label {
+      font-size: 8px; font-weight: 800; color: rgba(163,163,161,0.8);
+      text-transform: uppercase; letter-spacing: 0.7px;
+      padding: 8px 8px 3px;
+    }
+    .field-row {
+      display: flex; align-items: center; gap: 8px;
+      padding: 5px 8px; border-radius: 5px;
+      font-size: 11px; color: var(--black);
+      transition: background 0.1s;
+    }
+    .field-row:hover { background: var(--gray-50); }
+    .field-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+    .fd-sheets     { background: #34A853; }
+    .fd-confluence { background: #0052CC; }
+    .field-tag {
+      font-size: 9px; font-weight: 700; padding: 1px 6px; border-radius: 3px;
+      margin-left: auto; flex-shrink: 0;
+    }
+    .tag-opt { background: var(--gray-100); color: var(--gray-600); }
+    .tag-if  { background: var(--gold-muted); color: var(--gold-dark); border: 1px solid var(--gold-border); }
+
+    /* ─── STEPS ─────────────────────────────────────────────── */
+    .steps-wrap { display: flex; flex-direction: column; gap: 10px; padding: 16px 24px 24px; }
+    .step-row {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 14px 16px; border-radius: 9px;
+      border: 1px solid var(--gray-100); background: var(--gray-50);
+    }
+    .step-num {
+      width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 900; color: var(--black);
+      background: var(--gold); margin-top: 1px;
+    }
+    .step-title { font-size: 13px; font-weight: 700; color: var(--black); margin-bottom: 4px; }
+    .step-desc  { font-size: 11px; color: var(--gray-600); line-height: 1.55; }
+    .step-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      margin-top: 6px; font-size: 11px; font-weight: 600;
+      color: var(--gold-dark); text-decoration: none;
+    }
+    .step-link:hover { text-decoration: underline; }
+    code {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 10px; background: var(--gray-100);
+      padding: 1px 5px; border-radius: 3px; color: var(--black);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="side-nav">
+  <div class="nav-header">
+    <div class="nav-logo">
+      <div class="nav-logo-mark">P.</div>
+      <div class="nav-logo-text">PRAY<span>.COM</span></div>
+    </div>
+    <div class="nav-subtitle">How to Update · 2026</div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Tools</div>
+    <a href="../2026-events-calendar.html" class="nav-link">
+      <span class="nav-link-icon">📅</span> 2026 Events Calendar
+    </a>
+    <a href="internal-briefs.html" class="nav-link">
+      <span class="nav-link-icon">🔒</span> Internal Briefs
+    </a>
+    <a href="external-onepagers.html" class="nav-link">
+      <span class="nav-link-icon">🌐</span> Customer One-Pagers
+    </a>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Sources of Truth</div>
+    <a href="https://docs.google.com/spreadsheets/d/1B1uRmSPn-_CLe4PqytlZC7HO8K6-CIzmmmwZ_PdAeBI/edit?gid=1218116210#gid=1218116210" target="_blank" class="nav-link">
+      <span class="nav-link-icon">📊</span> Google Sheet
+    </a>
+    <a href="https://prayinc.atlassian.net/wiki/spaces/MARK" target="_blank" class="nav-link">
+      <span class="nav-link-icon">📄</span> Confluence Space
+    </a>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">On This Page</div>
+    <a href="#system-arch" class="nav-link">
+      <span class="nav-link-icon">🗺</span> System Architecture
+    </a>
+    <a href="#where-fields" class="nav-link">
+      <span class="nav-link-icon">📋</span> Where Each Field Lives
+    </a>
+    <a href="#how-to-update" class="nav-link">
+      <span class="nav-link-icon">✏️</span> How to Update
+    </a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <div class="hero-card">
+    <div class="hero-eyebrow">Internal Reference · PRAY.COM Events 2026</div>
+    <div class="hero-title">How to Update Event Information</div>
+    <div class="hero-subtitle">Event data lives in two sources of truth: a <strong style="color:rgba(255,255,255,0.7)">Google Sheet</strong> for structured fields (dates, budgets, targets, resource links) and <strong style="color:rgba(255,255,255,0.7)">Confluence pages</strong> for rich content (summaries, agendas, pitches). Both feed the three HTML event tools used by the team.</div>
+    <div class="hero-actions">
+      <a href="https://docs.google.com/spreadsheets/d/1B1uRmSPn-_CLe4PqytlZC7HO8K6-CIzmmmwZ_PdAeBI/edit?gid=1218116210#gid=1218116210" target="_blank" class="hero-btn hero-btn-primary">📊 Open Google Sheet</a>
+      <a href="https://prayinc.atlassian.net/wiki/spaces/MARK" target="_blank" class="hero-btn hero-btn-ghost">📄 Confluence Space</a>
+      <a href="internal-briefs.html" class="hero-btn hero-btn-ghost">🔒 Internal Briefs</a>
+    </div>
+  </div>
+
+  <!-- ── SYSTEM ARCHITECTURE ──────────────────────────────── -->
+  <div class="doc-card" id="system-arch">
+    <div class="card-title">System Architecture</div>
+    <div class="arch-wrap">
+      <div class="arch-block">
+        <div class="arch-topbar">
+          <div class="arch-dot arch-dot-r"></div>
+          <div class="arch-dot arch-dot-y"></div>
+          <div class="arch-dot arch-dot-g"></div>
+          <span class="arch-file-label">event-system.diagram</span>
+        </div>
+        <div class="arch-pre"><span style="color:#57D9A3;font-weight:600">Google Sheet</span> (structured fields)          <span style="color:#4C9AFF;font-weight:600">Confluence</span> (rich content)
+└─ date, location, budget,                └─ agenda, notes, FAQs,
+   type, website, size, targets               messaging, theme &amp; story
+          │                                          │
+          ▼                                          │
+  <span style="color:#E3AF4A;font-weight:600">/events/data/events.json</span>  ◄──── sync script ───────┘
+          │
+          ├─ 2026-events-calendar.html
+          ├─ internal-briefs.html
+          └─ external-onepagers.html</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── WHERE EACH FIELD LIVES ───────────────────────────── -->
+  <div class="doc-card" id="where-fields">
+    <div class="card-title">Where Each Field Lives</div>
+    <div class="source-grid">
+
+      <!-- Google Sheet -->
+      <div class="source-box">
+        <div class="source-head source-head-sheets">
+          <span class="source-icon">📊</span>
+          <div>
+            <div class="source-title">Google Sheet</div>
+            <div class="source-desc">Structured data — dates, budgets, targets, links</div>
+          </div>
+        </div>
+        <a href="https://docs.google.com/spreadsheets/d/1B1uRmSPn-_CLe4PqytlZC7HO8K6-CIzmmmwZ_PdAeBI/edit?gid=1218116210#gid=1218116210" target="_blank" class="source-cta source-cta-sheets">→ Open Sheet</a>
+        <div class="source-fields">
+          <div class="field-group-label">Event Details</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event Quarter</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event Format</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event Name</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event Start Date</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event End Date</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event Location</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event Website</div>
+          <div class="field-group-label">PRAY Details</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>PRAY Role</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event Size</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Event Budget</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>PRAY Attendees</div>
+          <div class="field-group-label">Targets</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Target MQLs</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Target SQLs</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Target Deals</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Target Pipeline</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Target Deals Won</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Target Revenue</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Target ROI</div>
+          <div class="field-group-label">Resources &amp; Links</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Confluence Page</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Jira Issues</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Drive Repository</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Registration Form</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Confirmed Attendee List</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Run of Show</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Expense Tracking</div>
+          <div class="field-row"><span class="field-dot fd-sheets"></span>Report Link</div>
+        </div>
+      </div>
+
+      <!-- Confluence -->
+      <div class="source-box">
+        <div class="source-head source-head-confluence">
+          <span class="source-icon">📄</span>
+          <div>
+            <div class="source-title">Confluence</div>
+            <div class="source-desc">Rich content — summaries, agendas, pitches</div>
+          </div>
+        </div>
+        <a href="https://prayinc.atlassian.net/wiki/spaces/MARK" target="_blank" class="source-cta source-cta-confluence">→ Open Confluence</a>
+        <div class="source-fields">
+          <div class="field-group-label">Content</div>
+          <div class="field-row"><span class="field-dot fd-confluence"></span>Event Summary</div>
+          <div class="field-row"><span class="field-dot fd-confluence"></span>Event Timeline</div>
+          <div class="field-row"><span class="field-dot fd-confluence"></span>Event Agenda</div>
+          <div class="field-row"><span class="field-dot fd-confluence"></span>Pre-Event Pitch <span class="field-tag tag-opt">to invite people</span></div>
+          <div class="field-row"><span class="field-dot fd-confluence"></span>Elevator Pitch</div>
+          <div class="field-group-label">Sponsorship &amp; Hosting</div>
+          <div class="field-row"><span class="field-dot fd-confluence"></span>PRAY Sponsorship Tier <span class="field-tag tag-if">if Conference</span></div>
+          <div class="field-row"><span class="field-dot fd-confluence"></span>Event Sponsors <span class="field-tag tag-if">if Hosted</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── HOW TO UPDATE ────────────────────────────────────── -->
+  <div class="doc-card" id="how-to-update">
+    <div class="card-title">How to Update</div>
+    <div class="steps-wrap">
+
+      <div class="step-row">
+        <div class="step-num">1</div>
+        <div>
+          <div class="step-title">Open the Google Sheet and find the event row</div>
+          <div class="step-desc">Navigate to the 2026 Events tab. Each row is one event. Update the relevant columns directly — dates, location, budget, targets, PRAY attendees, and all resource links (Confluence, Jira, Drive, Registration, etc.).</div>
+          <a href="https://docs.google.com/spreadsheets/d/1B1uRmSPn-_CLe4PqytlZC7HO8K6-CIzmmmwZ_PdAeBI/edit?gid=1218116210#gid=1218116210" target="_blank" class="step-link">→ Open Google Sheet ↗</a>
+        </div>
+      </div>
+
+      <div class="step-row">
+        <div class="step-num">2</div>
+        <div>
+          <div class="step-title">Update rich content on the event's Confluence page</div>
+          <div class="step-desc">Each event has a linked Confluence page — find the link in the <em>Confluence Page</em> column of the spreadsheet, or in the Internal Brief for that event. Edit the page directly in Confluence for summaries, timelines, agendas, pre-event pitches, elevator pitches, and sponsorship details.</div>
+          <a href="https://prayinc.atlassian.net/wiki/spaces/MARK/pages/4889149441/2026+Event+Tracker" target="_blank" class="step-link">→ Open Confluence Space ↗</a>
+        </div>
+      </div>
+
+      <div class="step-row">
+        <div class="step-num">3</div>
+        <div>
+          <div class="step-title">Sync changes to the HTML event tools</div>
+          <div class="step-desc">After updating the source(s), the HTML event tools need to be updated to reflect the changes. Update the JavaScript event data arrays in the three HTML files — <code>2026-events-calendar.html</code>, <code>internal-briefs.html</code>, and <code>external-onepagers.html</code> — to match the new values from the spreadsheet and Confluence.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+</body>
+</html>

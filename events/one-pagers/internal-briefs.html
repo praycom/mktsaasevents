@@ -136,6 +136,23 @@
       padding: 2px 6px;
     }
 
+    .header-update-link {
+      font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.35);
+      text-decoration: none; padding: 2px 8px;
+      border: 1px solid rgba(255,255,255,0.12); border-radius: 3px;
+      letter-spacing: 0.3px; transition: all 0.12s;
+    }
+    .header-update-link:hover { color: var(--gold); border-color: var(--gold-border); }
+
+    .nav-update-link {
+      display: block; margin-top: 8px;
+      font-size: 9px; font-weight: 700; color: var(--gray-600);
+      text-decoration: none; padding: 4px 8px; border-radius: 4px;
+      border: 1px solid rgba(255,255,255,0.08); text-align: center;
+      transition: all 0.12s;
+    }
+    .nav-update-link:hover { color: var(--gold); border-color: var(--gold-border); background: var(--gold-muted); }
+
     /* Status badges */
     .badge {
       font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.6px;
@@ -372,6 +389,7 @@
       </div>
       <div class="nav-subtitle">Internal Event Briefs · 2026</div>
       <div class="nav-confidential">Confidential</div>
+      <a href="how-to-update.html" class="nav-update-link" target="_blank">📖 How to Update Info</a>
     </div>
     <div class="nav-items" id="nav-items"></div>
   </nav>
@@ -1171,6 +1189,7 @@
           '<div class="header-right">' +
             '<span class="header-num">#' + (idx + 1) + ' of ' + events.length + '</span>' +
             statusBadge(ev) +
+            '<a href="how-to-update.html" target="_blank" class="header-update-link">📖 How to Update</a>' +
             '<span class="header-conf">CONFIDENTIAL</span>' +
           '</div>' +
         '</div>' +
